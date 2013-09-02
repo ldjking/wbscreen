@@ -1,0 +1,258 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: verdana!important;
+}
+.con {
+	height: 100%;
+	width: 100%;
+	min-height: 700px;
+	display: table;
+}
+.vbox {
+	width: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.vbox>* {
+	margin: auto;
+}
+.wrap {
+	height: 100%;
+	width: 960px;
+	margin: auto;
+	position: relative;
+}
+.top {
+	width: 1000px;
+	margin: auto;
+	height: 60px;
+}
+.top .logo {
+	height: 60px;
+	float: left;
+	line-height: 60px;
+	font-size: 36px;
+}
+.top .logo a:first-child {
+	border-right: 1px solid #ccc;
+	padding-right: 8px;
+}
+.top .logo a:last-child {
+	padding-left: 8px;
+	font-size: 20px;
+	color: #717171;
+	line-height: 60px;
+	vertical-align: top;
+	font-weight: bold;
+	display: inline-block;
+}
+.top .links {
+	height: 60px;
+	float: right;
+	text-align: right;
+}
+.top .links span {
+	padding-left: 4px;
+	line-height: 60px;
+	font-size: 13px;
+	color: #717171;
+	cursor: pointer;
+	padding-right: 4px;
+	text-align: center;
+}
+.top .links span:hover {
+	color: #333333;
+}
+.main {
+	width: 100%;
+	background-image: url(130723_music_bg_new.jpg);
+	background-repeat: repeat;
+	height: 500px;
+	z-index: 1;
+}
+.main .wrap {
+	width: 1000px;
+	background-image: url(130723_music_cnt_new.jpg);
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: center center;
+	opacity: 1;
+	height: 100%;
+	padding-top: 60px;
+	box-sizing: border-box;
+}
+.down {
+	width: 1000px;
+	margin: auto;
+	background-color: #fff;
+	height: 60px;
+}
+.login-box {
+	width: 300px;
+	height: 400px;
+	background-color: rgba(245,242,249,0.8);
+	border-radius: 4px;
+	opacity: 1;
+	z-index: 2;
+	margin-left: auto;
+	overflow: hidden;
+}
+.login-box .title{
+	height: 45px;
+	line-height: 45px;
+	cursor: default;
+}
+.login-box .title span{
+	width: 50%;
+	display: inline-block;
+	border-bottom:1px solid transparent;
+}
+.login-box .title span:first-child{
+	box-sizing: border-box;
+	border-right: 1px solid #ced3ce;
+	background-image: -webkit-linear-gradient(top,rgba(254,255,254,0.6),rgba(235,246,234,0.6));
+	border-bottom: 1px solid #ced3ce;
+
+}
+.login-box .title:hover span{
+	box-sizing: border-box;
+	border-right: 1px solid #d4d7d4;
+	/*border-top-left-radius:5px;*/
+	background-image: none;
+}
+.login-box .title span:hover{
+	box-sizing: border-box;
+	border-right: 1px solid #d4d7d4;
+	/*border-top-left-radius:5px;*/
+	background-image: -webkit-linear-gradient(top,rgba(254,255,254,0.6),rgba(235,246,234,0.6));
+	border-bottom: 1px solid #ced3ce;
+}
+.login-box .title a{
+	position: relative;
+}
+.login-box .title a:hover:after{
+	content: 123;
+	background-color: #F00;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: 100px;
+	height: 100px;
+}
+.login-box .account{
+	border: 1px solid #666;
+	border-radius: 5px;
+	margin: auto;
+	width: 80%;
+	height: 40px;
+	margin-top: 20px;
+	background-color: #FFF;
+	padding-left: 36px;
+	padding-right: 80px;
+	box-sizing: border-box;
+	background-image: url(icon-account.png), url(icon-suffix.png);
+	background-repeat: no-repeat;
+	background-position: 6px center, right center;
+	box-shadow:inset 0px 2px 0 0 #efefef;
+}
+.login-box .account input{
+	border: 0px;
+	height: 100%;
+	outline: none;
+	width: 100%;
+	box-sizing: border-box;
+	line-height: 100%;
+	background-color: transparent;
+}
+.left {
+	width: 640px;
+	height: 100%;
+	background-color: #0CF;
+	float: left;
+}
+.right {
+	width: 320px;
+	height: 100%;
+	background-color: #3F3;
+	float: left;
+	color: #bebebe;
+}
+</style>
+</head>
+
+<body class="con">
+<div class="vbox">
+  <div class="top">
+    <div class="logo"><a><img src="126logo.gif"></a><a>你的专业电子邮局</a></div>
+    <div class="links"><span>免费邮</span><span></span><span>企业邮</span><span>VIP邮箱</span><span></span></div>
+  </div>
+  <div class="main" id="main">
+    <div class="wrap" id="wrap">
+      <div class="login-box">
+        <div class="title"><span>邮件账号登录</span><span>手机号登录</span></div>
+        <div class="account">
+          <input type="text" placeholder="请输入账号">
+        </div>
+        <div class="pw">
+          <input type="text">
+        </div>
+        <div class="opt">
+          <input type="text">
+        </div>
+        <div class="btn"><span>登录</span><span><a href="#" title="忘记密码">忘记密码</a></span></div>
+        <div class="info"><span>版本</span><span>正确使用ssl登录</span></div>
+        <ul class="foot">
+          <li>网易邮箱5.0版介绍</li>
+          <li>免费发3G大附件邮箱</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="down"></div>
+</div>
+<script>
+	function $(id){
+		return document.getElementById(id);
+	}
+	function css(dom,style){
+		if(style.bg){
+			dom.style.backgroundImage=style.bg;
+		}
+		else{
+			;;;
+		}
+	}
+	
+	var main=$("main");
+	var wrap=$("wrap");
+	//css(main,{bg:"url(130813_geci_bg_new.jpg)"});
+	//css(wrap,{bg:"url(130813_geci_cnt_new.jpg)"});
+	
+	
+	//setInterval(changeBg,2000);
+	
+	var index=1;
+	var mainBg=["130723_music_bg_new.jpg","130813_geci_bg_new.jpg"];
+	var wrapBg=["130723_music_cnt_new.jpg","130813_geci_cnt_new.jpg"];
+	
+	function changeBg(){
+		css(main,{bg:"url("+mainBg[index]+")"});
+		css(wrap,{bg:"url("+wrapBg[index]+")"});
+		
+
+		index=(index++)%mainBg.length;
+		
+
+	}
+</script>
+</body>
+</html>

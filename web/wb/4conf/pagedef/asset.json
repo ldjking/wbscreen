@@ -1,0 +1,25 @@
+{
+  "name": "asset",
+  "cname": "资产管理",
+  "module": 4,
+  "template": "t1",
+  "title": "资产管理",
+  "id": 12,
+  "conf": {
+    "title": "资产管理",
+    "height": "",
+    "width": "",
+    "dataUrl": "",
+    "cols": [
+      {
+        "field": "",
+        "name": "",
+        "type": "",
+        "width": "",
+        "align": ""
+      }
+    ]
+  },
+  "person1": "罗惠恒",
+  "time1": "2013-7-6 18:00"
+}

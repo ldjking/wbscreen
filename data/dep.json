@@ -1,0 +1,7 @@
+[
+	{"id":"dev","name":"研发部"},
+	{"id":"tgp","name":"TGPMS事业部"},
+	{"id":"eam","name":"TGEAM事业部"},
+	{"id":"spt","name":"技术支持部"},
+	{"id":"xxzx","name":"信息中心"}
+]

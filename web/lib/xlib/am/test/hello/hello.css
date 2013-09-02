@@ -1,0 +1,17 @@
+html ,body{
+	background-color: #CCC;
+	padding: 0;
+	margin: 0;
+}
+.app1 {
+	background-color: #F69;
+}
+.top {
+	background-color: #999;
+	height: 48px;
+	width: 200px;
+}
+.down {
+	background-color: #0FC;
+	height: 200px;
+}

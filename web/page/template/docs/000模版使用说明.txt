@@ -1,0 +1,19 @@
+使用模版的页面对JavaScript的引用应该包括
+<script type="text/javascript" src="../../../web/js/common/t1.js"></script>		模版JS代码		template
+<script type="text/javascript" src="../p1.js"></script>					页面JS代码		page
+<script type="text/javascript" src="../../../web/js/common/jsimport.js"></script>	资源加载JS代码		loader
+
+template	主要功能	实现某一类页面的标准事件
+page		主要功能	实现页面的自定义配置和自定义事件	
+loader		主要功能	加载所有需要的公共资源
+
+目前template有三版
+1.t1	参见template/t1.html		适用于单个对象管理
+2.t2	参见template/t2.html		适用于一主一从对象管理
+3.t3	参见template/t3.html		适用于一主一从对象管理【主对象不具备管理功能】
+
+各个版本的介绍请参见
+1.模版t1使用说明
+2.模版t2使用说明
+3.模版t3使用说明
+

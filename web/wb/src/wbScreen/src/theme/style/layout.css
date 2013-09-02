@@ -1,0 +1,136 @@
+body {
+	background-color: #666;
+	font-family: Verdana, Geneva, sans-serif;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.wb-top-bg {
+	height: 64px;
+	background-color: #333;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 1;
+	box-sizing: border-box;
+	left: 0px;
+	right: 0px;
+}
+.wb-con {
+	height: auto;
+	width: 1000px;
+	margin: auto;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.wb-top {
+	height: 64px;
+	background-color: #333;
+	padding-left: 232px;
+	position: fixed;
+	top: 0px;
+	width: 1000px;
+	z-index: 2;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.wb-btns {
+	float: right;
+	height: 38px;
+	padding-top: 16px;
+	padding-bottom: 10px;
+	padding-right: 2px;
+}
+.wb-btns .div{
+	float: left;
+	line-height: 36px;
+	color: #FFB417;
+	width: 36px;
+	border-radius: 18px;
+	font-size: 24px;
+	border: 2px solid #FFB417;
+	height: 36px;
+	box-sizing: border-box;
+	cursor: default;
+	text-align: center;
+}
+.wb-btns div{
+	float: left;
+	line-height: 38px;
+	color: #d7d7d7;
+	width: 38px;
+	border-radius: 19px;
+	font-size: 20px;
+	border: 2px solid #FFB417;
+	height: 38px;
+	box-sizing: border-box;
+	cursor: default;
+	text-align: center;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+.wb-btns div:hover{
+	background-color: #06C;
+}
+
+.wb-left {
+	position: fixed;
+	top: 0px;
+	width: 200px;
+	z-index: 3;
+}
+.wb-logo {
+	height: 64px;
+	line-height: 64px;
+	color: #53D5FF;
+	padding-left: 12px;
+	font-size: 28px;
+	font-weight: bold;
+	display: block;
+	cursor: default;
+	font-size: 32px;
+	font-weight: bold;
+	padding-left: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	text-align: left;
+}
+.wb-navs {
+	width: 170px;
+	padding-left: 10px;
+	padding-top: 10px;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
+}
+.wb-navs.full {
+	width: 0px;
+	padding-left: 16px;
+	padding-top: 12px;
+	overflow: hidden;
+	transition:all 0.3s ease-in-out;
+
+}
+.wb-menu {
+	width: 180px;
+}
+.wb-main {
+	height: 100%;
+	width: 1000px;
+	background-color: #666;
+	padding-left: 190px;
+	padding-top: 64px;
+	box-sizing: border-box;
+	transition: all 0.3s ease-in-out;
+}
+.wb-main.full {
+	height: 100%;
+	width: 1000px;
+	background-color: #666;
+	padding-left: 0px;
+	padding-top: 64px;
+	box-sizing: border-box;
+	transition:all 0.3s ease-in-out;
+}
+.wb-main .wrap{
+	height: 24px;
+	background-color: #F00;
+}

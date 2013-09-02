@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<div id="a1"></div>
+<script src="../ejs.js"></script>
+<script>
+	window.onload=init;
+	function init(){
+        var names = ['刘东杰', '李哲', '郑黎明'];
+		var data={title1:"所有员工", names: names };
+
+		var html=ejs.renderFile("a",data);
+		document.getElementById("a1").innerHTML = html;
+
+		
+	}
+</script>
+</body>
+</html>

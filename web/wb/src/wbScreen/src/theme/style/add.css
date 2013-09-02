@@ -1,0 +1,95 @@
+.paper {
+	width: 800px;
+	background-color: #FFF;
+	min-height: 480px;
+	margin: auto;
+	margin-top: 16px;
+	margin-bottom: 24px;
+	box-sizing: border-box;
+	padding: 64px 48px 64px 48px;
+}
+.paper table{
+	background-color: #FFFFFF;
+	table-layout: fixed;
+	padding: 0;
+
+
+}
+.content {
+	text-align: center;
+}
+.form {
+	border-top: 1px solid #333;
+	border-left: 1px solid #333;
+	margin: auto;
+	font-size: 14px;
+
+}
+.form table{
+	margin: auto;
+	box-sizing: border-box;
+	table-layout: fixed;
+
+}
+.form .row td{
+	border-bottom: 1px solid #333;
+	border-right: 1px solid #333;
+	box-sizing: border-box;
+	height: auto;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	min-height: 32px;
+	overflow: hidden;
+}
+.form span{
+	display: block;
+	box-sizing: border-box;
+	line-height: 24px;
+	padding-left: 12px;
+	padding-right: 12px;
+	text-align: center;
+	width: 100%;
+
+}
+.form ul,ol{
+	padding-left: 0px;
+	padding-right: 0px;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+}
+.form ul li{
+	padding-left: 10px;
+	padding-right: 10px;
+	display: inline-block;
+	width: 90px;
+	line-height: 32px;
+}
+.form ol li{
+	padding-left: 10px;
+	padding-right: 10px;
+	display: inline-block;
+	width: 100px;
+	line-height: 32px;
+}
+.form .txt{
+	display: block;
+	box-sizing: border-box;
+	line-height: 24px;
+	padding-left: 12px;
+	padding-right: 12px;
+	margin: 0;
+	border: 0px none;
+	width: 100%;
+	font-size: 14px;
+	min-height: 32px;
+}
+
+.form .check{
+	margin-right: 5px;
+
+}
+.form .radio{
+	margin-right: 12px;
+
+}

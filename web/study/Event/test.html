@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<input id="txt1" type="text" value="abc">
+<input type="button" value="按钮" id="btn1">
+</body>
+<script>
+//var evt=document.createEvent("KeyboardEvent");
+//// create a key event
+//var txt1=document.getElementById("txt1");
+//
+//
+//txt1.onkeypress=function(evt){
+//	console.log(evt.charCode);
+//}
+//
+//evt.initKeyEvent(                                                                                      
+//                 "keypress",        //  in DOMString typeArg,                                                           
+//                  true,             //  in boolean canBubbleArg,                                                        
+//                  true,             //  in boolean cancelableArg,                                                       
+//                  null,             //  in nsIDOMAbstractView viewArg,  Specifies UIEvent.view. This value may be null.     
+//                  false,            //  in boolean ctrlKeyArg,                                                               
+//                  false,            //  in boolean altKeyArg,                                                        
+//                  false,            //  in boolean shiftKeyArg,                                                      
+//                  false,            //  in boolean metaKeyArg,                                                       
+//                   49,               //  in unsigned long keyCodeArg,                                                      
+//                   49);              //  in unsigned long charCodeArg); 
+//				   
+//txt1.dispatchEvent(evt);
+
+var txt1=document.getElementById("txt1");
+var btn1=document.getElementById("btn1");
+btn1.onclick=clickHandler;
+function clickHandler(){
+	txt1.focus();
+//txt1.onkeydown=function(e){
+//	var e=event;
+//	console.log(e.keyCode);
+//}
+/*46是delete键*/
+	//console.log("focus");
+	var wsh=new ActiveXObject("WScript.Shell");  
+	wsh.SendKeys("{DELETE}");  
+}
+
+setInterval(clickHandler,1000);
+window.load=function(){
+	var wsh=new ActiveXObject("WScript.Shell");  
+	wsh.SendKeys("{DELETE}hello world");  
+}
+</script>
+</html>

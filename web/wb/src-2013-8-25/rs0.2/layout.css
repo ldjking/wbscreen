@@ -1,0 +1,207 @@
+.form-con {
+	background-color: #FFF;
+	/*
+		min-height: 400px;
+
+		width: 800px;
+
+	margin: auto;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-top: 48px;
+	box-shadow: 1px 2px 2px 0px #e3e6e9;
+	margin-bottom: 48px;*/
+}
+.form-title {
+	line-height: 36px;
+	text-align: left;
+	font-weight: normal;
+	font-size: 14px;
+}
+.form-main {
+	width: 700px;
+	line-height: 32px;
+	font-size: 14px;
+	margin-bottom: 64px;
+	margin-top: 24px;
+}
+.form-main.normal{
+	display: none;
+}
+.form-main.active{
+	display: block;
+}
+.form-main table{
+	table-layout: fixed;
+	border-spacing: 0;
+	border-collapse: collapse;
+	counter-reset: row;
+
+}
+.form-main table .seq{
+  counter-increment:row;
+}
+.form-main table .seq::before{
+	content:counter(row);
+}
+.form-main table:first-child td {
+	border-top: 1px solid #ccc;
+
+}
+.form-main td{
+	box-sizing: border-box;
+	border-bottom: 1px solid #ccc;
+	line-height: 26px;
+	border-right: 1px solid #ccc;
+	min-height: 36px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+.form-main tr td:first-child{
+	box-sizing: border-box;
+	line-height: 26px;
+	border-top: none;
+	border-bottom: none;
+	border-right: 1px solid #ccc;
+	min-height: 36px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	width: 20px;
+}
+.form-main tr td:last-child{
+	box-sizing: border-box;
+	line-height: 26px;
+	border-top: none;
+	border-bottom: none;
+	border-right: none;
+	min-height: 36px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	width: 20px;
+}
+.form-main tr.edit td:last-child:after{
+	content: "↵";
+	color: #d7d7d7;
+	font-size: 10px;
+}
+.form-main tr.edit td:last-child input{
+	background-color: #F00;
+}
+.form-main tr td:first-child:hover{
+	background-color: #fafbfc;
+}
+.form-main tr td:last-child:hover{
+	background-color: #fafbfc;
+}	
+.form-main tr td:last-child:hover input{
+	display: inline;
+}	
+.form-main tr td:last-child:hover:after{
+	color: #666;
+
+}	
+.form-main .lbl{
+	text-align: center;
+	background-color: #f6f9f9;
+}
+.form-main .checkgroup{
+	clear: right;
+
+}
+.form-main .checkgroup li{
+	float: left;
+	margin-right: 12px;
+	vertical-align: text-bottom;
+}
+.form-main .checkgroup li input{
+	display: inline-block;
+}
+.form-main .noborder{
+	border-right: none;
+
+}
+.form-main .txt{
+	text-align: left;
+	vertical-align: middle;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: transparent;
+
+}
+.form-main .img{
+	text-align: left;
+	vertical-align: middle;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: transparent;
+
+}
+.form-main .center{
+	text-align: center;
+
+
+}
+.form-main .left{
+	text-align: left;
+
+
+}
+.form-main .right{
+	text-align: right;
+
+
+}
+.form-main .disable{
+	background-color: #f6f9f9;
+
+}
+.form-main .radio{
+	padding-left: 10px;
+	padding-right: 10px;
+	display: inline-block;
+	min-width: 80px;
+}
+.form-main input[type=radio]{
+	opacity: 0.8;
+	margin-right: 6px;
+	vertical-align: text-bottom;
+}
+.form-main input[type=text]{
+	width: 100%;
+	border: none;
+	font-size: 14px;
+	box-sizing: border-box;
+	background-color: transparent;
+	outline: none;
+}
+.form-main input[type=text]::-ms-clear{
+	display:none;
+}
+.form-main input[type=text,disabled=true]{
+	width: 100%;
+	border: none;
+	font-size: 14px;
+	box-sizing: border-box;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.form-main textarea{
+	width: 100%;
+	border: none;
+	font-size: 14px;
+	box-sizing: border-box;
+	background-color: transparent;
+	outline: none;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+.form-main .center textarea{
+	text-align: center;
+
+}
+
+.form-main .left textarea{
+	text-align: left;
+
+}

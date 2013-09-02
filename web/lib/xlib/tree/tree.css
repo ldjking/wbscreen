@@ -1,0 +1,150 @@
+html ,body{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+.tree {
+	height: 100%;
+
+}
+.tree div{
+	line-height: 32px;
+	position: relative;
+	padding-left: 32px;
+	transition: all ease-in-out 0.2s;
+	color: #828282;
+	cursor: pointer;
+	font-size: 14px;
+}
+.tree div:hover{
+	color: #333;
+}
+.node {
+
+}
+.leaf {
+
+}
+.show {
+	height: 32px;
+	overflow: hidden;
+	transition-duration: 0.3s;
+	transition-property: all;
+	transition-timing-function: ease-in-out;
+}
+.hide {
+	height: 0px;
+	overflow: hidden;
+	transition-duration: 0.3s;
+	transition-property: all;
+	transition-timing-function: ease-in-out;
+	transform: translateX(-10px);
+}
+.open {
+}
+.close {
+}
+
+.open::before{
+	content: "";
+	position: absolute;
+	left: 10px;
+	top: 9px;
+	width: 0px;
+	height: 0px;
+	border-bottom: 8px solid rgba(10,11,12,0.8);;
+	border-left: 8px solid transparent;
+	z-index: 2;
+	transform: rotate(0deg) translate(3px,0px);
+	display:none;
+}
+
+.open::after{
+	content: "";
+	position: absolute;
+	left: 10px;
+	top: 9px;
+	width: 0px;
+	height: 0px;
+	border-bottom: 8px solid rgba(110,111,112,0.8);
+	border-left: 8px solid transparent;
+	z-index: 1;
+	transform: rotate(0deg) translate(3px,0px);
+}
+
+.close::before{
+	content: "";
+	position: absolute;
+	left: 12px;
+	top: 8px;
+	width: 0px;
+	height: 0px;
+	border-top: 6px solid transparent;
+	border-bottom: 6px solid transparent;
+	border-left: 8px solid  rgba(110,111,112,0.8);
+	z-index: 2;
+	transform: rotate(0deg);
+	transform-origin: center center;
+}
+.close::after{
+	content: "";
+	position: absolute;
+	left: 13px;
+	top: 10px;
+	width: 0px;
+	height: 0px;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	border-left: 6px solid #fff;
+	z-index: 2;
+	transform: rotate(0deg);
+	transform-origin: center center;
+}
+.leaf.normal::after{
+	content: "";
+	position: absolute;
+	left: 10px;
+	top: 12px;
+	width: 5px;
+	height: 5px;
+	border: 1px solid #828282;
+	z-index: 2;
+}
+.leaf.normal:hover{}
+.leaf.normal:hover::after{
+	content: "";
+	position: absolute;
+	left: 10px;
+	top: 12px;
+	width: 5px;
+	height: 5px;
+	border: 1px solid #333;
+	z-index: 2;
+}
+.leaf.active:hover{
+	color: #008CBB;
+
+}
+.leaf.active {
+	color: #008CBB;
+	text-shadow:#099;
+}
+.leaf.active::after{
+	content: "";
+	position: absolute;
+	left: 10px;
+	top: 12px;
+	width: 5px;
+	height: 5px;
+	border: 1px solid #008CBB;
+	z-index: 2;
+}
+.lvl1 {
+	margin-left: 24px;
+}
+.lvl2 {
+	margin-left: 48px;
+}
+.lvl3 {
+	margin-left: 72px;
+}

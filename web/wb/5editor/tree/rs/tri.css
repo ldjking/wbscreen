@@ -1,0 +1,86 @@
+.tree {
+}
+.tree .node{
+	padding-left: 32px;
+	margin-left: 24px;
+	background-color: #0CC;
+	position: relative;
+	height: 32px;
+	line-height: 32px;
+	z-index: 1;
+}
+.tree .node::before{
+	content:"";
+	position: absolute;
+	top: 6px;
+	left: 0px;
+	z-index: 2;
+	width: 0px;
+	height: 0px;
+	border-top:10px solid #ee0;
+	border-right:10px solid #ccc;
+	border-bottom:10px solid #0ee;
+	border-left:10px solid #e00;
+}
+.tree .node::after{
+	content:"";
+	position: absolute;
+	top: 9px;
+	left: 1px;
+	z-index: 3;
+	width: 0px;
+	height: 0px;
+	border-top:7px solid #ee0;
+	border-right:7px solid #ccc;
+	border-bottom:7px solid #0ee;
+	border-left:7px solid #fff;
+}
+.tree .hide{
+}
+.tree .collapse{
+}
+.tree .open{
+}
+
+.tree div.open::before{
+	transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+				-webkit-transform-origin:left left;
+
+}
+.tree div.open::after{
+		transform:rotate(45deg);
+			-webkit-transform:rotate(45deg);
+			transform-origin:center top;
+			-webkit-transform-origin:left left;
+
+
+}
+div{
+		content:"";
+	position: absolute;
+	top: 60px;
+	left: 100px;
+	z-index: 2;
+	width: 0px;
+	height: 0px;
+	border-top:10px solid #fff;
+	border-right:10px solid #fff;
+	border-bottom:10px solid #fff;
+	border-left:10px solid #e00;
+	transition:all ease-in-out 0.3s;
+}
+.tri1:hover {
+			-webkit-transform:rotate(45deg);
+			-webkit-transform-origin:20% 86%;
+}
+.tri2 {
+			transform:rotate(45deg);
+			-webkit-transform:rotate(45deg);
+			transform-origin:20% 86%;
+			-webkit-transform-origin:20% 86%;
+}
+#t1 {
+	width: 200px;
+	background-color: #dedede;
+}

@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Grid</title>
+<link rel="stylesheet" type="text/css" href="css/grid.css">
+<link rel="stylesheet" type="text/css" href="css/32grid.css">
+</head>
+
+<body class="grid">
+<div class="search">
+  <div class="find">高级搜索</div>
+  <div class="icon-gap-small"></div>
+  <div class="icon-more"></div>
+  <div class="save">保存搜索</div>
+  <div class="icon-gap-small"></div><div class="icon-more"></div>
+</div>
+<div class="header">
+  <div class="title">所有员工</div>
+  <div class="icon-gap"></div>
+</div>
+<div class="body">
+  <table class="table" id="grid" cellspacing="0" cellpadding="0">
+    <tr class="theader">
+      <td class="w01"  style="width: 30px;"><div class="w01">
+          <input class="checkbox" id="grid_0_selectAll" type="checkbox">
+        </div></td>
+      <td class="w02"  style="width: 60px;"><div class="w02"> 序号 </div></td>
+      <td class="asc"  style="width: 100px;"><div class="cell"> 主键 </div></td>
+      <td class="asc"  style="width: 180px;"><div class="cell"> 姓名 </div></td>
+      <td class="asc"  style="width: 80px;"><div class="cell"> 性别 </div></td>
+      <td class="asc"  style="width: 100px;"><div class="cell"> 出生日期 </div></td>
+      <td class="asc"  style="width: 180px;"><div class="cell"> 部门 </div></td>
+      <td class="asc"  style="width: 140px;"><div class="cell"> 密码 </div></td>
+      <td class="asc"  style="width: 120px;"><div class="cell"> 状态 </div></td>
+      <td class="asc"  style="width: auto;"></td>
+    </tr>
+    <tr class="hide">
+      <td><div class="w01">
+          <input class="checkbox" type="checkbox">
+        </div></td>
+      <td><div attr="seq" class="center"></div></td>
+      <td><div attr="id" class="left">  </div></td>
+      <td><div attr="name" class="center">  </div></td>
+      <td><div attr="sex" class="center">  </div></td>
+      <td><div attr="age" class="center">  </div></td>
+      <td><div attr="dep_name">  </div></td>
+      <td><div attr="pw">  </div></td>
+      <td><div attr="state">  </div></td>
+      <td></td>
+    </tr>
+    <tr class="filter">
+      <td class="w01"></td>
+      <td class="w02"><div class="w02">
+        </div></td>
+      <td><input class=" query cell" style="width: 80px;" type="text"></td>
+      <td><input class=" query cell" style="width: 160px;" type="text"></td>
+      <td><input class=" query cell" style="width: 60px;" type="text"></td>
+      <td><input class=" query cell" style="width: 80px;" type="text"></td>
+      <td><input class=" query cell" style="width: 160px;" type="text"></td>
+      <td><input class=" query cell" style="width: 100px;" type="text"></td>
+      <td><input class=" query cell" style="width: 100px;" type="text"></td>
+      <td></td>
+    </tr>
+   
+  </table>
+</div>
+<div class="footer" id="grid_0_footer">
+  <div class="pager" id="grid_0_pager">
+    <table class="pageInfo" cellspacing="0" cellpadding="0">
+      <tbody>
+        <tr>
+          <td class="rowNum" id="grid_0_rowNum">共<label id="totalnum">2</label>条数据;</td>
+          <td class="pageNum" id="grid_0_pageNum">第<label id="currpage">2</label>页，共<label id="totalpage">2</label>页</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="pageTable"  cellspacing="0" cellpadding="0">
+      <tbody>
+        <tr>
+          <td class="pagebtn" id="grid_0_firstPage">首页</td>
+          <td class="pagebtn" id="grid_0_prePage">上一页</td>
+          <td class="pagebtn" id="grid_0_nextPage">下一页</td>
+          <td class="pagebtn" id="grid_0_lastPage">尾页</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<script src="js/lib.js"></script>
+<script src="js/grid.js"></script>
+<script>
+	var gridConf={
+			url:"common/query",
+			param:{
+				table:"user",
+				joins:[{table:"dep",attr:"dep"}],
+				pagenum:1,
+				pagesize:10
+			}
+		}
+	makeGrid("#grid",gridConf);
+</script>
+</body>
+</html>

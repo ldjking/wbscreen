@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<div id="a" style="width:260px; background-color:#e3e6e9">
+</div>
+<script src="../../require.js"></script> 
+<script>
+	var tree=g.tree;
+	var data=[
+				{name:"所有页面",level:1,type:"node"},
+				{name:"系统模块",level:2,type:"node"},
+				{name:"人员管理",level:3,type:"leaf"},
+				{name:"角色管理",level:3,type:"leaf"},
+				{name:"授权管理",level:3,type:"leaf"},
+				{name:"开发模块",level:2,type:"node"},
+				{name:"数据库",level:3,type:"leaf"},
+				{name:"服务",level:3,type:"leaf"},
+				{name:"页面",level:3,type:"leaf"},
+				{name:"运行模块",level:2,type:"node"},
+				{name:"运行日志",level:3,type:"leaf"},
+				{name:"工作票",level:3,type:"leaf"},
+				{name:"操作票",level:3,type:"leaf"},
+				{name:"物资模块",level:2,type:"node"},
+				{name:"物资台账",level:3,type:"leaf"},
+				{name:"仓库管理",level:3,type:"leaf"},
+				{name:"采购管理",level:3,type:"leaf"},
+				{name:"入库",level:3,type:"leaf"},
+				{name:"出库",level:3,type:"leaf"},
+				{name:"领料",level:3,type:"leaf"},
+				{name:"合同模块",level:2,type:"node"},
+				{name:"合同录入",level:3,type:"leaf"},
+				{name:"支付单",level:3,type:"leaf"},
+				{name:"合同结算",level:3,type:"leaf"},
+				{name:"合同验收",level:3,type:"leaf"}
+
+			];
+	tree(document.getElementById("a"),{},data);
+</script>
+</body>
+</html>

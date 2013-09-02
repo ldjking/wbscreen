@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+
+</body>
+<script src="../../require.js"></script>
+<script>
+	var parser=require("../html2json.js");
+	var result=parser("<body><div id=\"app\" class=\"abc\"><div></div><p></p><input><img></div></body>");
+	console.log(result.doms.app);
+	//console.log(parser);
+</script>
+</html>

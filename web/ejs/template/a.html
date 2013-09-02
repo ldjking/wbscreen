@@ -1,0 +1,11 @@
+<%if(typeof(title)==undefined){%><div><%=title%></div>
+<%}else{%>
+<div>没有设置标题</div><%}%>
+
+<% if (names.length) { %>
+    <ul>
+      <% names.forEach(function(name,i,arr){ %>
+        <li>共<%=arr.length%>个，这是第<%=i%>个： <%= name %></li>
+      <% }) %>
+    </ul>
+<% } %>

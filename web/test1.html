@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script type="text/javascript">
+
+var i=1;
+function a3(){
+	alert("13");
+}
+function a1(){
+	a3();
+}
+</script>
+
+</head>
+
+<body>
+
+
+<script type="text/javascript">
+var i=2;
+function a3(){
+	alert("23");
+}
+function a2(){
+	a3();
+}
+</script>
+<script type="text/javascript">
+window.onload=a1;
+</script>
+</body>
+</html>

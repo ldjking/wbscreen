@@ -1,0 +1,16 @@
+1.bug场景描述：
+    该bug仅出现在IE9中
+	chrome,firefox,IE10中无此问题
+	
+2.参考资料：http://www.seezh.com/forums/viewtopic328.html
+
+3.问题初步分析：  easyui对iframe操作方式不当，造成IE9内存泄露
+
+4.场景构造
+	4.1	移除easyui  【正常】
+		index_2.html
+	4.2 保留easyui,移除iframe父级元素的布局设置  【正常】
+		index_3.html
+	4.3 移除iframe,使用easyui的panel组件，并将panel的href指向iframe的src  【正常】
+		index_4.html	
+		

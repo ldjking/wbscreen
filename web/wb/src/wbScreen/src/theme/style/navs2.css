@@ -1,0 +1,75 @@
+.wb-menu > li {
+	line-height: 50px;
+	border-bottom: 1px solid #3d3d3d;
+	box-shadow: 0 1px 0 #888;
+}
+.wb-menu > li:first-child {
+	border-top: 1px solid #3d3d3d;
+	box-shadow: 0 1px 0 #888, 0 1px 0 #888 inset;
+}
+.wb-menu a {
+	position: relative;
+	outline: 0;
+	display: block;
+	text-align: left;
+	color: #e5e5e5;
+	font-size: 18px;
+	text-shadow: 0 1px 1px #171717;
+	padding: 0 40px;
+}
+.wb-menu a:hover {
+	text-decoration: none;
+}
+.wb-menu > li > a:before, .menu > li > a:after {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-ms-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	-webkit-font-feature-settings: "liga" 1, "dlig" 1;
+	-moz-font-feature-settings: "liga=1, dlig=1";
+	-ms-font-feature-settings: "liga" 1, "dlig" 1;
+	font-feature-settings: "liga" 1, "dlig" 1;
+	font-size: 20px;
+}
+.wb-menu > li > a:before {
+	position: absolute;
+	left: 10px;
+	color: #e5e5e5;
+	text-shadow: inherit -1px 0 #fff, 0 -2px 0 #1a1a1a, 0 1px 2px #1a1a1a;
+}
+.wb-menu > li > a:after {
+	position: absolute;
+	right: 10px;
+	color: #292929;
+	text-shadow: -1px 0 0 #050505, 1px 0 0 #868686;
+}
+.wb-menu > li > a:after {
+
+}
+.wb-menu ul {
+	line-height: 30px;
+	max-height: 0;
+	overflow: hidden;
+	-webkit-transition: max-height .5s linear;
+	-moz-transition: max-height .5s linear;
+	transition: max-height .5s linear;
+}
+.wb-menu ul a {
+	color: #000;
+	text-shadow: 0 1px 1px #848484;
+	font-size: 12px;
+}
+.wb-menu ul a:hover {
+	color: #ccc;
+	text-shadow: 0 1px 0 #252525;
+}
+.wb-menu li:target > a:after {
+
+}
+.wb-menu ul.active  {
+	max-height: 200px;
+	border-top: 1px solid #3d3d3d;
+	box-shadow: 0 1px 0 #888 inset;
+}

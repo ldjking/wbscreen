@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+html ,body{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+#top {
+	height: 50%;
+}
+#down {
+	height: 50%;
+}
+</style>
+</head>
+
+<body>
+<div id="top">
+</div>
+<div id="down">
+</body>
+<script src="../../require.js"></script>
+<script>
+	var am=g.am;
+	var _top=document.getElementById("top");
+	am.run(_top,"top.html",{a:10});
+	var _down=document.getElementById("down");
+	var down=am.load("down.html");
+	am.run(_down,down,{b:100,handler:clickHandler});
+	
+	function clickHandler(e){
+		console.log("click");
+		
+	}
+</script>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<p>slice用于获取从start开始，到end结束，但不包含end的所有元素</p>
+<p>start为负值，start+=array.length</p>
+<p>end为负值，end+=array.length</p>
+<p>start仍是负值,start=0</p>
+<p>end仍是负值,end=0</p>
+<p>start>end>0,返回空</p>
+<p>end>start>0,[start,end) 从start开始但不包含end的元素</p>
+</body>
+<script>
+	var array=[1,2,3,4,5,6,7,8];
+	
+	var array2=array.slice(2,3);/**/
+
+	console.log("end>start>0 array2: "+array2);
+	
+	array2=array.slice(-2,7);/*从第0个开始，删除n个  返回会删除的内容*/
+	console.log("start为负数: "+array2);
+	
+	array2=array.slice(-12,3);/*从第0个开始，删除n个  返回会删除的内容*/
+	console.log("start大负数 array2: "+array2);
+	
+	array2=array.slice(0,-2);/*从第0个开始，删除n个  返回会删除的内容*/
+	console.log("end负数 array2: "+array2);
+	
+	array2=array.slice(0,-13);/*从第0个开始，删除n个  返回会删除的内容*/
+	console.log("end大负数 array2: "+array2);
+	
+	array2=array.slice(-12,-13);/*从第0个开始，删除n个  返回会删除的内容*/
+	console.log("start end大负数 array2: "+array2);
+	
+	array2=array.slice(5,4);/*从第0个开始，删除n个  返回会删除的内容*/
+	
+	console.log("start>end>0: "+array2);
+	
+
+</script>
+</html>

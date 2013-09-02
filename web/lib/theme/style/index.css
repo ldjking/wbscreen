@@ -1,0 +1,166 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: "微软雅黑", Tahoma, Verdana, sans-serif, "Times New Roman";
+	z-index: 1;
+	background-color: #c6c6c6;
+	font-size: 14px;
+}
+.con {/*容器采用弹性布局  行布局*/
+	display: -ms-flexbox;
+	-ms-flex-align: stretch;/*子元素对齐方式  start end center strech baseline*/
+	-ms-flex-pack: start;/*剩余空间分配方式   start end center justify*/
+	-ms-flex-direction: column;/*元素方向*/
+	-ms-flex-wrap: wrap;
+	height: 100%;
+	overflow: hidden;
+	background-color: #FF0;
+}
+.top {/*top仍然使用弹性布局 列布局  左 中 右  logo  title  control(控制按钮 新增 目录 步骤  操作按钮)*/
+	display: -ms-flexbox;
+	-ms-flex-align: stretch;
+	-ms-flex-pack: justify;
+	-ms-flex-direction: row;
+	-ms-flex-wrap: wrap;
+	-ms-flex: 0;
+	min-height: 56px;
+	max-height: 56px;
+	overflow: hidden;
+	background-color: #2b2b2b;
+	color: #FFF;
+	line-height: 56px;
+	width: 100%;
+	position: static;
+	top: 0px;
+	left: 0px;
+}
+.top-1{
+	display: -ms-flexbox;
+	-ms-flex-align: center;
+	-ms-flex: 1;
+	text-align: left;
+}
+.logo{
+	padding-left: 16px;
+	font-size: 24px;
+	font-weight: bold;
+}
+.top-2{
+	display: -ms-flexbox;
+	-ms-flex: 2;
+	-ms-flex-align: center;
+	-ms-flex-direction: column;
+	text-align: center;
+}
+.page-title{
+	font-size: 16px;
+	font-weight: bold;
+}
+.top-3{
+	display: -ms-flexbox;
+	-ms-flex: 1;
+	-ms-flex-align: end;
+	-ms-flex-direction: column;
+}
+.btn-add{
+	padding-right: 16px;
+
+}
+.middle {
+	display: -ms-flexbox;
+	-ms-flex-align: stretch;
+	-ms-flex-pack: center;
+	-ms-flex-direction: row;
+	-ms-flex-wrap: wrap;
+	-ms-flex: 1;
+	overflow: hidden;
+	background-color: #00F;
+}
+.left {
+	-ms-flex: 1;
+	display: -ms-flexbox;
+	-ms-flex-align: top;
+	-ms-flex-pack: top;
+	-ms-flex-direction: column;
+	-ms-flex-wrap: wrap;
+	background-color: #0f6d39;
+	min-width: 800px;
+}
+.left-top {
+	background-color: #44454b;
+	min-height: 48px;
+	max-height: 48px;
+	border-bottom: 1px solid #333;
+	display: -ms-flexbox;
+	-ms-flex-align: justify;
+	-ms-flex-pack: baseline;
+	-ms-flex-direction: row;
+	-ms-flex-wrap: wrap;
+	position: relative;
+}
+.nav {
+	margin: 12px 12px 0 12px;
+	height: 36px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	background-color: #E3E6E9;
+	padding: 0 12px 0 12px;
+	line-height: 36px;
+	color: #000;
+	position: absolute;
+	bottom: -1px;
+	left: 0px;
+	z-index: 2;
+	transition-duration: 0.3s;
+}
+.right {
+	-ms-flex: 1;
+	display: -ms-flexbox;
+	-ms-flex-align: stretch;
+	-ms-flex-pack: center;
+	-ms-flex-direction: row;
+	-ms-flex-wrap: wrap;
+	background-color: #434343;
+	min-width: 220px;
+	max-width: 280px;
+	color: #FFF;
+	transition-property: all;
+	transition-duration: 1.2s;
+	transition-timing-function: ease-in-out;
+}
+.hide {
+	-ms-flex: 1;
+	-ms-flex-align: stretch;
+	-ms-flex-pack: center;
+	-ms-flex-direction: row;
+	-ms-flex-wrap: wrap;
+	min-width: 10px;
+	max-width: 10px;
+	transition-duration: 1.2s;
+	transition-property: all;
+	transition-timing-function: ease-in-out;
+}
+.foot {
+	display: -ms-flexbox;
+	-ms-flex-align: stretch;
+	-ms-flex-pack: center;
+	-ms-flex-direction: row;
+	-ms-flex-wrap: wrap;
+	-ms-flex: 0;
+	min-height: 24px;
+	max-height:24px;
+	overflow: hidden;
+	background-color: #F00;
+}
+.paper {
+	width: 800px;
+	height: 400px;
+	margin: auto;
+	margin-top: 60px;
+	background-color: #FFF;
+	border: 1px solid #a9b0b8;
+	-webkit-box-shadow: 0px 0px 6px 3px #999999;
+	-moz-box-shadow: 0px 0px 6px 3px #999999;
+	box-shadow: -3px 0 8px #94979b, 0 -3px 8px #94979b, 0 3px 8px #94979b, 3px 0 8px #94979b;/*box-shadow: -5px -5px 12px #94979b,5px 5px 12px #94979b;*/
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>页面模版</title>
+<style type="text/css">
+html, body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	font-family: "微软雅黑";
+}
+.top {
+	height: 48px;
+	background-color: #999999;
+}
+#c2 {
+	width: 100%;
+	background-color: #FFF;
+	padding: 0;
+	margin: 0;
+}
+.top {
+	height: 48px;
+	background-color: #383e43;
+}
+.logo {
+	float: right;
+	font-weight: bold;
+	color: #a8cefe;
+	line-height: 48px;
+	font-size: 24px;
+	padding-right: 24px;
+	cursor: default;
+}
+.navs {
+	float: left;
+	cursor: default;
+	margin: 0;
+	padding: 0;
+	padding-left: 12px;
+	padding-top: 12px;
+}
+.navs li {
+	font-size: 16px;
+	color: #dfdfbf;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-left: 6px;
+	margin-right: 6px;
+	list-style: none;
+	float: left;
+	text-align: center;
+}
+.navs li a {
+	height: 24px;
+	text-align: center;
+	line-height: 24px;
+	padding-bottom: 6px;
+	font-size: 16px;
+	text-decoration: none;
+	color: #dfdfbf;
+	outline: none;
+	display: block;
+}
+.navs li p {
+	height: 0px;
+	margin: 0;
+	padding: 0;
+	width: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 6px solid transparent;
+	border-bottom-width:6px;
+	border-top-width:0px;
+}
+.navs li.active {
+	float: left;
+	font-size: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+	line-height: 36px;
+}
+.navs li.active p {
+	border-bottom-color: #FFF;
+}
+.navs li:hover {
+	color: #FFF;
+}
+.navs li:hover a{
+	color: #FFF;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="top">
+    <ul class="navs" id="navs">
+      <li class="active" id="nav1">
+        <a href="../../../../src/template/template/copy/t1.html" target="c2">单表管理</a>
+        <p></p>
+      </li>
+      <li>
+        <a href="../../../../src/template/template/copy/t2.html" target="c2">主从表管理</a>
+        <p></p>
+      </li>
+      <li>
+       <a href="../../../../src/template/template/copy/t4.html" target="c2">多从表管理</a>
+        <p></p>
+      </li>
+    </ul>
+    <div class="logo">页面开发模版</div>
+  </div>
+  <iframe src="" frameborder="0" id="c2" name="c2" scrolling="no"></iframe>
+</div>
+<script type="text/javascript">
+	window.onload=init;
+	var lastActive;
+	function init(){
+		var c2=document.getElementById("c2");
+		c2.style.height=window.innerHeight-48+"px";
+		c2.src="t1.html";
+		var navs=document.getElementById("navs");
+		navs.onclick=navClick;
+		
+		lastActive=document.getElementById("nav1");
+	}
+	function navClick(e){
+		var target=e.target;
+		if(target.tagName.toLowerCase()!="li"){
+			target=target.parentNode;
+		}
+		if(target.tagName.toLowerCase()=="li"){
+			if(target!=lastActive){
+				lastActive.className="";
+				target.className="active";
+				lastActive=target;
+			}
+		}
+	}
+</script>
+</body>
+</html>

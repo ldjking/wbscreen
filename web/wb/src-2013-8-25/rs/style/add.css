@@ -1,0 +1,53 @@
+.w-add {
+
+
+}
+.w-right-top {
+	margin-left: 24px;
+	margin-right: 24px;
+	border-bottom: 1px solid #ccc;
+	line-height: 64px;
+	font-size: 20px;
+	padding-left: 24px;
+	height: 64px;
+	box-sizing: border-box;
+}
+.w-right iframe{
+	width: 100%;
+
+
+}
+.w-main-top {
+	margin-left: 24px;
+	margin-right: 24px;
+	line-height: 48px;
+	font-size: 16px;
+	padding-left: 24px;
+	color: #666;
+}
+.w-main {
+	font-size: 16px;
+	box-sizing: border-box;
+	margin-left: 36px;
+	margin-right: 24px;
+}
+.w-area {
+	border: 1px solid #ccc;
+	height: 200px;
+	width: 300px;
+	margin-right: 10px;
+	margin-bottom: 24px;
+	position: relative;
+	display: inline-block;
+}
+.w-area-text {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 48px;
+	background-color: rgba(10,110,230,0.8);
+	line-height: 48px;
+	color: #FFF;
+	padding-left: 24px;
+	box-sizing: border-box;
+}

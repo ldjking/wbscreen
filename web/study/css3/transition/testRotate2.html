@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+html ,body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: #999;
+}
+body {
+	position: relative;
+}	
+.top {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 200px;
+	height: 64px;
+	background-color: #000;
+	z-index: 2;
+	padding-top: 24px;
+}
+.down {
+	position: absolute;
+	top: 0px;
+	left: 300px;
+	width: 800px;
+	height: 64px;
+	background-color: #0F0;
+	z-index: 1;
+	padding-top: 36px;
+}
+.logo {
+	background-color: transparent;
+	float: left;
+	width: 0px;
+	height: 0px;
+	border-right: 64px solid #ccc;
+	border-top: 64px solid transparent;
+	transform: rotate(-45deg);
+	transform-origin: left bottom;
+}
+.text {
+	width: 100px;
+	height: 64px;
+	background-color: #F00;
+	float: left;
+}
+.logo.normal {
+	transition-duration: .3s;
+	transition-timing-function: ease-in-out;
+	transition-property: all;
+}
+.logo.active {
+	transform: rotate(0deg) translate(0px,-6px);
+	transition-duration: .3s;
+	transition-timing-function: ease-in-out;
+	transition-property: all;
+	transform-origin: left bottom;
+}
+</style>
+</head>
+
+<body>
+<div class="top">
+</div>
+<div class="down"><div class="logo normal" id="logo"></div>
+<div class="text"></div>
+<div>
+</div>
+<script type="text/javascript">
+	var logo=document.getElementById("logo");
+	logo.onclick=handler;
+
+	function handler(evt){
+		var target=evt.target;
+		var css=target.className;
+		//target.addEventListener("MSTransitionEnd",function(){target.className=css});
+		//target.onMSTransitionEnd=function(){alert("end");}
+
+		if(css.indexOf("normal")>=0){
+			target.className=css.replace("normal","active");
+		}
+		else target.className=css.replace("active","normal");
+		
+	}
+</script>
+</body>
+</html>

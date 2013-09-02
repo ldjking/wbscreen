@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1",
+    "type": "sex",
+    "code": 1,
+    "value": "男",
+	"num":1
+  },
+  {
+    "id": "2",
+    "type": "sex",
+    "code": 2,
+    "value": "女",
+	"num":2
+  }
+]

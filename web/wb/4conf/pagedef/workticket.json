@@ -1,0 +1,11 @@
+{
+  "name": "workticket",
+  "cname": "工作票",
+  "module": 6,
+  "template": "t1",
+  "title": "工作票",
+  "id": 23,
+  "conf": null,
+  "person1": "罗惠恒",
+  "time1": "2013-7-6 18:00"
+}

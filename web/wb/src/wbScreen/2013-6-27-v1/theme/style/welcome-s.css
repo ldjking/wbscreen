@@ -1,0 +1,476 @@
+html ,body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+.container {
+	height: 100%;
+	background-color: #999;
+	z-index: 1;
+	min-width: 1024px;
+
+}
+.top {
+	height: 64px;
+	background-color: #333;
+	padding-left: 232px;
+}
+.add {
+	height: 64px;
+	background-color: #006384;
+	width: 120px;
+	color: #FFFFB3;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 64px;
+	padding-left: 48px;
+	cursor: default;
+	float: left;
+	position: relative;
+}
+.add::before{
+	height: 4px;
+	background-color: transparent;
+	width: 120px;
+	font-size: 24px;
+	font-weight: bold;
+	padding-left: 48px;
+	cursor: default;
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.navs {
+	float: left;
+	margin: 0;
+	padding: 0;
+	color: #FFF;
+
+
+}
+.nav {
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #666;
+	color: #FFF;
+	line-height: 32px;
+	border-bottom: 5px #d7d7d7 solid;
+
+
+}
+.btns {
+	float: right;
+	height: 64px;
+	line-height: 64px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+.btn {
+	float: left;
+	color: #FFF;
+	margin-left: 12px;
+	margin-right: 12px;
+	line-height: 32px;
+	border-radius: 6px;
+	height: 32px;
+	cursor: default;
+}
+.btn .save{
+	float: left;
+	padding-left: 12px;
+	padding-right: 12px;
+	background-color: #09F;
+	color: #FFF;
+	margin-left: 12px;
+	margin-right: 12px;
+	line-height: 32px;
+	border-radius: 6px;
+
+
+}
+.steps {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+
+
+}
+.steps li{
+	display: block;
+	position: relative;
+	background-color: #F00;
+	float: left;
+	line-height: 36px;
+	padding-bottom: 20px;
+}
+.steps li div{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 20px;
+	left: 0px;
+	background-color: #00F;
+}
+.steps .step{
+	border-bottom: 5px solid #d7d7d7;
+	line-height: 36px;
+
+
+}
+.steps .step:after{
+	content: "";
+
+
+}
+.con {
+	background-color: #333;
+	position: relative;
+	height: 60px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	padding-top: 4px;
+	margin-left: 24px;
+}
+.con::before {
+	background-color: #666;
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	bottom: 14px;
+	left: 0px;
+	z-index: 1;
+	content: "";
+}
+.con::after {
+	background-color: #F00;
+	position: absolute;
+	width: 100px;
+	height: 2px;
+	bottom: 158px;
+	left: 0px;
+	z-index: 2;
+	content: "";
+}
+.a2 {
+		counter-increment: li;
+
+	position: relative;
+	float: left;
+	text-align: center;
+	font-size: 14px;
+	line-height: 36px;
+	min-height: 60px;
+	padding-left: 24px;
+	padding-right: 24px;
+	color: #CCC;
+	text-shadow: 3px 3px 3px rgba(221,223,225,0.3);
+}
+.a1:before {
+	z-index: 4;
+	content: counter(li)"、";
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+}
+.a1::after {
+	width: 8px;
+	z-index: 3;
+	height: 8px;
+	color: #FFF;
+	background-color: #888;
+	position: absolute;
+	border-radius: 8px;
+	bottom: 6px;
+	content: "";
+	left: 50%;
+	margin-left: -8px;
+	border: 4px solid #e3d6d9;
+	transition-duration: 0.3s;
+	transition-property: all;
+	transition-timing-function: ease-in-out;
+}
+.a1:hover {
+	color: #b9e980;
+	text-shadow: 3px 3px 3px rgba(64,113,112,0.8);
+}
+.a1:hover::after {
+	background-color: #6baf3f;
+	width: 12px;
+	height: 12px;
+	left: 50%;
+	margin-left: -10px;
+	bottom: 4px;
+	border-radius: 10px;
+	transition-duration: 0.3s;
+	transition-property: all;
+	transition-timing-function: ease-in-out;
+	border: 4px solid #fff;
+	font-size: 14px;
+	font-weight: bold;
+}
+.down {
+	background-color: #999999;
+	padding-left: 200px;
+
+}
+.down table{
+	background-color: #FFFFFF;
+
+
+}
+.paper {
+	width: 800px;
+	min-height: 480px;
+	background-color: #FFF;
+	margin: auto;
+	margin-top: 24px;
+	box-sizing: border-box;
+	padding: 64px 48px 64px 48px;
+	border: 1px solid #666;
+	box-shadow: 0 0 7px 5px rgba(100,100,100,0.6);
+
+
+}
+.content {
+	text-align: center;
+}
+.form {
+	border-top: 1px solid #333;
+	border-left: 1px solid #333;
+	margin: auto;
+	font-size: 14px;
+
+}
+.form table{
+	margin: auto;
+	box-sizing: border-box;
+	table-layout: fixed;
+
+}
+.form .row td{
+	border-bottom: 1px solid #333;
+	border-right: 1px solid #333;
+	box-sizing: border-box;
+	height: 100%;
+	padding-top: 6px;
+	padding-bottom: 6px;
+
+}
+.form span{
+	display: block;
+	box-sizing: border-box;
+	line-height: 24px;
+	padding-left: 12px;
+	padding-right: 12px;
+
+
+}
+.left {
+	width: 220px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 3;
+	box-sizing: border-box;
+}
+.logo {
+	height: 64px;
+	line-height: 64px;
+	color: #FFF;
+	background-color: #0099CC;
+	padding-left: 12px;
+	padding-right: 12px;
+	font-size: 24px;
+	font-weight: bold;
+	border-bottom-width: 0px;
+	border-bottom-style: dashed;
+	border-bottom-color: #06C;
+	display: block;
+	cursor: default;
+}
+.logo .text {
+	font-size: 30px;
+	font-weight: bold;
+	float: left;
+	padding-left: 6px;
+}
+.logo .text: first-letter{
+
+	font-size: 36px;
+	font-weight: bold;
+
+}
+.files {
+	background-color: transparent;
+	height: 640px;
+	width: 200px;
+}
+.newPage {
+	color: #bbb;
+	font-weight: 900;
+	display: block;
+	float: right;
+	border: 2px solid #bbb;
+	border-radius: 17px;
+	width: 34px;
+	height: 34px;
+	text-align: center;
+	line-height: 34px;
+	font-family: "黑体";
+	font-size: 34px;
+	box-sizing: border-box;
+	margin-top: 16px;
+	cursor: default;
+}
+.newPage:hover {
+	color: #FFF;
+	font-weight: 900;
+	display: block;
+	float: right;
+	border: 2px solid #fff;
+	border-radius: 17px;
+	width: 34px;
+	height: 34px;
+	text-align: center;
+	line-height: 34px;
+	font-family: "黑体";
+	font-size: 34px;
+	box-sizing: border-box;
+	margin-top: 16px;
+	cursor: default;
+}
+.wrap{
+	width: 0px;
+	height: 0px;
+	border-top: 60px solid #e3e6e9;
+	border-right: 200px solid transparent;
+	border-bottom: 0px solid #f00;
+	border-left: 0px solid #0f0;
+	content: "";
+	display: none;
+}
+
+.tree {
+	padding: 12px;
+	padding-left: 16px;
+	cursor: pointer;
+}
+.tree .node{
+	height: 32px;
+	margin-bottom: 0px;
+	line-height: 32px;
+}
+.tree .leaf{
+	height: 32px;
+	margin-bottom: 0px;
+	line-height: 32px;
+}
+.tree .text{
+	color: #e3e6e9;
+	cursor: pointer;
+}
+.tree .text.active{
+	color: #6ADAFF;
+}
+.tree .text:hover{
+	color: #FFF;
+}
+.open {
+
+}
+.open >.state{
+	position: relative;
+	z-index: 1;
+	cursor: default;
+
+}
+.open >.state :before{
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	content: "";
+	left: 10px;
+	top: 10px;
+	border-top: 5px solid transparent;
+	border-left: 8px solid rgba(10,11,12,0.8);
+	border-bottom: 5px solid transparent;
+	z-index: 2;
+
+}
+.open >.state :after{
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	content: "";
+	left: 11px;
+	top: 11px;
+	border-top: 4px solid transparent;
+	border-left: 6px solid #fff;
+	border-bottom: 4px solid transparent;
+	z-index: 3;
+
+}
+
+.close {
+
+}
+.close >.state{
+	position: relative;
+	z-index: 1;
+	cursor: default;
+}
+.close >.state :before{
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	content: "";
+	left: 10px;
+	top: 11px;
+	border-left: 7px solid transparent;
+	border-bottom: 7px solid rgba(190,191,192,0.8);
+	z-index: 2;
+
+}
+.close >.state :after{
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	content: "";
+	left: 10px;
+	top: 11px;
+	border-left: 7px solid transparent;
+	border-bottom: 7px solid rgba(100,100,100,0.8);
+	z-index: 2;
+
+}
+.leaf >.state{
+	position: relative;
+	z-index: 1;
+	cursor: default;
+}
+.leaf >.state :before{
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	content: "";
+	left: 10px;
+	top: 11px;
+	border: 1px solid #777;
+	z-index: 2;
+	text-align: center;
+}
+.tree .text{
+	padding-left: 26px;
+	font-size: 14px;
+	z-index: 1;
+}
+.lvl2 {
+	padding-left: 24px;
+}
+.hide {
+	display: none;
+
+}

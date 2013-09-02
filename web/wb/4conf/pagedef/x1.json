@@ -1,0 +1,82 @@
+{
+  "name": "x1",
+  "cname": "",
+  "code": "",
+  "title": "",
+  "des": "",
+  "person1": "",
+  "time1": "",
+  "person2": "",
+  "time2": "",
+  "person3": "",
+  "time3": "",
+  "queryUrl": "",
+  "deleteUrl": "",
+  "addUrl": "",
+  "updateUrl": "",
+  "btnDefault": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+  ],
+  "columns": [
+    {
+      "attr": "",
+      "text": "",
+      "type": "",
+      "width": "55",
+      "align": ""
+    },
+    {
+      "attr": "",
+      "text": "",
+      "type": "",
+      "width": "",
+      "align": ""
+    },
+    {
+      "attr": "",
+      "text": "",
+      "type": "",
+      "width": "",
+      "align": ""
+    }
+  ],
+  "btns": [],
+  "inputs": [
+    {
+      "lbl": "",
+      "attr": "",
+      "type": "",
+      "width": "",
+      "align": "",
+      "lov": "",
+      "dataUrl": "",
+      "handler": ""
+    },
+    {
+      "lbl": "",
+      "attr": "",
+      "type": "",
+      "width": "",
+      "align": "",
+      "lov": "",
+      "dataUrl": "",
+      "handler": ""
+    },
+    {
+      "lbl": "",
+      "attr": "",
+      "type": "",
+      "width": "",
+      "align": "",
+      "lov": "",
+      "dataUrl": "",
+      "handler": ""
+    }
+  ],
+  "module": 1,
+  "template": "new1"
+}

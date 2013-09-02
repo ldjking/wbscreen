@@ -1,0 +1,34 @@
+模版t1使用html代码：
+<script type="text/javascript" src="/js/common/t1.js"></script>
+<script type="text/javascript" src="../../../../template/template/p1.js"></script>
+<script type="text/javascript" src="/js/jsimport.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="top" id="top" style="height:366px">
+    <table id="dg">
+    </table>
+  </div>
+  <div class="middle" id="middle">
+    <div  class="noborder" id="tab">
+      <div id="form" title="对象详细信息">
+        <form id="ff"><!--write your code here 此处编写新增及修改表单配置--></form>
+		<form id="ff2"><!--write your code here 此处编写详细信息表单配置  所有输入项应该为只读模式--></form>
+      </div>
+      <div id="query" title="对象查询">
+        <form id="queryForm"><!--write you code here 此处编写查询表单配置--></form>
+      </div>
+    </div>
+  </div>
+  <div class="down detailMode" id="down">
+      <a id="btn2_save" href="#">保存</a>
+      <a id="btn2_edit" href="#">修改</a> 
+      <a id="btn2_search" href="#">搜索</a> 
+      <a id="btn2_addItem" href="#">新增行</a> 
+      <a id="btn2_rmItem" href="#">删除行</a> 
+      <a id="btn2_ok" href="#">提交更改</a> 
+  </div>
+</div>
+<div class="mask" id="mask">加载中</div>
+</body>
+

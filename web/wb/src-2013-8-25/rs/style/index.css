@@ -1,0 +1,90 @@
+body {
+	font-family: "微软雅黑",Verdana, Geneva, sans-serif;
+	overflow-y: scroll;
+	color: #333;
+}
+.w-con {
+	position: relative;
+	padding-left: 224px;
+	box-sizing: border-box;
+	min-height:100%;
+	background-image:linear-gradient(to bottom,#ccc,#ccc);
+	background-image:-webkit-linear-gradient(top,#ccc,#ccc);
+	background-image:-moz-linear-gradient(top,#ccc,#ccc);
+	background-repeat:repeat-y;
+	background-size:1px 1px;
+	background-position:224px;
+
+}
+.w-left {
+	min-width: 223px;
+	width: 223px;
+	height: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 10px 20px;
+	left: 0px;
+	top: 0px;
+	position: fixed;
+	z-index: 90;
+	bottom: 0px;
+}
+.w-gotop {
+	position: fixed;
+	top: 50%;
+	margin-top: -16px;
+	height: 32px;
+	width: 32px;
+	background-color: rgba(0,153,204,0.6);
+	border-radius: 16px;
+	right: 20px;
+	z-index: 100;
+	text-align: center;
+	line-height: 32px;
+	font-size: 24px;
+	cursor: default;
+	color: #FFF;
+	box-sizing: border-box;
+	display: none;
+}
+.w-gotop:hover {
+	background-color: rgba(0,153,204,0.6);
+	color: #FFF;
+	text-decoration: none;
+}
+.w-left-con {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	box-sizing: border-box;
+}
+.w-logo {
+	height: 64px;
+	line-height: 64px;
+	font-size: 32px;
+	text-align: center;
+	color: #381717;
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	padding: 0 12px;
+	cursor: pointer;
+}
+.w-right {
+	-ms-flex: 20;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 10px;
+	position: relative;
+	min-width: 800px;
+}
+@media screen and (min-width:1024px) { 
+	.w-left {
+	position: fixed
+}
+}
+
+@media screen and (max-width:1024px) { 
+	.w-left {
+	position: absolute
+}
+}

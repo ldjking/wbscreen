@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>测试查询服务</title>
+<style type="text/css">
+td {
+	vertical-align: middle;
+}
+
+label {
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	padding-right: 12px;
+	vertical-align: text-top;
+}
+iframe {
+	width: 100%;
+}
+</style>
+</head>
+
+<body>
+<form action="/handler/common/query" method="get" target="frame1">
+  <table>
+    <tr>
+      <td><label>表名</label></td><td>
+        <input type="text" name="table" value="user"></td>
+    </tr>
+        <tr>
+      <td><label>连接</label></td><td>
+        <textarea name="joins">[{"table":"dep","attr":"dep","map":{"name":"depname"}}]</textarea></td>
+    </tr>
+    <tr>
+      <td><label>过滤条件</label></td><td>
+        <textarea name="filter">if(e.id%2==0) return true;</textarea></td>
+    </tr>
+    <tr>
+      <td><label>映射</label></td><td>
+        <textarea name="map"></textarea></td>
+    </tr>
+    <tr>
+      <td><label>分组属性</label></td><td>
+        <textarea name="gattr">dep</textarea></td>
+    </tr>
+        <tr>
+      <td><label>统计函数</label></td><td>
+        <textarea name="group">if(!pre.count) pre.count=0;return {dep:curr.dep,name:curr.depname,count:++pre.count};</textarea></td>
+    </tr>
+    <tr>
+      <td><label>排序</label></td><td>
+        <textarea name="compare">return -parseInt(a.id)+parseInt(b.id);</textarea></td>
+    </tr>
+    <tr>
+      <td><label>分页</label></td><td>
+        <textarea name="pagesize"></textarea></td>
+    </tr>
+    <tr>
+      <td><label>分页</label></td><td>
+        <textarea name="pagenum"></textarea></td>
+    </tr>
+    <tr>
+      <td><input type="submit" value="提交"></td>
+    </tr>
+  </table>
+</form>
+<iframe src="" id="frame1" name="frame1"></iframe>
+</body>
+</html>

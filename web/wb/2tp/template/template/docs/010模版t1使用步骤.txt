@@ -1,0 +1,19 @@
+step1.	新建newPage.jsp文件和newPage.js文件 [newPage为用户定义页面名称]
+step2.	复制	【011】模版t1使用html代码
+step3.	在newPage.jsp <title>标签后面 粘贴step2中复制代码
+step4.	在newPage.jsp 有三处write your code here注释部分
+		第一处为新增修改表单配置	
+		第二处为详细信息表单配置	
+		第三处为查询表单配置	
+step5.	阅读 【013】模版t1使用js代码，供以下过程参考
+step6.	在newPage.js中定义变量
+		var objName="@objName";		/*页面管理对象名称*/
+		var pageName="@pageName";	/*根据pageName能够取得按钮定义*/
+		var dgConf=@dgConf;			/*页面主表的dategrid定义*/
+step7.	在newPage.js中编写事件处理函数
+		function btn2_save(){}		/*底部保存按钮处理函数*/
+		function btn2_update(){}	/*底部修改按钮处理函数*/
+		function btn2_search(){}	/*底部查询按钮处理函数*/
+
+step8.	阅读 【014】模版t1固化部分详解
+step9.	根据页面开发需要，覆盖定义模版t1固化部分函数

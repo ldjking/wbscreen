@@ -1,0 +1,216 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+.app {
+	-ms-flex-align: stretch;
+	-ms-flex-pack: end;
+	-ms-flex-direction: column;
+	-ms-flex-wrap: normal;
+	z-index: 1;
+	background-color: #d7d7d7;
+}
+.flex {
+	display: -ms-flexbox;
+	-ms-flex-align: stretch;
+	-ms-flex-pack: end;
+	-ms-flex-direction: column;
+	-ms-flex-wrap: normal;
+
+}
+.top {
+	-ms-flex: 0 auto;
+	background-color: #d7d7d7;
+	height: 50px;
+	color: #000;
+	line-height: 50px;
+	overflow: hidden;
+	width: 100%;
+	box-sizing: border-box;
+	position: relative;
+	border-bottom: 1px solid #777;
+	z-index: 2;
+}
+.tabs {
+	float: left;
+	padding-top: 22px;
+	line-height: 28px;
+	padding-left: 12px;
+}
+
+.tabs div {
+	float: left;
+	min-width: 60px;
+	text-align: center;
+	cursor: default;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	padding-left: 4px;
+	padding-right: 4px;
+	margin-left: 5px;
+	margin-right: 5px;
+	transition: 0.3s all ease-in-out;
+	font-size: 14px;
+}
+.tabs div:hover {
+	color: #000;
+	background-image: linear-gradient(to bottom, rgba(201,201,201,1) 0%, rgba(145,145,145,1) 56%,rgba(201,201,201,1) 100%);
+}
+.tabs div.active{
+	color: #FFF;
+	background-image: linear-gradient(to bottom, rgba(120,210,233,1) 0%, rgba(22,122,131,1) 56%,rgba(120,210,233,1) 100%);
+}
+.links {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	z-index: 3;
+	line-height: 16px;
+	font-size: 12px;
+	height: 16px;
+}
+.links div{
+	float: left;
+	padding-left: 10px;
+	padding-right: 24px;
+	color: #666;
+	position: relative;
+	border-right: 1px solid #a6a7a8;
+	border-bottom: 1px solid #a6a7a8;
+	cursor: default;
+}
+.links div::before{
+	content: "";
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	border-top: 16px solid #d7d7d7;
+	border-left: 16px solid transparent;
+	left: -16px;
+	z-index: 2;
+	top: 0px;
+}
+.links div::after{
+	content: "";
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	border-top: 17px solid #ababab;
+	border-left: 17px solid transparent;
+	left: -17px;
+	z-index: 1;
+	top: 0px;
+}
+.links div:last-child{
+	padding-right: 12px;
+}
+.links div:hover{
+	color: #0088cc;
+}
+.links div:hover:before{
+}
+.btns {
+	float: right;
+	padding-top: 24px;
+	line-height: 20px;
+	padding-left: 12px;
+}
+.btns div {
+	float: left;
+	min-width: 20px;
+	text-align: center;
+	cursor: default;
+	margin-left: 5px;
+	margin-right: 5px;
+	transition: 0.1s all ease-in-out;
+	font-size: 14px;
+	border-radius: 3px;
+	font-weight: normal;
+	box-shadow: 1px 1px 1px 1px #aaa;
+	background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(44,160,202)), color-stop(1, rgb(62,184,229)) );
+	background-image: linear-gradient(to bottom,#e7eef1 0%,#c2cace 75%,#e7eef1 100%);
+	/*background-image:linear-gradient(to bottom,#fdfdfd 0%,#ededed 50%,#fdfdfd 100%);*/
+	color: #333;
+}
+.btns div:hover {
+	background-color: #fff;
+	background-image: linear-gradient(to bottom,#e7eef1 0%,#c2cace 90%,#e7eef1 100%);
+	box-shadow: 2px 2px 1px 1px #888;
+	color: #333333;
+	transform: translate(-1px,-1px);
+}
+.btns div.disable {
+	color: #999;
+	box-shadow: 1px 1px 1px 1px #ccc;
+	background-image: linear-gradient(to bottom,#e7eef1 0%,#e7eef1 30%,#e7eef1 100%);
+
+
+}
+.btns div.disable:hover {
+	transform: translate(0px,0px);
+}
+.querys {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 3;
+	line-height: 16px;
+	font-size: 12px;
+	height: 16px;
+}
+.querys div{
+	float: left;
+	padding-left: 26px;
+	padding-right: 12px;
+	color: #666;
+	position: relative;
+	border-right: 0px solid #a6a7a8;
+	border-bottom: 1px solid #a6a7a8;
+	cursor: default;
+}
+.querys div::before{
+	content: "";
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	border-top: 0px solid transparent;
+	border-left: 16px solid #d7d7d7;
+		border-bottom: 16px solid transparent;
+
+	right: -15px;
+	z-index: 2;
+	top: 0px;
+}
+.querys div::after{
+	content: "";
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	border-top: 0px solid transparent;
+	border-left: 17px solid #ababab;
+		border-bottom: 17px solid transparent;
+	right: -16px;
+	z-index: 1;
+	top: 0px;
+}
+.querys div:first-child{
+	padding-left: 12px;
+}
+.querys div:hover{
+	background-color: #f1f2f3;
+}
+.querys div:hover:before{
+	border-left: 16px solid #f1f2f3;
+
+}
+.main {
+	box-sizing: border-box;
+	-ms-flex: 1 auto;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	width: 100%;
+}

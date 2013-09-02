@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Basic DataGrid - jQuery EasyUI Demo</title>
+<link rel="stylesheet" type="text/css" href="../../../../template/template/js/easyui_qdp/themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="../../../../template/template/js/easyui_qdp/themes/icon.css">
+<link rel="stylesheet" type="text/css" href="../../../../template/template/js/easyui_qdp/themes/layout.css">
+<style type="text/css">
+.a {
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="top" id="top">
+    <div id="tb">
+      <a id="btn_add" href="#"></a>
+      <a id="btn_edit" href="#"></a>
+      <a id="btn_delete" href="#"></a>
+      <a id="btn_refresh" href="#"></a>
+      <a id="btn_search" href="#"></a>
+    </div>
+    <table id="dg">
+    </table>
+  </div>
+  <div class="middle" id="middle">
+    <div  class="noborder" id="tab">
+      <div id="form" title="对象详细信息">
+        <form class="formPanel detailMode" id="ff1" method="post">
+          <table>
+            <tr>
+              <td>公司编码:</td>
+              <td><input type="text" name="itemid"/></td>
+              <td>公司名称:</td>
+              <td><input type="text" name="productid"/></td>
+            </tr>
+            <tr>
+              <td>公司简称:</td>
+              <td><input type="text" name="listprice"/></td>
+              <td>公司类型:</td>
+              <td><input type="text" name="unitcost"/></td>
+            </tr>
+            <tr>
+              <td>地区国家:</td>
+              <td><input type="text" name="attr1"/></td>
+              <td>公司状态:</td>
+              <td><input type="checkbox" name="unitcost" value="1"/></td>
+            </tr>
+            <tr>
+              <td>税务编号:</td>
+              <td><input type="text" name="status"/></td>
+              <td>财务负责人:</td>
+              <td><input type="text" name="status"/></td>
+            </tr>
+            <tr>
+              <td>税务编号:</td>
+              <td><input type="text" name="status"/></td>
+              <td>财务负责人:</td>
+              <td><input type="text" name="status"/></td>
+            </tr>
+            <tr>
+              <td>税务编号:</td>
+              <td><input type="text" name="status"/></td>
+              <td>财务负责人:</td>
+              <td><input type="text" name="status"/></td>
+            </tr>
+            <tr>
+              <td>税务编号:</td>
+              <td><input type="text" name="status"/></td>
+              <td>财务负责人:</td>
+              <td><input type="text" name="status"/></td>
+            </tr>
+            <tr>
+              <td>税务编号:</td>
+              <td><input type="text" name="status"/></td>
+              <td>财务负责人:</td>
+              <td><input type="text" name="status"/></td>
+            </tr>
+            <tr>
+              <td>担保银行:</td>
+              <td colspan="3"><select name="language">
+                </select></td>
+            </tr>
+            <tr>
+              <td>担保银行:</td>
+              <td colspan="3"><select name="language">
+                </select></td>
+            </tr>
+            <tr>
+              <td>担保银行:</td>
+              <td colspan="3"><select name="language">
+                </select></td>
+            </tr>
+            <tr>
+              <td>担保银行:</td>
+              <td colspan="3"><select name="language">
+                </select></td>
+            </tr>
+            <tr>
+              <td>担保银行:</td>
+              <td colspan="3"><select name="language">
+                </select></td>
+            </tr>
+            <tr>
+              <td>担保银行:</td>
+              <td colspan="3"><select name="language">
+                </select></td>
+            </tr>
+            <tr>
+              <td>担保银行:</td>
+              <td colspan="3"><select name="language">
+                </select></td>
+            </tr>
+            <tr>
+              <td>担保银行:</td>
+              <td colspan="3"><select name="language">
+                </select></td>
+            </tr>
+            <tr>
+              <td>担保银行:</td>
+              <td colspan="3"><select name="language">
+                </select></td>
+            </tr>
+            <tr>
+              <td>担保银行:</td>
+              <td colspan="3"><select name="language">
+                </select></td>
+            </tr>
+            <tr>
+              <td>担保银行:</td>
+              <td colspan="3"><select name="language">
+                </select></td>
+            </tr>
+            <tr>
+              <td>担保银行:</td>
+              <td colspan="3"><select name="language">
+                </select></td>
+            </tr>
+            <tr>
+              <td>担保银111行:</td>
+              <td colspan="3"><select name="language">
+                </select></td>
+            </tr>
+          </table>
+        </form>
+        <form class="formPanel" id="ff2" method="post">
+          <table>
+            <tr>
+              <td>公司编码:</td>
+              <td><input type="text" name="itemid"/></td>
+              <td>公司名称:</td>
+              <td><input type="text" name="productid"/></td>
+            </tr>
+            <tr>
+              <td>公司简称:</td>
+              <td><input type="text" name="listprice"/></td>
+              <td>公司类型:</td>
+              <td><input type="text" name="unitcost"/></td>
+            </tr>
+            <tr>
+              <td>地区国家:</td>
+              <td><input type="text" name="attr1"/></td>
+              <td>公司状态:</td>
+              <td><input type="text" name="status"/></td>
+            </tr>
+            <tr>
+              <td>税务编号:</td>
+              <td><input type="text" name="status"/></td>
+              <td>财务负责人:</td>
+              <td><input type="text" name="status"/></td>
+            </tr>
+            <tr>
+              <td>税务编号:</td>
+              <td><input type="text" name="status"/></td>
+              <td>财务负责人:</td>
+              <td><input type="text" name="status"/></td>
+            </tr>
+            <tr>
+              <td>税务编号:</td>
+              <td><input type="text" name="status"/></td>
+              <td>财务负责人:</td>
+              <td><input type="text" name="status"/></td>
+            </tr>
+            <tr>
+              <td>税务编号:</td>
+              <td><input type="text" name="status"/></td>
+              <td>财务负责人:</td>
+              <td><input type="text" name="status"/></td>
+            </tr>
+            <tr>
+              <td>税务编号:</td>
+              <td><input type="text" name="status"/></td>
+              <td>财务负责人:</td>
+              <td><input type="text" name="status"/></td>
+            </tr>
+            <tr>
+              <td>担保银行:</td>
+              <td colspan="3"><select name="language">
+                </select></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+      <div id="query" title="对象查询">
+        <form class="formPanel" id="queryForm" method="post">
+          <table>
+            <tr>
+              <td>商品名称:</td>
+              <td colspan="3"><input  type="text" name="itemid"/></td>
+            </tr>
+            <tr>
+              <td>金额范围大于:</td>
+              <td><input  type="text" name="productid"/></td>
+              <td align="right">小于:</td>
+              <td><input  type="text" name="productid"/></td>
+            </tr>
+            <tr>
+              <td>时间早于:</td>
+              <td><input  type="text" name="listprice" /></td>
+              <td align="right">晚于:</td>
+              <td><input type="text" name="unitcost" /></td>
+            </tr>
+            <tr>
+              <td>多选选项:</td>
+              <td colspan="3"><span>
+                <input type="checkbox" checked>
+                西陵区</span><span>
+                <input type="checkbox" checked>
+                夷陵区</span><span>
+                <input type="checkbox">
+                伍家岗</span></td>
+            </tr>
+            <tr>
+              <td>单选选项:</td>
+              <td colspan="3"><input type="radio" name="sex"/>
+                男
+                <input type="radio" name="sex"/>
+                女</td>
+            </tr>
+            <tr>
+              <td>税务编号:</td>
+              <td><input type="text" name="status"/></td>
+              <td>财务负责人:</td>
+              <td><input type="text" name="status"/></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="down" id="down">
+    <a id="btn2_save" href="#">保存</a>
+    <a id="btn2_edit" href="#">修改</a>
+    <a id="btn2_search" href="#">搜索</a>
+  </div>
+</div>
+<div class="mask" id="mask">加载中</div>
+<script src="../../../../template/template/js/easyui/jquery-1.8.0.min.js"></script>
+<script src="../../../../template/template/js/easyui_qdp/jquery.easyui.min.js"></script>
+<script src="../../../../template/template/js/easyui_qdp/locale/easyui-lang-zh_CN.js"></script>
+<script src="../../../../template/template/js/common/qdplib.js"></script><!--qdp 自实现前端类库整合-->
+<script src="../../../../template/template/js/common/a1.js"></script><!--模板a1的标准接口-->
+<script src="../../../../template/template/js/common/b1.js"></script><!--模板a1的接口实现-->
+<script src="../../../../template/template/js/common/c1.js"></script><!--模板a1的自定义配置部分-->
+</body>
+</html>

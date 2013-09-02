@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>普通应用程序</title>
+<link rel="stylesheet" type="text/css" href="../../../32guide/mro/src/css/app.css">
+</head>
+
+<body class="app flex">
+<div class="top">
+  <div class="tabs">
+    <div id="list" class="active">
+      列表
+    </div>
+    <div id="form">
+      表单
+    </div>
+    <div>
+      子表
+    </div>
+  </div>
+  <div class="links">
+    <div>
+      员工管理
+    </div>
+    <div>
+      账户管理
+    </div>
+    <div>
+      授权管理
+    </div>
+    <div>
+      合同管理
+    </div>
+  </div>
+   <div class="querys">
+    <div>
+      我的报销
+    </div>
+    <div>
+      TGPMS部门
+    </div>
+    <div>
+      TGEAM部门
+    </div>
+    <div>
+      研发部
+    </div> <div>
+      技术支持部
+    </div>
+  </div>
+  <div class="btns">
+    <div>
+      a
+    </div>
+    <div class="disable">
+      b
+    </div>
+    <div>
+      c
+    </div>
+    <div>
+      d
+    </div>
+    <div>
+      e
+    </div>
+    <div>
+      f
+    </div>
+    <div>
+      g
+    </div>
+  </div>
+</div>
+<iframe id="main" src="../../../32guide/mro/src/grid.html" class="main" frameborder="0"  allowtransparency="true"></iframe>
+<script type="text/javascript">
+	var list=$("list");
+	var form=$("form");
+
+	var main=$("main");
+
+	list.onclick=function(){
+		main.src="grid.html";
+	}
+	form.onclick=function(){
+		main.src="form.html";
+	}
+	
+	
+	function $(id){
+		return document.getElementById(id);
+	}
+</script>
+</body>
+</html>

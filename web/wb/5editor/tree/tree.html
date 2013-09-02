@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="rs/tree.css">
+</head>
+
+<body>
+<div id="t1" class="tree">
+</div>
+<div id="editor" class="editor">
+</div>
+<script src="rs/tree.js"></script>
+<script src="../codeMirror/lib/codemirror.js"></script>
+<script>
+	genTree("t1","/web/file/catalog.json",leafClick);
+	function leafClick(evt){
+		var target=evt.target;
+		if(target.className.indexOf("leaf")>=0){
+			var path=target.getAttribute("path");
+			//alert(path);
+			
+			var xhr=new XMLHttpRequest();
+			xhr.open("get",path,false);
+			xhr.send();
+			var text=xhr.responseText;
+			alert(text);
+		}
+		
+	}
+</script>
+</body>
+</html>

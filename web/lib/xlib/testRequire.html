@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<input type="button" id="c1" value="按钮"/>
+<script src="require.js"></script>
+<script type="text/javascript">
+	window.onload=init;
+	function init(){
+		var x=g.base;
+		console.log(x);
+		eval(expose(x,"x"));/*暴漏x对象的所有可遍历属性*/
+		
+		bind("#c1","click",btnClick,{a:10});
+		//console.log(extend);
+	}
+	function btnClick(){
+		
+		console.log("click");
+		console.log(this);
+	}
+</script>
+</body>
+</html>

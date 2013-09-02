@@ -1,0 +1,150 @@
+.tp-main {
+	background-color: #FFF;
+	padding-top: 2px;
+	padding-bottom: 36px;
+}
+.tp-main form.normal{
+	display: none;
+
+}
+.tp-main form.active{
+	display: block;
+
+}
+.tp-main table{
+	background-color: #FFFFFF;
+	table-layout: fixed;
+	padding: 0;
+
+
+}
+.content {
+	text-align: center;
+}
+.form {
+	border-top: 1px solid #dedede;
+	border-left: 1px solid #dedede;
+	font-size: 14px;
+	color: #454545;
+	text-align: left;
+}
+
+.form table{
+	margin: auto;
+	box-sizing: border-box;
+	table-layout: fixed;
+
+}
+.form .row td{
+	border-bottom: 1px solid #dedede;
+	border-right: 1px solid #dedede;
+	box-sizing: border-box;
+	height: auto;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	min-height: 32px;
+	overflow: hidden;
+}
+.form span{
+	display: block;
+	box-sizing: border-box;
+	line-height: 24px;
+	padding-left: 12px;
+	padding-right: 12px;
+	text-align: center;
+	width: 100%;
+	color: #666;
+}
+.form ul,ol{
+	padding-left: 0px;
+	padding-right: 0px;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+}
+.form ul li{
+	padding-left: 10px;
+	padding-right: 10px;
+	display: inline-block;
+	width: 90px;
+	line-height: 32px;
+}
+.form ol li{
+	padding-left: 10px;
+	padding-right: 10px;
+	display: inline-block;
+	width: 100px;
+	line-height: 32px;
+}
+.form .txt{
+	display: block;
+	box-sizing: border-box;
+	line-height: 24px;
+	padding-left: 12px;
+	padding-right: 12px;
+	margin: 0;
+	border: 0px none;
+	width: 100%;
+	font-size: 14px;
+	min-height: 32px;
+	color: #454545;
+}
+
+.form .check{
+	margin-right: 5px;
+
+}
+.form .radio{
+	margin-right: 12px;
+
+}
+.p1{
+	color: #4183c4;
+	font-size: 32px;
+	font-weight: bold;
+	text-align: left;
+	padding-left: 24px;
+	padding-top:12px;
+	padding-bottom:16px;
+		margin-bottom:16px;
+
+	border-bottom: 1px solid #CCC;
+
+}
+
+.p2{
+	color: #000000;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: left;
+	padding-left: 24px;
+	line-height: 32px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.p3{
+	color: #000000;
+	font-size: 16px;
+	text-align: left;
+	padding-left: 48px;
+	line-height: 32px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+.p4{
+	color: #000000;
+	font-size: 16px;
+	text-align: left;
+	padding-left: 24px;
+	line-height: 32px;
+
+}
+.p5{
+	color: #000000;
+	font-size: 16px;
+	text-align: left;
+	line-height: 32px;
+	text-indent: 2em;
+	padding-left: 36px;
+
+}

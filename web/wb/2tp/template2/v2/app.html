@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>普通应用程序</title>
+<link rel="stylesheet" type="text/css" href="css/app.css">
+<link rel="stylesheet" type="text/css" href="css/32grid.css">
+<link rel="stylesheet" type="text/css" href="css/form5.css">
+</head>
+
+<body class="app">
+<div class="top">
+  <table cellpadding="0" cellspacing="0">
+    <tr>
+      <td><span class="slt">
+        <label>常用查询</label>
+        <ul>
+          <li>查询条件1</li>
+          <li>查询条件2</li>
+          <li>查询条件3</li>
+          <li>查询条件4</li>
+          <li>查询条件5</li>
+          <li>查询条件6</li>
+        </ul>
+        </span></td>
+      <td><label class="lbl-query">查找:</label></td>
+      <td><input type="text" class="txt"></td>
+      <td><div class="btn-query"></div></td>
+      <td><div class="icon-gap"></div></td>
+      <td><div class="icon-more"></div></td>
+      <td><span class="slt">
+        <label>选择操作</label>
+        <ul>
+          <li>停用</li>
+          <li>启用</li>
+          <li>转移</li>
+          <li>报废</li>
+          <li>折旧</li>
+          <li>收货</li>
+        </ul>
+        </span></td>
+      <td class="btns"><span class="group"> <span class="add " id="btn_add"></span> <span class="save disable" id="btn_save"></span> <span class="edit disable" id="btn_edit"></span> <span class="remove disable" id="btn_remove"></span> </span> <span class="group"> <span class="pre disable" id="btn_pre"></span> <span class="next disable" id="btn_next"></span> </span> <span class="group"> <span class="workflow"></span> </span></td>
+    </tr>
+  </table>
+  <div class="tabs"><span id="tab_list" class="active"> 列表 </span><span id="tab_form" class="normal"> 对象 </span></div>
+</div>
+<div class="main" id="main">
+  <div class="grid active" id="main_grid">
+    <div class="search">
+      <div class="find">高级搜索</div>
+      <div class="icon-gap-small"></div>
+      <div class="icon-more"></div>
+      <div class="save">保存搜索</div>
+      <div class="icon-gap-small"></div>
+      <div class="icon-more"></div>
+    </div>
+    <div class="header">
+      <div class="title">所有员工</div>
+      <div class="icon-gap"></div>
+    </div>
+    <div class="body">
+      <table class="table" id="grid" cellspacing="0" cellpadding="0">
+        <tr class="theader">
+          <td class="w01"  style="width: 30px;"><div class="w01">
+              <input class="checkbox" id="grid_0_selectAll" type="checkbox">
+            </div></td>
+          <td class="w02"  style="width: 60px;"><div class="w02"> 序号 </div></td>
+          <td class="asc"  style="width: 100px;"><div class="cell"> 主键 </div></td>
+          <td class="asc"  style="width: 180px;"><div class="cell"> 姓名 </div></td>
+          <td class="asc"  style="width: 80px;"><div class="cell"> 性别 </div></td>
+          <td class="asc"  style="width: 100px;"><div class="cell"> 出生日期 </div></td>
+          <td class="asc"  style="width: 180px;"><div class="cell"> 部门 </div></td>
+          <td class="asc"  style="width: 140px;"><div class="cell"> 密码 </div></td>
+          <td class="asc"  style="width: 120px;"><div class="cell"> 状态 </div></td>
+          <td class="asc"  style="width: auto;"></td>
+        </tr>
+        <tr class="hide">
+          <td><div class="w01">
+              <input class="checkbox" type="checkbox">
+            </div></td>
+          <td><div attr="seq" class="center"></div></td>
+          <td><div attr="id" class="left"> </div></td>
+          <td><div attr="name" class="center"> </div></td>
+          <td><div attr="sex" class="center"> </div></td>
+          <td><div attr="age" class="center"> </div></td>
+          <td><div attr="dep_name"> </div></td>
+          <td><div attr="pw"> </div></td>
+          <td><div attr="state"> </div></td>
+          <td></td>
+        </tr>
+        <tr class="filter">
+          <td class="w01"></td>
+          <td class="w02"><div class="w02"> </div></td>
+          <td><input class=" query cell" style="width: 80px;" type="text"></td>
+          <td><input class=" query cell" style="width: 160px;" type="text"></td>
+          <td><input class=" query cell" style="width: 60px;" type="text"></td>
+          <td><input class=" query cell" style="width: 80px;" type="text"></td>
+          <td><input class=" query cell" style="width: 160px;" type="text"></td>
+          <td><input class=" query cell" style="width: 100px;" type="text"></td>
+          <td><input class=" query cell" style="width: 100px;" type="text"></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+    <div class="footer" id="grid_0_footer">
+      <div class="pager" id="grid_0_pager">
+        <table class="pageInfo" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td class="rowNum" id="grid_0_rowNum">共
+                <label id="totalnum">2</label>
+                条数据;</td>
+              <td class="pageNum" id="grid_0_pageNum">第
+                <label id="currpage">2</label>
+                页，共
+                <label id="totalpage">2</label>
+                页</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="pageTable"  cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td class="pagebtn" id="grid_0_firstPage">首页</td>
+              <td class="pagebtn" id="grid_0_prePage">上一页</td>
+              <td class="pagebtn" id="grid_0_nextPage">下一页</td>
+              <td class="pagebtn" id="grid_0_lastPage">尾页</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <form class="form normal"  id="main_form">
+    <div class="section" id="form_0_doc">
+      <div class="row"> <span style="width:300px">
+        <label class="w1">id：</label>
+        <input type="text" id="txt_id" name="id" readonly  class="text disable" style="width:100px"/>
+        </span> <span>
+        <label class="w2">所属部门：</label>
+        <input type="text" name="dep_name"  class="text" style="width:200px"/>
+        </span> </div>
+      <div class="row"> <span style="width:300px">
+        <label class="w1">姓名：</label>
+        <input type="text" name="name"  class="text" style="width:100px"/>
+        </span> <span>
+        <label class="w2">性别：</label>
+        <span>
+        <input name="sex" type="radio" value="男">
+        <label>男</label>
+        </span><span>
+        <input name="sex" type="radio" value="女">
+        <label>女</label>
+        </span></span> </div>
+      <div class="row"> <span style="width:300px">
+        <label class="w1">家庭地址：</label>
+        <input type="text" name="address" class="text" style="width:200px"/>
+        </span> <span>
+        <label class="w2">籍贯：</label>
+        <input type="text" name="home"  class="text"/>
+        </span> </div>
+      <div class="row"> <span style="width:300px">
+        <label class="w1">电子邮件：</label>
+        <input type="text" name="email" class="text"/>
+        </span> <span style="width:300px">
+        <label class="w2">QQ：</label>
+        <input type="text" name="qq"  class="text"/>
+        </span> </div>
+      <div class="row"> <span style="width:300px">
+        <label class="w1">手机：</label>
+        <input type="text" name="mobile"  class="text"/>
+        </span> <span style="width:300px">
+        <label class="w2">办公电话：</label>
+        <input type="text" name="phone" class="text"/>
+        </span> </div>
+    </div>
+    <div class="errorMsg" id="form_0_errorMsg" style="display: none;">
+      <div class="info" id="form_0_errorText"> </div>
+      <div class="tri"> </div>
+    </div>
+  </form>
+</div>
+<script src="js/lib.js"></script> 
+<script src="js/app.js"></script> 
+<script src="js/grid.js"></script> 
+<script src="js/form.js"></script>
+</body>
+</html>

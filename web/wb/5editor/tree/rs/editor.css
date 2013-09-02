@@ -1,0 +1,94 @@
+.tree {
+}
+.tree div {
+	padding-left: 24px;
+	margin-left: 24px;
+	position: relative;
+	height: 32px;
+	line-height: 32px;
+	z-index: 1;
+	transition: 0.3s all ease-in-out;
+	-webkit-transition: 0.3s all ease-in-out;
+	overflow: hidden;
+	max-height: 32px;
+	cursor: default;
+}
+.tree .node {
+}
+.tree .leaf {
+}
+.tree .leaf:before {
+	content: "";
+	position: absolute;
+	top: 11px;
+	left: 0px;
+	z-index: 2;
+	width: 6px;
+	height:6px;
+	background-color:#eee;
+	border: 1px solid #666;
+
+}
+.tree .node::before {
+	content: "";
+	position: absolute;
+	top: 8px;
+	left: 0px;
+	z-index: 2;
+	width: 0px;
+	height: 0px;
+	border-top: 7px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 7px solid transparent;
+	border-left: 8px solid #666;
+}
+.tree .node::after {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 1px;
+	z-index: 3;
+	width: 0px;
+	height: 0px;
+	border-top: 5px solid transparent;
+	border-right: 6px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 6px solid #dedede;
+}
+.tree .hide {
+	max-height: 0px;
+}
+.tree .collapse {
+}
+.tree .open {
+}
+.tree .node.open::before {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform-origin: 20% 86%;
+	-webkit-transform-origin: 20% 86%;
+	border-left: 7px solid #787878;
+
+}
+.tree .node.open::after {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform-origin: 20% 86%;
+	-webkit-transform-origin: 20% 86%;
+	top:9px;
+	left:2px;
+	border-left: 2px solid #999;
+
+}
+#t1 {
+	width: 400px;
+	background-color: #dedede;
+	float: left;
+}
+.right {
+	width: 800px;
+	background-color: #F00;
+	float: left;
+	min-height: 800px;
+	height: 800px;
+}

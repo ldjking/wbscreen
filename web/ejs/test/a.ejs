@@ -1,0 +1,11 @@
+<%if(typeof(title)==undefined){%><div><%=title%></div>
+<%}else{%>
+<div>没有设置标题</div><%}%>
+
+<% if (names.length) { %>
+    <ul>
+      <% names.forEach(function(name,i,arr){ %>
+        <include b>
+      <% }) %>
+    </ul>
+<% } %>

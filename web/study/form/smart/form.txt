@@ -1,0 +1,26 @@
+一个表单  要考虑的内容很多
+
+
+1.布局
+2.校验	 
+3.出错信息提示		tips
+3.placeHolder   IE9不支持
+4.值列表			各种值列表  	calendar   tree  list
+5.表格  			删除行  新增行		复制行	粘贴行	选中行
+6.输入多行		内容自动变成textarea text
+7.单选框
+8.复选框
+9.下拉列表
+10.按钮
+
+
+form0.1		处理layout
+form0.2		处理lov
+
+form0.3		处理输入多行
+form0.4		处理表格新增删除行
+form0.5		处理单选框、复选框、下拉列表
+form0.6		处理placeholder	校验	出错信息提示
+
+
+form0.3		新的表单样式  还是使用table布局，让标签和输入项紧密结合

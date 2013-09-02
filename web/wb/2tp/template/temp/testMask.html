@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+html,body{
+	height:100%;
+	padding:0;
+	margin:0;
+}
+</style>
+</head>
+
+<body>
+<div id="abc" style="height:400px; width:400px; background-color:#C93;"></div>
+</body>
+<script src="../js/easyui_qdp/jquery-1.8.0.min.js"></script>
+<script src="../js/easyui_qdp/jquery.easyui.min.js"></script>
+<script src="../js/easyui_qdp/mask.js"></script>
+<script>
+	$("body").mask({opacity:0.6,maskMsg:"加载中xxx<img src='../js/easyui_qdp/themes/default/images/loading.gif'>"});
+	
+	setTimeout(function(){$("body").mask("hide")},1000);	
+</script>
+</html>

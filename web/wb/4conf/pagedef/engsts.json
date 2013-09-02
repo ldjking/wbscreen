@@ -1,0 +1,11 @@
+{
+  "name": "engsts",
+  "cname": "电量统计",
+  "module": 7,
+  "template": "t1",
+  "title": "电量统计",
+  "id": 27,
+  "conf": null,
+  "person1": "罗惠恒",
+  "time1": "2013-7-6 18:00"
+}

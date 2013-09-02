@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="../CodeMirror/lib/codemirror.css">
+<link rel="stylesheet" type="text/css" href="rs/editor.css">
+</head>
+
+<body>
+<div id="t1" class="tree">
+</div>
+<div class="right">
+  <button id="btn_save">保存</button>
+  <button id="btn_preview">预览</button>
+  <div id="code" name="code"</div>
+</div>
+<script src="rs/tree.js"></script> 
+<script src="../codeMirror/lib/codemirror.js"></script> 
+<script src="../codeMirror/addon/hint/show-hint.js"></script> 
+<script src="../codeMirror/addon/hint/xml-hint.js"></script> 
+<script src="../codeMirror/addon/hint/html-hint.js"></script> 
+<script src="../codeMirror/mode/xml/xml.js"></script> 
+<script src="../codeMirror/mode/javascript/javascript.js"></script> 
+<script src="../codeMirror/mode/css/css.js"></script> 
+<script src="../codeMirror/mode/htmlmixed/htmlmixed.js"></script> 
+<script>
+	genTree("t1","/web/file/catalog.json",leafClick);
+	
+	// var mixedMode = {
+//        name: "htmlmixed",
+//        scriptTypes: [{matches: /\/x-handlebars-template|\/x-mustache/i,
+//                       mode: null}]
+//      };
+//	  
+//	  CodeMirror.commands.autocomplete = function(cm) {
+//          CodeMirror.showHint(cm, CodeMirror.hint.html);
+//      }
+//
+//      var editor = CodeMirror.fromTextArea(document.getElementById("code"), 
+//					{	mode: mixedMode, 
+//						tabMode: "indent", 
+//						lineNumbers: true,
+//						lineWrapping: true});
+//	  
+//	console.dir(editor);
+	
+	function leafClick(evt){
+		var target=evt.target;
+		if(target.className.indexOf("leaf")>=0){
+			path=target.getAttribute("path");
+			//alert(path);
+			
+			var xhr=new XMLHttpRequest();
+			xhr.open("get",path,false);
+			xhr.send();
+			var text=xhr.responseText;
+			//alert(text);
+			editor.doc.setValue(text);
+		}
+		
+	}
+	var editor;
+	var path;
+
+	 window.onload = function() {
+        editor = CodeMirror(document.getElementById("code"), {
+          mode: "text/html",
+          extraKeys: {"Ctrl-Space": "autocomplete"},
+          value: "<!doctype html>\n<html>\n  " + document.documentElement.innerHTML + "\n</html>"
+        });
+      };
+	  
+	var save=document.getElementById("btn_save");
+	save.onclick=doSave;
+	var preview=document.getElementById("btn_preview");
+	preview.onclick=doPreview;
+	
+	function doPreview(){
+		alert(window.location.protocol);
+		var url="http://"+window.location.host+path;
+		alert(url);
+		window.open(url);
+	}
+	
+	function doSave(){
+		var text=editor.doc.getValue();
+		//alert(text);
+		//alert(path);		
+		var param={path:path,content:text};
+
+		var str=encodeURI("p="+JSON.stringify(param)),content=str;	
+		//console.log("content:"+content);
+		
+		var xh=new XMLHttpRequest();
+		xh.open("POST", "/handler/file/save", false);
+		//xh.setRequestHeader("Content-Length",content.length);
+		xh.setRequestHeader("CONTENT-TYPE","application/x-www-form-urlencoded");
+		xh.send(content);
+		var text=xh.responseText;
+		
+		//var xhr=new XMLHttpRequest();
+		//xhr.open("get","/handler/file/save?path="+path,false);
+		
+		//var str=encodeURI("p="+JSON.stringify(param));	
+		//alert(str);
+		//xhr.setRequestHeader("Content-Length",str.length);
+		//xhr.setRequestHeader("CONTENT-TYPE","application/x-www-form-urlencoded");
+
+		//xhr.send(str);
+		//var text=xhr.responseText;
+		alert(text);
+		//editor.doc.setValue(text);
+	}
+	
+	document.oncontextmenu=function(){
+		return false;
+		
+	}
+</script>
+</body>
+</html>

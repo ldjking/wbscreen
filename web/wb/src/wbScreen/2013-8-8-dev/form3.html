@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>表单配置向导</title>
+<link rel="stylesheet" type="text/css" href="../../../src/wbScreen/2013-8-8-dev/rs/style/reset.css">
+<link rel="stylesheet" type="text/css" href="../../../src/wbScreen/2013-8-8-dev/rs/style/paper.css">
+</head>
+
+<body>
+<div class="paper" id="paper-add">
+  <form name="form-edit2" id="form-edit2">
+    <table class="form"  cellpadding="0" cellspacing="0">
+      <tr>
+        <td class="row"><table cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="100px"><span>列表标题</span></td>
+              <td width="240px"><input type="text" class="txt" name="title"/></td>
+              <td width="80px"><span>长度</span></td>
+              <td width="80px"><input type="text" class="txt" name="height"/></td>
+              <td width="80px"><span>宽度</span></td>
+              <td width="80px"><input type="text" class="txt" name="width"/></td>
+            </tr>
+            <tr>
+              <td width="100px"><span>URL</span></td>
+              <td colspan="5"><input type="text" class="txt" name="dataUrl"/></td>
+            </tr>
+            <tr>
+              <td colspan="6"><ol>
+                  <li>
+                    <input type="checkbox" name="singleSelect" class="check"/>
+                    单选模式</li>
+                  <li>
+                    <input type="checkbox" name="collapsible" class="check"/>
+                    允许收缩</li>
+                  <li>
+                    <input type="checkbox" name="fit" class="check"/>
+                    尺寸自适应</li>
+                  <li>
+                    <input type="checkbox" name="page" class="check"/>
+                    显示序号</li>
+                </ol></td>
+            </tr>
+            <tr>
+              <td colspan="6"><span style="width:100px">表单元素</span></td>
+            </tr>
+          </table></td>
+      </tr>
+      <tr>
+        <td class="row"><table cellpadding="0" cellspacing="0" id="childTable">
+            <tr>
+              <td width="120px"><span attr="cols#field">属性字段</span></td>
+              <td width="140px"><span attr="cols#text">表头文字</span></td>
+              <td width="120px"><span attr="cols#type">类型</span></td>
+              <td width="100px"><span attr="cols#width">宽度</span></td>
+              <td width="100px"><span attr="cols#align">对齐</span></td>
+              <td width="80px"><span attr="cols#hidden">隐藏</span></td>
+            </tr>
+            <tr>
+              <td width="120px"><input type="text" name="cols#field" class="txt"></td>
+              <td width="140px"><input type="text" name="cols#name" class="txt"></td>
+              <td width="120px"><input type="text" name="cols#type" class="txt"></td>
+              <td width="100px"><input type="text" name="cols#width" class="txt"></td>
+              <td width="100px"><input type="text" name="cols#align" class="txt"></td>
+              <td width="80px" style="text-align:center"><input type="checkbox" name="cols#hidden" class="check"></td>
+            </tr>
+          </table></td>
+      </tr>
+    </table>
+  </form>
+</div>
+</body>
+</html>

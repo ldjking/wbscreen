@@ -1,0 +1,12 @@
+<p>
+  You have viewed this page
+  <span id="count">an untold number of</span>
+  time(s).
+</p>
+<script>
+	console.log(cookie);
+  var storage = window.localStorage;
+  if (!storage.pageLoadCount) storage.pageLoadCount = 0;
+  storage.pageLoadCount = parseInt(storage.pageLoadCount, 10) + 1;
+  document.getElementById('count').innerHTML = storage.pageLoadCount;
+</script> 

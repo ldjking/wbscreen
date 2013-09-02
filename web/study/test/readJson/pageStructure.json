@@ -1,0 +1,30 @@
+/*页面的配置数据
+	
+	title	页面标题
+	name	页面名称
+	folder	所处目录
+	tag		标签
+
+	gridConf:
+		title
+		url
+		columns:[]
+			attr
+			align
+			width
+			name
+
+	formConf
+		title
+		url
+		saveUrl
+		updateUrl
+		rows:[]
+			height
+			cells:[]
+				type:label|input
+				text
+				attr
+				inputtype:date|xx|
+
+*/

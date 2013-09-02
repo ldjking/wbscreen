@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<form><div id="c1"></div></form>
+<script src="../../../require.js"></script>
+<script>
+	var x=req("base/src/14dom.js");
+	var radio=x.$radio(["男",1,"女",2],null,"sex");
+	console.log(radio);
+	x.$("#c1").appendChild(radio);;
+	//console.log(x);
+</script>
+</body>
+</html>

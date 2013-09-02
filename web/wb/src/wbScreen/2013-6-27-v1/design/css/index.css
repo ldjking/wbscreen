@@ -1,0 +1,37 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	  margin-top: 3em;
+  text-align: center;
+  background: #f8fcd4;
+  background: -moz-radial-gradient(center, ellipse cover,  #f8fcd4 19%, #dbfacb 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(19%,#f8fcd4), color-stop(100%,#dbfacb));
+  background: -webkit-radial-gradient(center, ellipse cover,  #f8fcd4 19%,#dbfacb 100%);
+  background: -o-radial-gradient(center, ellipse cover,  #f8fcd4 19%,#dbfacb 100%);
+  background: -ms-radial-gradient(center, ellipse cover,  #f8fcd4 19%,#dbfacb 100%);
+  background: radial-gradient(center, ellipse cover,  #f8fcd4 19%,#dbfacb 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8fcd4', endColorstr='#dbfacb',GradientType=1 );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.guide-con {
+	display: -ms-flexbox;
+	-ms-flex-align: center;
+	-ms-flex-pack: center;
+	-ms-flex-direction: column;
+	-ms-flex-wrap: wrap;
+	height: 100%;
+	/*background-color: #d7d7d7;*/
+}
+.guide {
+	width: 600px;
+	height: 200px;
+	background-color: #69C7C9;
+}
+.guide-logo {
+	font-family: "微软雅黑", Tahoma, Verdana, sans-serif, "Times New Roman";
+	font-size: 48px;
+	font-weight: bold;
+	color: #FFF;
+}

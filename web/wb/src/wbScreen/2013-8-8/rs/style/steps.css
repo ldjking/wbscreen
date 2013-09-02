@@ -1,0 +1,118 @@
+.wb-steps {
+	background-color: #FFF;
+	height: 60px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	padding-top: 4px;
+	position: relative;
+}
+.hide {
+	display: none;
+
+}
+.wb-steps::before {
+	background-color: #666;
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	bottom: 14px;
+	left: 0px;
+	z-index: 1;
+	content: "";
+	display: none;
+}
+.wb-steps::after {
+	background-color: #F00;
+	position: absolute;
+	width: 100px;
+	height: 2px;
+	bottom: 158px;
+	left: 0px;
+	z-index: 2;
+	content: "";
+	display: none;
+}
+.wb-steps li{
+	counter-increment: li;
+	position: relative;
+	float: left;
+	text-align: center;
+	font-size: 14px;
+	line-height: 36px;
+	min-height: 60px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #CCC;
+}
+.wb-steps .a1:before {
+	z-index: 4;
+	content: counter(li)"、";
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+}
+.wb-steps .a1::after {
+	width: 8px;
+	z-index: 3;
+	height: 8px;
+	color: #FFF;
+	background-color: #888;
+	position: absolute;
+	border-radius: 8px;
+	bottom: 6px;
+	content: "";
+	left: 50%;
+	margin-left: -8px;
+	border: 4px solid #e3d6d9;
+	transition-duration: 0.3s;
+	transition-property: all;
+	transition-timing-function: ease-in-out;
+	display: none;
+}
+.wb-steps .a2 {
+	color: #b9e980;
+}
+.wb-steps .a2:before {
+	z-index: 4;
+	content: counter(li)"、";
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	color: #9ADF46;
+}
+.wb-steps .a2::after {
+	width: 12px;
+	height: 12px;
+	z-index: 3;
+	background-color: #4F812E;
+	position: absolute;
+	border-radius: 10px;
+	bottom: 4px;
+	content: "";
+	left: 50%;
+	margin-left: -8px;
+	border: 4px solid #fff;
+	transition-duration: 0.3s;
+	transition-property: all;
+	transition-timing-function: ease-in-out;
+}
+.wb-steps .a1:hover {
+	color: #b9e980;
+	text-shadow: 3px 3px 3px rgba(64,113,112,0.8);
+}
+.wb-steps .a1:hover::after {
+	background-color: #6baf3f;
+	width: 12px;
+	height: 12px;
+	left: 50%;
+	margin-left: -10px;
+	bottom: 4px;
+	border-radius: 10px;
+	transition-duration: 0.3s;
+	transition-property: all;
+	transition-timing-function: ease-in-out;
+	border: 4px solid #fff;
+	font-size: 14px;
+	font-weight: bold;
+}

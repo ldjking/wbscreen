@@ -1,0 +1,103 @@
+{
+  "name": "x45",
+  "cname": "",
+  "code": "",
+  "title": "",
+  "des": "",
+  "person1": "",
+  "time1": "",
+  "person2": "",
+  "time2": "",
+  "person3": "",
+  "time3": "",
+  "queryUrl": "",
+  "deleteUrl": "",
+  "addUrl": "",
+  "updateUrl": "",
+  "btnDefault": [
+    "1",
+    "3",
+    "4",
+    "5"
+  ],
+  "columns": [
+    {
+      "attr": "",
+      "text": "",
+      "type": "",
+      "width": "",
+      "align": ""
+    },
+    {
+      "attr": "",
+      "text": "",
+      "type": "",
+      "width": "",
+      "align": ""
+    },
+    {
+      "attr": "",
+      "text": "",
+      "type": "",
+      "width": "",
+      "align": ""
+    }
+  ],
+  "btns": [
+    {
+      "id": "",
+      "text": "qdp_btnadd",
+      "style": "",
+      "num": "",
+      "handler": ""
+    },
+    {
+      "id": "",
+      "text": "qdp_btnapp",
+      "style": "",
+      "num": "",
+      "handler": ""
+    },
+    {
+      "id": "",
+      "text": "qdp_btnapp",
+      "style": "",
+      "num": "",
+      "handler": ""
+    }
+  ],
+  "inputs": [
+    {
+      "lbl": "tt",
+      "attr": "",
+      "type": "",
+      "width": "",
+      "align": "",
+      "lov": "",
+      "dataUrl": "",
+      "handler": ""
+    },
+    {
+      "lbl": "",
+      "attr": "",
+      "type": "",
+      "width": "",
+      "align": "",
+      "lov": "",
+      "dataUrl": "",
+      "handler": ""
+    },
+    {
+      "lbl": "",
+      "attr": "",
+      "type": "",
+      "width": "",
+      "align": "",
+      "lov": "",
+      "dataUrl": "",
+      "handler": ""
+    }
+  ],
+  "module": 1,
+  "template": "new1"
+}

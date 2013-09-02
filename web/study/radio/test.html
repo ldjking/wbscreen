@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	li{
+		position:relative;
+		z-index:1;
+	}
+	label{
+		position:absolute;
+		width:100%;
+	}
+	li:hover{
+		background-color:#0CC;
+	}
+	input{
+		opacity:0;
+		position:absolute;
+		width:100%;
+		height:100%;
+		z-index:2;
+	}
+	input:checked{
+		background-color:#F00;
+	}
+	input:checked+*{
+		background-color:#F00;
+		color:#03C;
+	}
+</style>
+</head>
+
+<body>
+<form>
+<ul>
+	<li><input type="radio" name="r1"/><label>hello</label></li>
+    <li><input type="radio" name="r1"/><label>hello</label></li>
+    <li><input type="radio" name="r1"/><label>hello</label></li>
+    <li><input type="radio" name="r1"/><label>hello</label></li>
+    <li><input type="radio" name="r1"/><label>hello</label></li>
+    <li><input type="radio" name="r1"/><label>hello</label></li>
+</ul>
+</form>
+</body>
+</html>

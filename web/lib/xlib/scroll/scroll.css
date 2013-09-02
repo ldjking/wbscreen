@@ -1,0 +1,33 @@
+.x-con {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+.x-con >div{
+	position: absolute;
+}
+.x-content {
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+
+}
+.x-scroll-x {
+	right: 0px;
+	top: 0px;
+	z-index: 20;
+	height: 40px;
+	width: 7px;
+	background-color: rgba(11,160,190,0.6);
+	border-radius: 3px;
+}
+.x-scroll-y {
+	bottom: 0px;
+	left: 0px;
+	z-index: 30;
+	height: 7px;
+	width: 100px;
+	background-color: rgba(11,160,190,0.6);
+	border-radius: 3px;
+}

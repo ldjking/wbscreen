@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MRO界面操作示例</title>
+<link rel="stylesheet" type="text/css" href="../../../32guide/mro/src/css/font1.css">
+<link rel="stylesheet" type="text/css" href="../../../32guide/mro/src/css/index.css">
+</head>
+<body>
+<div class="flex"><div class="top">
+  <div class="info">
+    启动中心  欢迎，刘东杰
+  </div>
+  <div class="funs">
+    <div id="jump">
+      <span class="icon-forward-2"></span> <span>转到</span>
+    </div>
+    <div id="start">
+      <span class="icon-home-2"></span><span>启动</span>
+    </div>
+    <div>
+      <span class="icon-question"></span><span>帮助</span>
+    </div>
+    <div>
+      <span class="icon-cog-2 "></span><span>设置</span>
+    </div>
+    <div>
+      <span class="icon-switch-2 "></span><span>退出</span>
+    </div>
+  </div>
+</div>
+<div class="menu hide" id="menu">
+	<div class="navs">
+        <div>常用程序</div>
+        <div>组织机构</div>
+        <div>人力资源</div>
+        <div>生产经营</div>
+        <div>运行值班</div>
+        <div>固定资产</div>
+        <div>物资</div>
+        <div>工作流</div>
+        <div>工作流</div>
+        <div>财务模块</div>
+    </div>
+    <div class="pages">
+    	<div>费用报销</div><div>项目管理</div><div>合同管理</div><div>人员管理</div><div>运行日志</div><div>工作票</div>
+    </div>
+</div>
+
+<iframe id="app" src="../../../32guide/mro/src/app.html" class="apps" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+</div>
+
+<script type="text/javascript">
+	//滑动或者单击转到时  显示页面清单  两级100个页面
+	var jump=$("jump");
+	var menu=$("menu");
+	var start=$("start");
+	var app=$("app");
+	jump.onmouseover=showMenu;
+	menu.onmouseleave=hideMenu;
+	menu.onclick=function(){
+		app.src="app.html";
+		hideMenu();
+	}
+	start.onclick=function(){
+			app.src="center6.html";
+		}
+	function showMenu(){
+		if(menu.className.indexOf("hide")>=0){
+			menu.className="menu show";
+		}
+	}
+	
+	function hideMenu(){
+		if(menu.className.indexOf("show")>=0){
+			menu.className="menu hide";
+		}
+	}
+	
+	function $(id){
+		return document.getElementById(id);
+	}
+</script>
+</body>
+</html>

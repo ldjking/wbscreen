@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<div class="container">
+  <div class="paper">
+    <div class="content" id="content">
+     
+    </div>
+  </div>
+</div>
+<script src="../../require.js"></script>
+<script>
+	var genForm=g.form;
+	var cfg=[
+		{	type:1,rows:3,cols:4,
+			cells:[
+				{type:"lbl",text:"页面名称",width:100,},
+				{type:"text",attr:"name",width:120},
+				{type:"lbl",text:"页面标题",width:100},
+				{type:"text",attr:"cname",width:340},
+				
+				{type:"lbl",text:"中文名称",width:100},
+				{type:"text",attr:"module",width:120},
+				{type:"lbl",text:"模块名称",width:100},
+				{type:"text",attr:"module",width:340},
+				
+				{type:"lbl",text:"模板类型",width:100},
+				{type:"checkbox",attr:"module", colSpan:3,data:["模板一","t1","模板二","t2"]}
+			]},/*普通表格布局*/
+		{	type:1,rows:3,cols:4,
+			cells:[
+				{type:"lbl",text:"需求提出人",width:100},
+				{type:"text",attr:"p1",width:120},
+				{type:"lbl",text:"需求时间",width:100},
+				{type:"text",attr:"p1",width:340},
+
+				
+				{type:"lbl",text:"开发人",width:100},
+				{type:"text",attr:"module",width:120},
+				{type:"lbl",text:"开发时间",width:100},
+				{type:"text",attr:"module",width:340},
+				
+				{type:"lbl",text:"测试人",width:100},
+				{type:"text",attr:"module",width:120},
+				{type:"lbl",text:"测试时间",width:100},
+				{type:"text",attr:"module",width:340}
+			]},/*普通表格布局*/
+		{	type:1,rows:1,cols:2,
+			cells:[
+				{type:"lbl",text:"功能描述",width:100},
+				{type:"text",attr:"template",width:560,height:320}
+			]}/*普通表格布局*/
+	];
+	
+	var dom=document.getElementById("content");
+	console.log(dom);
+	genForm(dom,cfg);
+
+</script>
+</body>
+</html>

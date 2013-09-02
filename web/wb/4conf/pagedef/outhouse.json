@@ -1,0 +1,11 @@
+{
+  "name": "outhouse",
+  "cname": "出库",
+  "module": 5,
+  "template": "t1",
+  "title": "出库",
+  "id": 19,
+  "conf": null,
+  "person1": "罗惠恒",
+  "time1": "2013-7-6 18:00"
+}

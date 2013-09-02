@@ -1,0 +1,263 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>登录页面创建向导</title>
+<link rel="stylesheet" type="text/css" href="../../../src/wbScreen/2013-8-25-dev/rs/style/reset.css">
+<link rel="stylesheet" type="text/css" href="../../../src/wbScreen/2013-8-25-dev/rs/icon/style.css">
+<link rel="stylesheet" type="text/css" href="../../../src/wbScreen/2013-8-25-dev/rs/style/steps.css">
+<link rel="stylesheet" type="text/css" href="../../../src/wbScreen/2013-8-25-dev/rs/style/tp.css">
+<link rel="stylesheet" type="text/css" href="../../../src/wbScreen/2013-8-25-dev/rs/style/form.css">
+<link rel="stylesheet" type="text/css" href="../../../src/wbScreen/2013-8-25-dev/rs0.2/layout.css">
+</head>
+
+<body>
+<div id="app" class="tp-con">
+  <div class="tp-top">
+    <div class="tp-steps">
+      <ul class="wb-steps" id="steps">
+        <li class="active" id="step1">基本信息</li>
+        <li class="normal" id="step2">列表配置 </li>
+        <li class="normal" id="step3">表单配置 </li>
+      </ul>
+    </div>
+    <div class="tp-btns"><span id="btn_save" class="icon-ok"></span><span id="btn_preview" class="icon-screen hide"></span><span id="btn_delete" class="icon-trash hide"></span>
+    </div>
+  </div>
+  <div class="tp-main">
+    <form name="form_1" id="form1" class="active">
+      <div class="tp-info">基本信息</div>
+      <table class="form"  cellpadding="0" cellspacing="0">
+        <tr>
+          <td class="row"><table cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="100px"><span>页面名称</span></td>
+                <td width="220px"><input type="text" class="txt" name="name"/></td>
+                <td width="120px"><span>中文名称</span></td>
+                <td width="220px"><input type="text" class="txt" name="cname" lov="sex"/></td>
+              </tr>
+              <tr>
+                <td><span>页面标题</span></td>
+                <td colspan="3"><input type="text" class="txt" name="title"/></td>
+              </tr>
+              <tr>
+                <td><span>所属模块</span></td>
+                <td colspan="3"><ul>
+                    <li>
+                      <input type="radio" name="module" class="check" value="1"/>
+                      工作流</li>
+                    <li>
+                      <input type="radio" name="module"  class="check" value="2"/>
+                      系统定义</li>
+                    <li>
+                      <input type="radio" name="module"  class="check" value="3"/>
+                      人员机构</li>
+                    <li>
+                      <input type="radio" name="module"  class="check" value="4"/>
+                      财务管理</li>
+                    <br/>
+                    <li>
+                      <input type="radio" name="module"  class="check" value="5"/>
+                      物资管理</li>
+                    <li>
+                      <input type="radio" name="module"  class="check" value="6"/>
+                      运行管理</li>
+                    <li>
+                      <input type="radio" name="module"  class="check" value="7"/>
+                      报表统计</li>
+                  </ul></td>
+              </tr>
+              <tr>
+                <td><span>模板类别</span></td>
+                <td colspan="3"><ul>
+                    <li>
+                      <input type="radio" name="template" class="check" value="t1"/>
+                      模板一</li>
+                    <li>
+                      <input type="radio" name="template"  class="check" value="t2"/>
+                      模板二</li>
+                    <li>
+                      <input type="radio" name="template"  class="check" value="t3"/>
+                      模板三</li>
+                  </ul></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td class="row"><table cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="100px"><span>query url</span></td>
+                <td width="560px"><input type="text" class="txt" name="queryurl"/></td>
+              </tr>
+              <tr>
+                <td><span>add url</span></td>
+                <td><input type="text" class="txt" name="addurl"/></td>
+              </tr>
+              <tr>
+                <td><span>update url</span></td>
+                <td><input type="text" class="txt" name="updateurl"/></td>
+              </tr>
+              <tr>
+                <td><span>delete url</span></td>
+                <td><input type="text" class="txt" name="deleteurl"/></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table>
+    </form>
+    <form name="form_2" id="form2" class="normal">
+      <div class="tp-info">列表配置</div>
+      <table class="form"  cellpadding="0" cellspacing="0">
+        <tr>
+          <td class="row"><table cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="100px"><span>列表标题</span></td>
+              <td width="240px"><input type="text" class="txt" name="title"/></td>
+              <td width="80px"><span>长度</span></td>
+              <td width="80px"><input type="text" class="txt" name="height"/></td>
+              <td width="80px"><span>宽度</span></td>
+              <td width="80px"><input type="text" class="txt" name="width"/></td>
+            </tr>
+            <tr>
+              <td width="100px"><span>URL</span></td>
+              <td colspan="5"><input type="text" class="txt" name="dataUrl"/></td>
+            </tr>
+            <tr>
+              <td colspan="6"><ol>
+                  <li>
+                    <input type="checkbox" name="singleSelect" class="check"/>
+                    单选模式</li>
+                  <li>
+                    <input type="checkbox" name="collapsible" class="check"/>
+                    允许收缩</li>
+                  <li>
+                    <input type="checkbox" name="fit" class="check"/>
+                    尺寸自适应</li>
+                  <li>
+                    <input type="checkbox" name="page" class="check"/>
+                    显示序号</li>
+                </ol></td>
+            </tr>
+            <tr>
+              <td colspan="6"><span style="width:100px">列定义</span></td>
+            </tr>
+          </table></td>
+      </tr>
+      <tr>
+        <td class="row"><table cellpadding="0" cellspacing="0" id="childTable" class="childTable">
+            <tr><!--子表的处理方式比较复杂  第一行控制布局  第二行控制元素 第二行要隐藏-->
+              <td width="120px"><span attr="cols#field">属性字段</span></td>
+              <td width="140px"><span attr="cols#text">表头文字</span></td>
+              <td width="120px"><span attr="cols#type">类型</span></td>
+              <td width="100px"><span attr="cols#width">宽度</span></td>
+              <td width="100px"><span attr="cols#align">对齐</span></td>
+              <td width="80px"><span attr="cols#hidden">隐藏</span></td>
+            </tr>
+            <tr style="display:none">
+              <td width="120px"><input type="text" name="cols#field" class="txt"></td>
+              <td width="140px"><input type="text" name="cols#name" class="txt"></td>
+              <td width="120px"><input type="text" name="cols#type" class="txt"></td>
+              <td width="100px"><input type="text" name="cols#width" class="txt"></td>
+              <td width="100px"><input type="text" name="cols#align" class="txt"></td>
+              <td width="80px" style="text-align:center"><input type="checkbox" name="cols#hidden" class="check"></td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+    </form>
+    <form name="form_3" id="form3" class="normal">
+      <div class="tp-info">表单配置</div>
+      <table class="form"  cellpadding="0" cellspacing="0">
+        <tr>
+          <td class="row"><table cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="100px"><span>页面名称</span></td>
+                <td width="220px"><input type="text" class="txt" name="name"/></td>
+                <td width="120px"><span>中文名称</span></td>
+                <td width="220px"><input type="text" class="txt" name="cname"/></td>
+              </tr>
+              <tr>
+                <td><span>页面标题</span></td>
+                <td colspan="3"><input type="text" class="txt" name="title"/></td>
+              </tr>
+              <tr>
+                <td><span>所属模块</span></td>
+                <td colspan="3"><ul>
+                    <li>
+                      <input type="radio" name="module" class="check" value="1"/>
+                      工作流</li>
+                    <li>
+                      <input type="radio" name="module"  class="check" value="2"/>
+                      系统定义</li>
+                    <li>
+                      <input type="radio" name="module"  class="check" value="3"/>
+                      人员机构</li>
+                    <li>
+                      <input type="radio" name="module"  class="check" value="4"/>
+                      财务管理</li>
+                    <br/>
+                    <li>
+                      <input type="radio" name="module"  class="check" value="5"/>
+                      物资管理</li>
+                    <li>
+                      <input type="radio" name="module"  class="check" value="6"/>
+                      运行管理</li>
+                    <li>
+                      <input type="radio" name="module"  class="check" value="7"/>
+                      报表统计</li>
+                  </ul></td>
+              </tr>
+              <tr>
+                <td><span>模板类别</span></td>
+                <td colspan="3"><ul>
+                    <li>
+                      <input type="radio" name="template" class="check" value="t1"/>
+                      模板一</li>
+                    <li>
+                      <input type="radio" name="template"  class="check" value="t2"/>
+                      模板二</li>
+                    <li>
+                      <input type="radio" name="template"  class="check" value="t3"/>
+                      模板三</li>
+                  </ul></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td class="row"><table cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="100px"><span>query url</span></td>
+                <td width="560px"><input type="text" class="txt" name="queryurl"/></td>
+              </tr>
+              <tr>
+                <td><span>add url</span></td>
+                <td><input type="text" class="txt" name="addurl"/></td>
+              </tr>
+              <tr>
+                <td><span>update url</span></td>
+                <td><input type="text" class="txt" name="updateurl"/></td>
+              </tr>
+              <tr>
+                <td><span>delete url</span></td>
+                <td><input type="text" class="txt" name="deleteurl"/></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div>
+<div class="lov-con" id="lov_con">
+	<div id="lov_sex" class="lov lov-list">
+    	<div>男</div>
+        <div>女</div>
+    </div>
+</div>
+<script src="../../../src/wbScreen/2013-8-25-dev/rs/js/lib.js"></script>
+<script src="../../../src/wbScreen/2013-8-25-dev/rs/js/tp.js"></script>
+<script src="../../../src/wbScreen/2013-8-25-dev/rs/js/tp_lov.js"></script>
+<script src="../../../src/wbScreen/2013-8-25-dev/rs/js/tp_form.js"></script>
+<script src="../../../src/wbScreen/2013-8-25-dev/rs/js/tp_steps.js"></script>
+<script src="../../../src/wbScreen/2013-8-25-dev/rs/js/tp_btns.js"></script>
+</body>
+</html>

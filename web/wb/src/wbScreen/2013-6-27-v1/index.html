@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="UTF-8">
+<title>WBScreen</title>
+<link rel="stylesheet" href="../../../ide/2013-6-27-v1/theme/style/index.css">
+<link rel="stylesheet" href="../../../ide/2013-6-27-v1/theme/style/pictogram-button.css">
+<style>
+#cloud9 .canvas { 
+    background: #f1f8fb;
+	transform:scale(0.3,0.3);
+}
+#cloud9 .icon {
+    height: 200px;
+    left:120px;
+    overflow: hidden;
+    top:52px;
+    width:300px;
+}
+  
+#cloud9 .cloud {
+    background: #298ccf;
+}
+#cloud9 .cloud1 {
+    border-radius:50%;
+    height: 130px;
+    top:53px;
+    width: 130px;
+}
+#cloud9 .cloud2 {
+    border-radius:50%;
+    height: 120px;
+    left: 179px;
+    top:62px;
+    width: 120px;
+}
+#cloud9 .cloud3 {
+    border-radius: 50%;
+    left: 84px;
+    height: 138px;
+    top: 0;
+    width: 138px;
+}
+#cloud9 .cloud4 {
+    border-radius: 140px/110px 110px 110px 120px;
+    box-shadow: 0 2px 0 #fff, 0 5px 5px RGBA(0,0,0,0.2);
+    clip: rect(30px, 300px, 140px, 0px);
+    height: 130px;
+    top: 59px;
+    width:298px;
+}
+#cloud9 .shine {
+    background-image: -ms-radial-gradient(70% 100%,RGBA(255,255,255,0) 70%, RGBA(255,255,225,0.05) 70%, RGBA(255,255,225,0.2) 100%);
+    background-image: -moz-radial-gradient(70% 100%,RGBA(255,255,255,0) 55%, RGBA(255,255,225,0.05) 55%, RGBA(255,255,225,0.2) 100%);
+    background-image: -o-radial-gradient(70% 100%,RGBA(255,255,255,0) 70%, RGBA(255,255,225,0.05) 70%, RGBA(255,255,225,0.2) 100%);
+    background-image: -webkit-radial-gradient(70% 100%,RGBA(255,255,255,0) 70%, RGBA(255,255,225,0.05) 70%, RGBA(255,255,225,0.2) 100%);
+    background-image: radial-gradient(70% 100%,RGBA(255,255,255,0) 70%, RGBA(255,255,225,0.05) 70%, RGBA(255,255,225,0.2) 100%);
+    -o-transform:scale(0.95);
+    -moz-transform:scale(0.95);
+    -ms-transform:scale(0.95);
+    -webkit-transform:scale(0.95);
+    transform:scale(0.95);
+}
+#cloud9 .icon .number {
+    background: #f6f6f6;
+}
+#cloud9 .number1 {
+    border-radius:50%;
+    box-shadow: inset 0 2px #fff, 0 -2px 2px RGBA(0,0,0,0.2);
+    clip: rect(-2px,92px,46px,0);
+    height: 92px;
+    left: 108px;
+    top: 26px;
+    width:92px;
+}
+#cloud9 .number2 {
+    border-radius:50% 50% 0;
+    box-shadow: -1px 0 0 RGBA(0,0,0,0.2);
+    clip: rect(46px,59px,92px,-2px);
+    height: 92px;
+    left: 108px;
+    top: 26px;
+    width:59px;
+}
+#cloud9 .number3 {
+    border-radius: 50%;
+    clip: rect(31px,80px,127px,36px);
+    height: 146px;
+    left: 115px;
+    top: 27px;
+    -o-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+    width: 80px;
+}
+#cloud9 .number4 {
+    clip: rect(31px,85px,135px,48px);
+    box-shadow: 1px 0 0 RGBA(0,0,0,0.2);
+}
+#cloud9 .number5 {
+    border-radius: 10px 50% 50% 50%;
+    height: 37px;
+    left: 131px;
+    top: 115px;
+    -o-transform: rotate(37deg);
+    -moz-transform: rotate(37deg);
+    -ms-transform: rotate(37deg);
+    -webkit-transform: rotate(37deg);
+    transform: rotate(37deg);
+    width: 15px;
+}
+#cloud9 .number6 {
+    border-radius: 50%;
+    box-shadow: 0 1px 0 RGBA(0,0,0,0.2);
+    height: 10px;
+    left: 130px;
+    top: 152px;
+    -o-transform: rotate(32deg);
+    -moz-transform: rotate(32deg);
+    -ms-transform: rotate(32deg);
+    -webkit-transform: rotate(32deg);
+    transform: rotate(32deg);
+    width: 27px;
+}
+#cloud9 .number7 {
+    border-radius: 50%;
+    box-shadow:0 0 2px RGBA(0,0,0,0.5) inset;
+    height: 36px;
+    left: 145px;
+    top: 56px;
+    -o-transform: rotate(-9deg);
+    -moz-transform: rotate(-9deg);
+    -ms-transform: rotate(-9deg);
+    -webkit-transform: rotate(-9deg);
+    transform: rotate(-9deg);
+    width: 20px;
+}
+/* general styles */
+.canvas { 
+    display: block;
+    overflow: hidden;
+    position: relative;
+    top: 0px;
+    text-indent:-9999px;
+    z-index: 10;
+}
+.icon, .icon * {
+    display: block;
+    position: absolute;
+}
+.monitor,
+.monitor .canvas {
+    height: 304px;
+    width:540px;
+}
+.monitor {
+    background: #000;
+    border:30px solid #000;
+    border-radius:20px;
+    float:left;
+    position:relative;
+}
+.monitor:before { /* shadow */
+    box-shadow: 0 360px 10px rgba(0,0,0,0.2);
+    border-radius:50%;
+    content: "#";
+    display: block;
+    height: 20px;
+    left: 30px;
+    position: absolute;
+    text-indent: -9999px;
+    width: 540px;
+}
+.monitor:after { /* shine */
+    background: -webkit-linear-gradient(top left, rgba(255,255,255,0) 60%, rgba(255,255,255,0.2) 60%, rgba(255,255,255,0) 100%);
+    border-radius:20px 20px 0 0;
+    height: 364px;
+    content: "#";
+    display: block;
+    position: absolute;
+    right: -30px;
+    text-indent: -9999px;
+    top:-30px;
+    width:600px;
+    z-index: 10;
+}
+</style>
+</head>
+<body class="con">
+<div class="top">
+  <div class="top-1"><div class="logo"> <div id="cloud9">
+        <div class="monitor">
+            <div class="canvas">
+                <div class="icon">
+                    <div class="cloud3 cloud"></div>
+                    <div class="cloud3 shine"></div>
+                    <div class="cloud1 cloud"></div>
+                    <div class="cloud2 cloud"></div>
+                    <div class="cloud4 cloud"></div>
+                    <div class="inner-glow"></div>
+                    <div class="cloud1 shine"></div>
+                    <div class="cloud2 shine"></div>
+                    <div class="number number1"></div>
+                    <div class="number number2"></div>
+                    <div class="number number3"></div>
+                    <div class="number number3 number4"></div>
+                    <div class="cloud number5"></div>
+                    <div class="number number6"></div>
+                    <div class="cloud number7"></div>
+                </div>
+            </div>
+        </div>
+    </div></div>
+  </div>
+  <div class="top-2"><div class="page-title">新建屏幕对象</div>
+  </div>
+  <div class="top-3"><div class="btn-add">新增</div>
+  </div>
+</div>
+<div class="middle">
+  <div class="right" id="right">
+    <div class="right-top">
+      <div class="right-title">
+        
+      </div>
+      <div class="btns">
+        <span class="btn-add">+</span>
+      </div>
+    </div>
+  </div>
+  <div class="left">111
+  </div>
+</div>
+<!--<div class="foot">
+</div>--> 
+<script type="text/javascript">
+	window.onload=init;
+	function $(id){
+		return document.getElementById(id);
+	}
+	function init(){
+		$("right").onclick=clickHandler;
+	}
+	
+	function clickHandler(){
+		var className=this.className;
+		if(className.indexOf("hide")<0)	this.className="right hide";
+		else	this.className="right";
+	}
+</script>
+</body>
+</html>

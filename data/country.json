@@ -1,0 +1,72 @@
+[
+  {
+    "id": "",
+    "name": "张三",
+    "type": 1,
+    "value": 1,
+    "dep": "dev"
+  },
+  {
+    "id": "2",
+    "name": "李四",
+    "type": 11,
+    "value": 1,
+    "dep": "xxzx"
+  },
+  {
+    "id": "3",
+	 "name": "王五",
+    "type": 11,
+    "value": 1,
+    "dep": "xxzx"
+  },
+  {
+    "id": "3",
+	 "name": "谢六",
+    "type": 11,
+    "value": 1,
+    "dep": "xxzx"
+  },
+  {
+    "id": "3",
+	 "name": "陈七",
+    "type": 11,
+    "value": 1,
+    "dep": "xxzx"
+  },
+  {
+    "id": "3",
+	 "name": "邓八",
+    "type": 11,
+    "value": 1,
+    "dep": "xxzx"
+  },
+  {
+    "id": "段九",
+	 "name": "王五",
+    "type": 11,
+    "value": 1,
+    "dep": "xxzx"
+  },
+  {
+    "id": "伊一",
+	 "name": "王五",
+    "type": 11,
+    "value": 1,
+    "dep": "xxzx"
+  },
+  {
+    "id": "宋二",
+	 "name": "王五",
+    "type": 11,
+    "value": 1,
+    "dep": "xxzx"
+  },
+  {
+    "id": "习二",
+	 "name": "王五",
+    "type": 11,
+    "value": 1,
+    "dep": "xxzx"
+  }
+]

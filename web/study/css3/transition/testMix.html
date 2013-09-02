@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: #999;
+}
+body {
+	position: relative;
+}
+.tree {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 240px;
+	background-color: #FFF;
+	z-index: 2;
+	cursor: default;
+	height: 100%;
+}
+.node {
+	z-index: 1;
+	padding-left: 24px;
+}
+.childs {
+	padding-left: 24px;
+}
+.tag ,.leaf{
+	height: 32px;
+	line-height: 32px;
+}
+.icon {
+	background-color: transparent;
+	float: left;
+	width: 0px;
+	height: 0px;
+	border-right: 12px solid #ccc;
+	border-top: 12px solid transparent;
+	transform: rotate(-45deg);
+	transform-origin: left bottom;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+.close .icon {
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+	transition-property: all;
+}
+.open .icon {
+	transform: rotate(0deg) translate(-3px,-3px);
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+	transition-property: all;
+	transform-origin: left bottom;
+}
+.open2 .childs2 {
+	transition-duration: 3s;
+	transition-timing-function: ease-in-out;
+	transition-property: all;
+	transition-delay: 0.2s;
+	height: 128px;
+}
+.open .childs .leaf{
+	transition-duration: .6s;
+	transition-timing-function: ease-in-out;
+	transition-property: all;
+	height: 32px;
+	width: 100%;
+	overflow: hidden;
+}
+.open .childs .leaf:nth-child(1){
+	transition-delay: 0.5s;
+}
+.open .childs .leaf:nth-child(2){
+	transition-delay: 0.4s;
+}
+.open .childs .leaf:nth-child(3){
+	transition-delay: 0.3s;
+}
+.open .childs .leaf:nth-child(4){
+	transition-delay: 0.2s;
+}
+.open .childs .leaf:nth-child(5){
+	transition-delay: 0.1s;
+}
+.open .childs .leaf:nth-child(6){
+	transition-delay: 0.0s;
+}
+.close .childs .leaf{
+	transition-duration: .3s;
+	transition-timing-function: ease-in-out;
+	transition-property: all;
+	height: 0px;
+	overflow: hidden;
+	width: 0px;
+	transform:translate(-18px,-12px);
+}
+.close .childs .leaf:nth-child(1){
+	transition-delay: 0.0s;
+}
+.close .childs .leaf:nth-child(2){
+	transition-delay: 0.1s;
+}
+.close .childs .leaf:nth-child(3){
+	transition-delay: 0.2s;
+}
+.close .childs .leaf:nth-child(4){
+	transition-delay: 0.3s;
+}
+.close .childs .leaf:nth-child(5){
+	transition-delay: 0.4s;
+}
+.close .childs .leaf:nth-child(6){
+	transition-delay: 0.5s;
+}
+</style>
+</head>
+
+<body>
+<div class="tree" id="tree">
+  <div class="node close">
+    <div class="tag">
+      <div class="icon"></div>系统管理
+    </div>
+    <div class="childs">
+      <div class="leaf">
+        账户管理
+      </div>
+      <div class="leaf">
+        角色管理
+      </div>
+      <div class="leaf">
+        授权管理
+      </div>
+    </div>
+  </div>
+  <div class="node open">
+    <div class="tag">
+      <div class="icon"></div>运行管理
+    </div>
+    <div class="childs">
+      <div class="leaf">
+        运行日志
+      </div>
+      <div class="leaf">
+        工作票
+      </div>
+      <div class="leaf">
+        操作票
+      </div>
+    </div>
+  </div>
+  <div class="node close">
+    <div class="tag">
+      <div class="icon"></div>物资管理
+    </div>
+    <div class="childs">
+      <div class="leaf">
+        物资台账
+      </div>
+      <div class="leaf">
+        仓库管理
+      </div>
+      <div class="leaf">
+        采购管理
+      </div>
+      <div class="leaf">
+        入库单
+      </div>
+      <div class="leaf">
+        出库单
+      </div>
+      <div class="leaf">
+        领料单
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+	var tree=document.getElementById("tree");
+	tree.onclick=handler;
+
+	function handler(evt){
+		var target=evt.target;
+		if(target.className.indexOf("node")<0)	target=target.parentNode;
+		if(target.className.indexOf("node")<0)	target=target.parentNode;
+		
+		if(target.className.indexOf("node")>=0){
+			var css=target.className;
+			//target.addEventListener("MSTransitionEnd",function(){target.className=css});
+			//target.onMSTransitionEnd=function(){alert("end");}
+	
+			if(css.indexOf("open")>=0){
+				target.className=css.replace("open","close");
+			}
+			else target.className=css.replace("close","open");
+		}
+		
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>对象管理页面创建向导</title>
+<link rel="stylesheet" type="text/css" href="rs/style/reset.css">
+<link rel="stylesheet" type="text/css" href="rs/icon/style.css">
+<link rel="stylesheet" type="text/css" href="rs/style/steps.css">
+<link rel="stylesheet" type="text/css" href="rs/style/tp.css">
+<link rel="stylesheet" type="text/css" href="rs0.2/layout.css">
+</head>
+
+<body>
+<div id="app" class="tp-con">
+  <div class="tp-top">
+    <div class="tp-steps">
+      <ul class="wb-steps" id="steps">
+        <li class="active" id="step1">基本信息</li>
+        <li class="normal" id="step2">列表配置 </li>
+        <li class="normal" id="step3">表单配置 </li>
+      </ul>
+    </div>
+    <div class="tp-btns"><span id="btn_save" class="icon-ok"></span><span id="btn_preview" class="icon-screen hide"></span><span id="btn_delete" class="icon-trash hide"></span>
+    </div>
+  </div>
+  <div class="tp-main">
+    <form class="form-con" id="form">
+      <div class="form-main active" id="form1">
+        <table class="tbl">
+          <tr>
+            <td></td>
+            <td class="lbl" width="100">页面名称</td>
+            <td class="txt" width="120"><input type="text" name="name" id="pageName"></td>
+            <td class="lbl" width="100">中文名称</td>
+            <td class="txt" width="120"><input type="text" name="cname"></td>
+              <td class="lbl" width="100">页面编码</td>
+            <td class="txt" width="120"><input type="text" name="code"></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="lbl">页面标题</td>
+            <td class="txt" colspan="5"><input type="text" name="title"></td>
+             
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+           <td class="lbl">功能描述</td>
+            <td class="txt" colspan="5"><input type="text" name="des"></td>
+            <td></td>
+          </tr>
+           <tr>
+            <td></td>
+            <td class="lbl">需求人</td>
+            <td class="txt"><input type="text" name="person1"></td>
+            <td class="lbl">提出时间</td>
+            <td class="txt" colspan="3"><input type="text" name="time1"></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="lbl">开发人</td>
+            <td class="txt"><input type="text" name="person2"></td>
+            <td class="lbl">开发时间</td>
+            <td class="txt" colspan="3"><input type="text" name="time2"></td>
+            <td></td>
+          </tr>
+           <tr>
+            <td></td>
+            <td class="lbl">维护人</td>
+            <td class="txt"><input type="text" name="person3"></td>
+            <td class="lbl">维护时间</td>
+            <td class="txt" colspan="3"><input type="text" name="time3"></td>
+            <td></td>
+          </tr>
+        </table>
+        <table class="tbl">
+          <tr>
+            <td></td>
+            <td class="lbl" width="120">查询服务URL</td>
+            <td class="txt" width="200"><input type="text" name="queryUrl"></td>
+            <td class="lbl" width="120">删除服务URL</td>
+            <td class="txt" width="220"><input type="text" name="deleteUrl"></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="lbl">新增服务URL</td>
+            <td class="txt"><input type="text" name="addUrl"></td>
+            <td class="lbl">修改服务URL</td>
+            <td class="txt"><input type="text" name="updateUrl"></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <div class="form-main normal" id="form2">
+        <table class="tbl">
+          <tr>
+            <td></td>
+            <td class="lbl" width="100px">列表名称</td>
+            <td class="txt" width="230px"></td>
+             <td class="lbl" width="100px">列表图标</td>
+            <td class="txt" width="230px"></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="lbl" width="100px">默认按钮</td>
+            <td class="txt" width="560px" colspan="3">
+            	<span class="radio">
+              <input type="checkbox" checked name="btnDefault" value="1">
+              新增</span><span class="radio">
+              <input type="checkbox"  name="btnDefault" value="2">
+              修改</span><span class="radio">
+              <input type="checkbox" checked name="btnDefault" value="3">
+              删除</span><span class="radio">
+              <input type="checkbox" checked name="btnDefault" value="4">
+              查询</span><span class="radio">
+              <input type="checkbox" checked name="btnDefault" value="5">
+              刷新</span>
+            </td>
+            <td></td>
+          </tr>
+        </table>
+        <table class="tbl">
+          <tr>
+            <td></td>
+            <td class="lbl noborder" width="100px">自定义列</td>
+            <td class="lbl" width="560px"></td>
+            <td></td>
+          </tr>
+        </table>
+        <table class="childTable" rows=3 name="columns">
+          <tr class="edit-add">
+            <td></td>
+            <td class="lbl" width="60">序号</td>
+            <td class="lbl" width="120px">属性名</td>
+            <td class="lbl" width="120px">属性类型</td>
+            <td class="lbl" width="120px">表头文字</td>
+            <td class="lbl" width="120px">列宽</td>
+            <td class="lbl" width="120px">对齐方式</td>
+            <td></td>
+          </tr>
+          <tr class="edit" style="display:none">
+            <td></td>
+            <td class="txt center seq"></td>
+            <td class="txt center"><input type="text" class="center" name="attr"></td>
+            <td class="txt center"><input type="text" class="center" name="text"></td>
+            <td class="txt center"><input type="text" class="left" name="type"></td>
+            <td class="txt left"><input type="text" class="right" name="width"></td>
+            <td class="txt center"><input type="text" class="center" lov="align" name="align"></td>
+            <td></td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td></td>
+            <td class="lbl noborder" width="100px">自定义按钮</td>
+            <td class="lbl" width="560px"></td>
+            <td></td>
+          </tr>
+        </table>
+        <table class="childTable" rows=3 name="btns">
+          <tr class="edit-add">
+            <td></td>
+            <td class="lbl" width="60">序号</td>
+            <td class="lbl" width="120px">ID</td>
+            <td class="lbl" width="120px">文本</td>
+            <td class="lbl" width="120px">样式</td>
+            <td class="lbl" width="120px">序号</td>
+            <td class="lbl" width="120px">处理事件</td>
+            <td></td>
+          </tr>
+          <tr class="edit" style="display:none">
+            <td></td>
+            <td class="txt center seq"></td>
+            <td class="txt center"><input type="text" class="center" name="id"></td>
+            <td class="txt center"><input type="text" class="center" name="text"></td>
+            <td class="txt center"><input type="text" class="left" name="style"></td>
+            <td class="txt left"><input type="text" class="right" name="num"></td>
+            <td class="txt center"><input type="text" class="center" lov="align" name="handler"></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+       <div class="form-main normal" id="form3" style="width:830px">
+        <table>
+          <tr>
+            <td></td>
+            <td class="lbl noborder" width="134px">自定义表单元素</td>
+            <td class="lbl" width="700px"></td>
+            <td></td>
+          </tr>
+        </table>
+        <table class="childTable" name="inputs">
+          <tr class="edit-add">
+            <td></td>
+            <td class="lbl" width="60">序号</td>
+            <td class="lbl" width="100px">元素标签</td>
+            <td class="lbl" width="100px">属性名称</td>
+            <td class="lbl" width="80px">元素类型</td>
+            <td class="lbl" width="60px">宽度</td>
+            <td class="lbl" width="60px">对齐</td>
+            <td class="lbl" width="50px">只读</td>
+            <td class="lbl" width="80px">值列表</td>
+            <td class="lbl" width="140px">取值URL</td>
+            <td class="lbl" width="100px">监听事件</td>
+            <td></td>
+          </tr>
+          <tr class="edit" style="display:none">
+            <td></td>
+            <td class="txt center seq"></td>
+            <td class="txt center"><input type="text" class="center" name="lbl"></td>
+            <td class="txt center"><input type="text" class="center" name="attr"></td>
+            <td class="txt center"><input type="text" class="center" name="type"></td>
+            <td class="txt left"><input type="text" name="width"></td>
+            <td class="txt center"><input type="text" lov="align" class="center" name="align"></td>
+            <td class="txt center"><input type="checkbox" class="center" name="readonly"></td>
+            <td class="txt left"><input type="text" name="lov"></td>
+            <td class="txt left"><input type="text" name="dataUrl"></td>
+            <td class="txt left"><input type="text" name="handler"></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="lov-con" id="lov_con">
+  <div id="lov_sex" class="lov lov-list">
+    <div>男</div>
+    <div>女</div>
+  </div>
+  <div id="lov_align" class="lov lov-list">
+    <div>左</div>
+    <div>中</div>
+    <div>右</div>
+  </div>
+</div>
+<script src="rs/js/lib.js"></script>
+<script src="rs/js/tp.js"></script>
+<script src="rs/js/form.js"></script>
+<script src="rs/js/tp_lov.js"></script>
+<script src="rs/js/tp_form.js"></script>
+<script src="rs/js/tp_steps.js"></script>
+<script src="rs/js/tp_btns.js"></script>
+</body>
+</html>

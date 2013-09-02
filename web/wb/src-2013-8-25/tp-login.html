@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>登录页面创建向导</title>
+<link rel="stylesheet" type="text/css" href="../../../src/wbScreen/2013-8-25-dev/rs/style/reset.css">
+<link rel="stylesheet" type="text/css" href="../../../src/wbScreen/2013-8-25-dev/rs/icon/style.css">
+<link rel="stylesheet" type="text/css" href="../../../src/wbScreen/2013-8-25-dev/rs/style/steps.css">
+<link rel="stylesheet" type="text/css" href="../../../src/wbScreen/2013-8-25-dev/rs/style/tp.css">
+<link rel="stylesheet" type="text/css" href="../../../src/wbScreen/2013-8-25-dev/rs/style/form.css">
+</head>
+
+<body>
+<div id="app" class="tp-con">
+  <div class="tp-top">
+    <div class="tp-steps">
+      <ul class="wb-steps" id="steps">
+        <li class="active" id="step1">登录模板-1 配置向导</li>
+      </ul>
+    </div>
+    <div class="tp-btns"><span id="btn_save" class="icon-ok"></span><span id="btn_preview" class="icon-screen hide"></span><span id="btn_delete" class="icon-trash hide"></span> </div>
+  </div>
+  <div class="tp-main">
+    <form name="form_1" id="form1" class="active">
+      <div class="tp-info">登录模板-1</div>
+      <table class="form"  cellpadding="0" cellspacing="0">
+        <tr>
+          <td class="row"><table cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="100px"><span>页面名称</span></td>
+                <td width="220px"><input type="text" class="txt" name="name"/></td>
+                <td width="120px"><span>中文名称</span></td>
+                <td width="220px"><input type="text" class="txt" name="cname"/></td>
+              </tr>
+              <tr>
+                <td><span>页面标题</span></td>
+                <td colspan="3"><input type="text" class="txt" name="title"/></td>
+              </tr>
+              <tr>
+                <td><span>所属模块</span></td>
+                <td colspan="3"><ul>
+                    <li>
+                      <input type="radio" name="module" class="check" value="1"/>
+                      工作流</li>
+                    <li>
+                      <input type="radio" name="module"  class="check" value="2"/>
+                      系统定义</li>
+                    <li>
+                      <input type="radio" name="module"  class="check" value="3"/>
+                      人员机构</li>
+                    <li>
+                      <input type="radio" name="module"  class="check" value="4"/>
+                      财务管理</li>
+                    <br/>
+                    <li>
+                      <input type="radio" name="module"  class="check" value="5"/>
+                      物资管理</li>
+                    <li>
+                      <input type="radio" name="module"  class="check" value="6"/>
+                      运行管理</li>
+                    <li>
+                      <input type="radio" name="module"  class="check" value="7"/>
+                      报表统计</li>
+                  </ul></td>
+              </tr>
+              <tr>
+                <td><span>模板类别</span></td>
+                <td colspan="3"><ul>
+                    <li>
+                      <input type="radio" name="template" class="check" value="t1"/>
+                      模板一</li>
+                    <li>
+                      <input type="radio" name="template"  class="check" value="t2"/>
+                      模板二</li>
+                    <li>
+                      <input type="radio" name="template"  class="check" value="t3"/>
+                      模板三</li>
+                  </ul></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td class="row"><table cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="160px"><span>登录提交地址</span></td>
+                <td width="500px"><input type="text" class="txt" name="queryurl"/></td>
+              </tr>
+              <tr>
+                <td><span>成功跳转地址</span></td>
+                <td><input type="text" class="txt" name="addurl"/></td>
+              </tr>
+              <tr>
+                <td><span>失败跳转地址</span></td>
+                <td><input type="text" class="txt" name="updateurl"/></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div>
+</div>
+<script src="../../../src/wbScreen/2013-8-25-dev/rs/js/lib.js"></script> 
+<script src="../../../src/wbScreen/2013-8-25-dev/rs/js/tp.js"></script> 
+<script src="../../../src/wbScreen/2013-8-25-dev/rs/js/tp_form.js"></script> 
+<script src="../../../src/wbScreen/2013-8-25-dev/rs/js/tp_login_steps.js"></script>
+<script src="../../../src/wbScreen/2013-8-25-dev/rs/js/tp_btns.js"></script>
+
+</body>
+</html>

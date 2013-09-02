@@ -1,0 +1,232 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: #727b7f;
+	color: #FFF;
+}
+.center {
+	height: 480px;
+	width: 960px;
+	position: relative;
+	top: 50%;
+	
+	margin-top: -240px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.center>div {
+	float: left;
+}
+.area1 {
+	width: 726px;
+}
+.area2 {
+	width: 234px;
+	float: right;
+}
+.area3 {
+}
+.area1 >div{
+	float: left;
+	height: 108px;
+	background-color: #4cc0ff;
+	margin-left: -4px;
+	margin-top: -4px;
+	border: 4px solid #676767;
+	position: relative;
+	z-index: 10;
+	overflow: hidden;
+	transition: 0.3s all ease-in-out;
+}
+.area1 div p{
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	cursor: default;
+	z-index: 3;
+	width: 100%;
+	margin: 0;
+	position: absolute;
+	padding: 0;
+}
+.area1 div p i{
+	font-style: normal;
+	padding-left: 12px;
+	padding-right: 12px;
+	font-family: Arial;
+	font-size: 24px;
+}
+.area1 div p:first-child {
+	font-size: 32px;
+	z-index: 2;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	line-height: 72px;
+}
+.area1 div p:last-child {
+	height: 108px;
+	width: 100%;
+	z-index: 3;
+	background-color: rgba(11,11,11,0.6);
+	line-height: 108px;
+	font-size: 24px;
+	font-weight: normal;
+	top: 128px;
+	transition: 0.3s all ease-in-out;
+}
+.area1 div:hover p:first-child {
+	opacity: 0.1;
+}
+.area1 div:hover p:last-child {
+	top: 0px;
+}
+.row1 {
+}
+.col1{
+	margin-left: 0px;
+}
+.area1 >div:hover{
+	/*background-color: #484848;*/
+	z-index: 20;
+}
+
+.area2 >div{
+	float: left;
+	height: 108px;
+	background-color: #00a5ff;
+	margin-left: -4px;
+	margin-top: -4px;
+	border: 4px solid #676767;
+	position: relative;
+	z-index: 10;
+	overflow: hidden;
+	transition: 0.3s all ease-in-out;
+}
+.area2 div p{
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	cursor: default;
+	z-index: 3;
+	width: 100%;
+	margin: 0;
+	position: absolute;
+	padding: 0;
+}
+.area2 div p i{
+	font-style: normal;
+	padding-left: 12px;
+	padding-right: 12px;
+	font-family: Arial;
+	font-size: 24px;
+}
+.area2 div p:first-child {
+	font-size: 32px;
+	z-index: 2;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	line-height: 72px;
+}
+.area2 div p:last-child {
+	height: 108px;
+	width: 100%;
+	z-index: 3;
+	background-color: rgba(11,11,11,0.6);
+	line-height: 108px;
+	font-size: 24px;
+	font-weight: normal;
+	top: 128px;
+	transition: 0.3s all ease-in-out;
+}
+.area2 div:hover p:first-child {
+	opacity: 0.1;
+}
+.area2 div:hover p:last-child {
+	top: 0px;
+}
+.item1 {
+	width: 220px;
+	
+}
+.item2 {
+	width: 220px;
+	
+}
+.item3 {
+	width: 108px;
+	
+}
+.item4 {
+	width: 108px;
+	
+}
+.item5 {
+	width: 108px;
+	
+}
+.item6 {
+	width: 108px;
+	
+}
+.item7 {
+	width: 220px;
+	
+}
+.item8 {
+	width: 108px;
+	
+}
+.item9 {
+	width: 108px;
+	
+}
+.item10 {
+	width: 220px;
+	
+}
+.item11 {
+	width: 220px;
+	
+}
+.item12 {
+	width: 220px;
+	
+}
+.item13 {
+	width: 220px;
+	
+}
+.item14 {
+	width: 220px;
+	
+}
+.item15 {
+	width: 220px;
+	
+}
+
+.item21 {
+	width: 220px;
+	
+}
+.item22 {
+	width: 220px;
+	
+}.item23 {
+	width: 108px;
+	
+}.item24 {
+	width: 108px;
+	
+}.item25 {
+	width: 108px;
+	
+}.item26 {
+	width: 108px;
+	
+}

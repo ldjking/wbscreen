@@ -1,0 +1,309 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../../../../../src/wbScreen/2013-8-25-dev/rs/icon/fonts/icomoon.eot');
+	src:url('../../../../../src/wbScreen/2013-8-25-dev/rs/icon/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+url('../../../../../src/wbScreen/2013-8-25-dev/rs/icon/fonts/icomoon.woff') format('woff'),
+url('../../../../../src/wbScreen/2013-8-25-dev/rs/icon/fonts/icomoon.ttf') format('truetype'),
+url('../../../../../src/wbScreen/2013-8-25-dev/rs/icon/fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-rss, .icon-chat, .icon-bookmark, .icon-book, .icon-cog, .icon-monitor, .icon-star, .icon-heart, .icon-th-large, .icon-comment, .icon-comments, .icon-thumbs-up, .icon-thumbs-down, .icon-cogs, .icon-edit, .icon-desktop, .icon-power, .icon-users, .icon-wrench, .icon-truck, .icon-bookmark-2, .icon-bookmarks, .icon-tree, .icon-wrench-2, .icon-stats, .icon-database, .icon-cog-2, .icon-wrench-3, .icon-chart, .icon-umbrella, .icon-star-2, .icon-address-book, .icon-calendar, .icon-enter, .icon-exit, .icon-stats-2, .icon-bars, .icon-alarm, .icon-table, .icon-screen, .icon-list, .icon-dollar, .icon-coins, .icon-profile, .icon-justice, .icon-stats-3, .icon-stats-4, .icon-abacus, .icon-tools, .icon-chart-2, .icon-suitcase, .icon-suitcase-2, .icon-stocks, .icon-barcode, .icon-cash, .icon-paintbrush, .icon-resellerhosting, .icon-user, .icon-star-empty, .icon-star-3, .icon-folder-close-alt, .icon-folder-open-alt, .icon-star-empty-2, .icon-star-4, .icon-switch, .icon-wrench-4, .icon-angle-left, .icon-angle-right, .icon-angle-up, .icon-angle-down, .icon-home, .icon-home-2, .icon-home-3, .icon-cloud, .icon-apple, .icon-forward, .icon-paperclip, .icon-trash, .icon-ok, .icon-remove, .icon-checkmark, .icon-checkmark-2, .icon-cancel, .icon-caret-down, .icon-caret-up, .icon-caret-left, .icon-caret-right, .icon-info, .icon-exclamation, .icon-question {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-rss:before {
+	content: "\f17b";
+}
+.icon-chat:before {
+	content: "\e000";
+}
+.icon-bookmark:before {
+	content: "\e001";
+}
+.icon-book:before {
+	content: "\e002";
+}
+.icon-cog:before {
+	content: "\e003";
+}
+.icon-monitor:before {
+	content: "\e004";
+}
+.icon-star:before {
+	content: "\e005";
+}
+.icon-heart:before {
+	content: "\e006";
+}
+.icon-th-large:before {
+	content: "\f009";
+}
+.icon-comment:before {
+	content: "\f075";
+}
+.icon-comments:before {
+	content: "\f086";
+}
+.icon-thumbs-up:before {
+	content: "\f087";
+}
+.icon-thumbs-down:before {
+	content: "\f088";
+}
+.icon-cogs:before {
+	content: "\f085";
+}
+.icon-edit:before {
+	content: "\f044";
+}
+.icon-desktop:before {
+	content: "\f108";
+}
+.icon-power:before {
+	content: "\e007";
+}
+.icon-users:before {
+	content: "\e00d";
+}
+.icon-wrench:before {
+	content: "\e008";
+}
+.icon-truck:before {
+	content: "\e009";
+}
+.icon-bookmark-2:before {
+	content: "\e00a";
+}
+.icon-bookmarks:before {
+	content: "\e00b";
+}
+.icon-tree:before {
+	content: "\e00c";
+}
+.icon-wrench-2:before {
+	content: "\e00e";
+}
+.icon-stats:before {
+	content: "\e00f";
+}
+.icon-database:before {
+	content: "\e010";
+}
+.icon-cog-2:before {
+	content: "\e011";
+}
+.icon-wrench-3:before {
+	content: "\e012";
+}
+.icon-chart:before {
+	content: "\e013";
+}
+.icon-umbrella:before {
+	content: "\e014";
+}
+.icon-star-2:before {
+	content: "\e015";
+}
+.icon-address-book:before {
+	content: "\e016";
+}
+.icon-calendar:before {
+	content: "\e017";
+}
+.icon-enter:before {
+	content: "\e018";
+}
+.icon-exit:before {
+	content: "\e019";
+}
+.icon-stats-2:before {
+	content: "\e01a";
+}
+.icon-bars:before {
+	content: "\e01b";
+}
+.icon-alarm:before {
+	content: "\e01c";
+}
+.icon-table:before {
+	content: "\f0ce";
+}
+.icon-screen:before {
+	content: "\e01d";
+}
+.icon-list:before {
+	content: "\e01e";
+}
+.icon-dollar:before {
+	content: "\e021";
+}
+.icon-coins:before {
+	content: "\e022";
+}
+.icon-profile:before {
+	content: "\e023";
+}
+.icon-justice:before {
+	content: "\e024";
+}
+.icon-stats-3:before {
+	content: "\e025";
+}
+.icon-stats-4:before {
+	content: "\e026";
+}
+.icon-abacus:before {
+	content: "\e027";
+}
+.icon-tools:before {
+	content: "\e028";
+}
+.icon-chart-2:before {
+	content: "\e029";
+}
+.icon-suitcase:before {
+	content: "\e02a";
+}
+.icon-suitcase-2:before {
+	content: "\e02b";
+}
+.icon-stocks:before {
+	content: "\f250";
+}
+.icon-barcode:before {
+	content: "\f276";
+}
+.icon-cash:before {
+	content: "\f27b";
+}
+.icon-paintbrush:before {
+	content: "\f1e8";
+}
+.icon-resellerhosting:before {
+	content: "\f03a";
+}
+.icon-user:before {
+	content: "\e02c";
+}
+.icon-star-empty:before {
+	content: "\e02d";
+}
+.icon-star-3:before {
+	content: "\e02e";
+}
+.icon-folder-close-alt:before {
+	content: "\f114";
+}
+.icon-folder-open-alt:before {
+	content: "\f115";
+}
+.icon-star-empty-2:before {
+	content: "\f006";
+}
+.icon-star-4:before {
+	content: "\f005";
+}
+.icon-switch:before {
+	content: "\e038";
+}
+.icon-wrench-4:before {
+	content: "\f05b";
+}
+.icon-angle-left:before {
+	content: "\f104";
+}
+.icon-angle-right:before {
+	content: "\f105";
+}
+.icon-angle-up:before {
+	content: "\f106";
+}
+.icon-angle-down:before {
+	content: "\f107";
+}
+.icon-home:before {
+	content: "\e02f";
+}
+.icon-home-2:before {
+	content: "\e030";
+}
+.icon-home-3:before {
+	content: "\e031";
+}
+.icon-cloud:before {
+	content: "\e036";
+}
+.icon-apple:before {
+	content: "\e037";
+}
+.icon-forward:before {
+	content: "\e039";
+}
+.icon-paperclip:before {
+	content: "\e032";
+}
+.icon-trash:before {
+	content: "\f014";
+}
+.icon-ok:before {
+	content: "\f00c";
+}
+.icon-remove:before {
+	content: "\f00d";
+}
+.icon-checkmark:before {
+	content: "\e01f";
+}
+.icon-checkmark-2:before {
+	content: "\e020";
+}
+.icon-cancel:before {
+	content: "\e033";
+}
+.icon-caret-down:before {
+	content: "\f0d7";
+}
+.icon-caret-up:before {
+	content: "\f0d8";
+}
+.icon-caret-left:before {
+	content: "\f0d9";
+}
+.icon-caret-right:before {
+	content: "\f0da";
+}
+.icon-info:before {
+	content: "\f129";
+}
+.icon-exclamation:before {
+	content: "\f12a";
+}
+.icon-question:before {
+	content: "\f128";
+}

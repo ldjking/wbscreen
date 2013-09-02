@@ -1,0 +1,177 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../../../../src/template2/src/font/font1.eot');
+	src:url('../../../../src/template2/src/font/font1.eot?#iefix') format('embedded-opentype'),
+url('../../../../src/template2/src/font/font1.woff') format('woff'),
+url('../../../../src/template2/src/font/font1.ttf') format('truetype'),
+url('../../../../src/template2/src/font/font1.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-home, .icon-home-2, .icon-home-3, .icon-redo, .icon-undo, .icon-forward, .icon-reply, .icon-users, .icon-user, .icon-user-2, .icon-switch, .icon-enter, .icon-exit, .icon-wrench, .icon-flag, .icon-bookmark, .icon-bookmarks, .icon-cog, .icon-switch-2, .icon-trashcan, .icon-forward-2, .icon-arrow-right, .icon-arrow-left, .icon-arrow-up, .icon-checkmark, .icon-cancel, .icon-paperclip, .icon-cog-2, .icon-star, .icon-folder-close-alt, .icon-folder-open-alt, .icon-expand-alt, .icon-collapse-alt, .icon-envelope-alt, .icon-folder-open, .icon-folder-close, .icon-question-sign, .icon-cog-3, .icon-off, .icon-check, .icon-signout, .icon-upload-alt, .icon-sitemap, .icon-question, .icon-info, .icon-exclamation {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-home:before {
+	content: "\e000";
+}
+.icon-home-2:before {
+	content: "\e001";
+}
+.icon-home-3:before {
+	content: "\e002";
+}
+.icon-redo:before {
+	content: "\e003";
+}
+.icon-undo:before {
+	content: "\e004";
+}
+.icon-forward:before {
+	content: "\e005";
+}
+.icon-reply:before {
+	content: "\e006";
+}
+.icon-users:before {
+	content: "\e007";
+}
+.icon-user:before {
+	content: "\e008";
+}
+.icon-user-2:before {
+	content: "\e009";
+}
+.icon-switch:before {
+	content: "\e00a";
+}
+.icon-enter:before {
+	content: "\e00b";
+}
+.icon-exit:before {
+	content: "\e00c";
+}
+.icon-wrench:before {
+	content: "\e00d";
+}
+.icon-flag:before {
+	content: "\e00e";
+}
+.icon-bookmark:before {
+	content: "\e00f";
+}
+.icon-bookmarks:before {
+	content: "\e010";
+}
+.icon-cog:before {
+	content: "\e011";
+}
+.icon-switch-2:before {
+	content: "\e012";
+}
+.icon-trashcan:before {
+	content: "\e013";
+}
+.icon-forward-2:before {
+	content: "\e014";
+}
+.icon-arrow-right:before {
+	content: "\e015";
+}
+.icon-arrow-left:before {
+	content: "\e016";
+}
+.icon-arrow-up:before {
+	content: "\e017";
+}
+.icon-checkmark:before {
+	content: "\e018";
+}
+.icon-cancel:before {
+	content: "\e019";
+}
+.icon-paperclip:before {
+	content: "\e01a";
+}
+.icon-cog-2:before {
+	content: "\e01b";
+}
+.icon-star:before {
+	content: "\e01c";
+}
+.icon-folder-close-alt:before {
+	content: "\f114";
+}
+.icon-folder-open-alt:before {
+	content: "\f115";
+}
+.icon-expand-alt:before {
+	content: "\f116";
+}
+.icon-collapse-alt:before {
+	content: "\f117";
+}
+.icon-envelope-alt:before {
+	content: "\f0e0";
+}
+.icon-folder-open:before {
+	content: "\f07c";
+}
+.icon-folder-close:before {
+	content: "\f07b";
+}
+.icon-question-sign:before {
+	content: "\f059";
+}
+.icon-cog-3:before {
+	content: "\f013";
+}
+.icon-off:before {
+	content: "\f011";
+}
+.icon-check:before {
+	content: "\f046";
+}
+.icon-signout:before {
+	content: "\f08b";
+}
+.icon-upload-alt:before {
+	content: "\f093";
+}
+.icon-sitemap:before {
+	content: "\f0e8";
+}
+.icon-question:before {
+	content: "\f128";
+}
+.icon-info:before {
+	content: "\f129";
+}
+.icon-exclamation:before {
+	content: "\f12a";
+}

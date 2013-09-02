@@ -1,0 +1,126 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+.tree {
+	padding: 12px;
+	padding-left: 16px;
+	cursor: pointer;
+}
+.tree .node{
+	height: 32px;
+	margin-bottom: 0px;
+	line-height: 32px;
+}
+.tree .leaf{
+	height: 32px;
+	margin-bottom: 0px;
+	line-height: 32px;
+}
+.tree .text{
+	color: #666;
+	cursor: pointer;
+}
+.tree .text.active{
+	color: #008CBB;
+}
+.tree .text:hover{
+	color: #000;
+}
+.open {
+
+}
+.open >.state{
+	position: relative;
+	z-index: 1;
+	cursor: default;
+
+}
+.open >.state :before{
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	content: "";
+	left: 10px;
+	top: 10px;
+	border-top: 5px solid transparent;
+	border-left: 8px solid rgba(10,11,12,0.8);
+	border-bottom: 5px solid transparent;
+	z-index: 2;
+
+}
+.open >.state :after{
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	content: "";
+	left: 11px;
+	top: 11px;
+	border-top: 4px solid transparent;
+	border-left: 6px solid #fff;
+	border-bottom: 4px solid transparent;
+	z-index: 3;
+
+}
+
+.close {
+
+}
+.close >.state{
+	position: relative;
+	z-index: 1;
+	cursor: default;
+}
+.close >.state :before{
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	content: "";
+	left: 10px;
+	top: 11px;
+	border-left: 7px solid transparent;
+	border-bottom: 7px solid rgba(190,191,192,0.8);
+	z-index: 2;
+
+}
+.close >.state :after{
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	content: "";
+	left: 10px;
+	top: 11px;
+	border-left: 7px solid transparent;
+	border-bottom: 7px solid rgba(100,100,100,0.8);
+	z-index: 2;
+
+}
+.leaf >.state{
+	position: relative;
+	z-index: 1;
+	cursor: default;
+}
+.leaf >.state :before{
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	content: "";
+	left: 10px;
+	top: 11px;
+	border: 1px solid #777;
+	z-index: 2;
+	text-align: center;
+}
+.tree .text{
+	padding-left: 26px;
+	font-size: 14px;
+	z-index: 1;
+}
+.lvl2 {
+	padding-left: 24px;
+}
+.hide {
+	display: none;
+
+}

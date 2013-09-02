@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WBScreen 界面设计</title>
+<link rel="stylesheet" type="text/css" href="../../../src/wbScreen/2013-8-25-dev/rs/style/reset.css">
+<link rel="stylesheet" type="text/css" href="../../../src/wbScreen/2013-8-25-dev/rs/icon/style.css">
+<link rel="stylesheet" type="text/css" href="../../../src/wbScreen/2013-8-25-dev/rs/style/index.css">
+<link rel="stylesheet" type="text/css" href="../../../src/wbScreen/2013-8-25-dev/rs/style/menu.css">
+<link rel="stylesheet" type="text/css" href="../../../src/wbScreen/2013-8-25-dev/rs/style/add.css">
+</head>
+<body>
+<div class="w-con">
+  <div class="w-left wLeft" id="w_left">
+    <div class="w-logo" id="logo"> WBScreen </div>
+    <div class="wb-navs" id="navs">
+      <ul class="wb-menu" id="wbMenu">
+        <li class="item1">
+          <label class="icon-suitcase">工作流 </label>
+          <ul id="item1">
+          </ul>
+        </li>
+        <li class="item2">
+          <label class="icon-tools">系统定义 </label>
+          <ul id="item2">
+            <li>标签定义</li>
+            <li>消息定义</li>
+            <li>值列表定义</li>
+          </ul>
+        </li>
+        <li class="item3">
+          <label class="icon-tree">人员机构 </label>
+          <ul id="item3">
+          </ul>
+        </li>
+        <li class="item4">
+          <label class="icon-abacus">财务管理</label>
+          <ul id="item4">
+          </ul>
+        </li>
+        <li class="item5">
+          <label class="icon-star-4">物资管理</label>
+          <ul id="item5">
+          </ul>
+        </li>
+        <li class="item6">
+          <label class="icon-cogs">运行管理</label>
+          <ul id="item6">
+          </ul>
+        </li>
+        <li class="item7">
+          <label class="icon-stats-2">报表统计</label>
+          <ul id="item7">
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="w-right" id="w_right"><!--index里要维护多个iframe  每个模板都是一个iframe-->
+    <div id="tpAll">
+      <div class="w-add" id="w_add">
+        <div class="w-right-top"> 创建一个新页面 </div>
+        <!--如何让按钮更加迷人-->
+        <div class="w-main-top"> 全部模板 </div>
+        <div class="w-main" id="tpAll_main">
+        </div>
+      </div>
+    </div>
+  </div>
+  <a id="wGotop" class="w-gotop icon-angle-up" href="#w_right"></a> </div>
+<script src="../../../src/wbScreen/2013-8-25-dev/rs/js/lib.js"></script> 
+<script src="../../../src/wbScreen/2013-8-25-dev/rs/js/index.js"></script> 
+<script src="../../../src/wbScreen/2013-8-25-dev/rs/js/index_nav.js"></script>
+<script src="../../../src/wbScreen/2013-8-25-dev/rs/js/index_tpdef.js"></script>
+<script src="../../../src/wbScreen/2013-8-25-dev/rs/js/index_tp.js"></script>
+</body>
+</html>

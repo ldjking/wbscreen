@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<script type="text/javascript">
+	var g={};
+	var cache={};
+	var map={a:1,b:2,c:"c"};
+	function loadRs(name){
+		if(!cache[name]){
+			//alert("cache have no:"+name);
+			cache[name]=map[name];
+		}
+		return cache[name];
+	}
+	function f_rs(name){
+		return function(){return loadRs(name)};
+	}
+	
+	for(var p in map){
+		Object.defineProperty(g,p,{get:f_rs(p),enumerable:true});
+	}
+	
+	for(var p in cache){
+		//alert("cache1."+p);
+	}
+	
+	for(var p in g){
+		alert(p+":"+g[p]);
+	}
+	
+	for(var p in cache){
+		//alert("cache2."+p);
+	}
+
+	//alert(g.c);
+</script>
+</body>
+</html>

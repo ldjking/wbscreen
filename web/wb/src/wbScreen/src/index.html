@@ -1,0 +1,257 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>新增表单</title>
+<link rel="stylesheet" type="text/css" href="../../../src/wbScreen/src/theme/style/reset.css">
+<link rel="stylesheet" type="text/css" href="../../../src/wbScreen/src/theme/icon/style.css">
+<link rel="stylesheet" type="text/css" href="../../../src/wbScreen/src/theme/style/navs2.css">
+<link rel="stylesheet" type="text/css" href="../../../src/wbScreen/src/theme/style/steps.css">
+<link rel="stylesheet" type="text/css" href="../../../src/wbScreen/src/theme/style/intro.css">
+<link rel="stylesheet" type="text/css" href="../../../src/wbScreen/src/theme/style/layout.css">
+</head>
+<body>
+<div class="wb-top-bg"></div>
+<div class="wb-con">
+  <div class="wb-top">
+    <ul class="wb-steps hide" id="steps">
+      <li class="a2" id="step1">基本信息</li>
+      <li class="a1" id="step2">列表配置 </li>
+      <li class="a1" id="step3">表单配置 </li>
+      <li class="a1 hide">子表配置 </li>
+      <li class="a1" id="step4">自定义事件 </li>
+    </ul>
+    <div class="wb-btns" id="btns">
+      <div class="btn-add icon-plus " id="btn-add"></div>
+      <div class="btn-save icon-ok hide" id="btn-save"></div>
+      <div class="btn-update icon-ok hide" id="btn-update"></div>
+      <div class="btn-rm icon-trashcan hide" id="btn-rm"></div>
+      <div class="btn-view icon-screen hide" id="btn-view"></div>
+      <div class="btn-exit icon-exit hide" id="btn-exit"></div>
+    </div>
+  </div>
+  <div class="wb-left">
+    <div class="wb-logo" id="logo">WBScreen</div>
+    <div class="wb-navs" id="navs">
+      <ul class="wb-menu">
+        <li class="item1"><a href="#item1" class="icon-suitcase">工作流 </a>
+          <ul id="item1">
+          </ul>
+        </li>
+        <li class="item2"><a href="#item2" class="icon-tools">系统定义 </a>
+          <ul id="item2">
+          </ul>
+        </li>
+        <li class="item3"><a href="#item3" class="icon-tree">人员机构 </a>
+          <ul id="item3">
+          </ul>
+        </li>
+        <li class="item4"><a href="#item4" class="icon-abacus">财务管理</a>
+          <ul id="item4">
+          </ul>
+        </li>
+        <li class="item5"><a href="#item5" class="icon-star-4">物资管理</a>
+          <ul id="item5">
+          </ul>
+        </li>
+        <li class="item6"><a href="#item6" class="icon-cogs">运行管理</a>
+          <ul id="item6">
+          </ul>
+        </li>
+        <li class="item7"><a href="#item7" class="icon-stats-2">报表统计</a>
+          <ul id="item7">
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="wb-main" id="wb-main">
+    <div class="paper" id="paper_index"></div>
+    <div class="paper hide" id="form_add"></div>
+    <div class="paper hide" id="paper-edit1">
+      <form name="form-edit1" id="form-edit1">
+        <table class="form"  cellpadding="0" cellspacing="0">
+          <tr>
+            <td class="row"><table cellpadding="0" cellspacing="0">
+                              <tr>
+                  <td width="100px"><span>页面名称</span></td>
+                  <td width="220px"><input type="text" class="txt" name="name"/></td>
+                  <td width="120px"><span>中文名称</span></td>
+                  <td width="220px"><input type="text" class="txt" name="cname"/></td>
+                </tr>
+                <tr>
+                   <td><span>页面标题</span></td>
+                  <td colspan="3"><input type="text" class="txt" name="title"/></td>
+                  </tr>
+                <tr>
+                  <td><span>所属模块</span></td>
+                  <td colspan="5"><ul>
+                      <li>
+                        <input type="radio" name="module" class="check" value="1"/>
+                        工作流</li>
+                      <li>
+                        <input type="radio" name="module"  class="check" value="2"/>
+                        系统定义</li>
+                      <li>
+                        <input type="radio" name="module"  class="check" value="3"/>
+                        人员机构</li>
+                      <li>
+                        <input type="radio" name="module"  class="check" value="4"/>
+                        财务管理</li>
+                      <br/>
+                      <li>
+                        <input type="radio" name="module"  class="check" value="5"/>
+                        物资管理</li>
+                      <li>
+                        <input type="radio" name="module"  class="check" value="6"/>
+                        运行管理</li>
+                      <li>
+                        <input type="radio" name="module"  class="check" value="7"/>
+                        报表统计</li>
+                    </ul></td>
+                </tr>
+                <tr>
+                  <td><span>模板类别</span></td>
+                  <td colspan="5"><ul>
+                      <li>
+                        <input type="radio" name="template" class="check" value="t1"/>
+                        模板一</li>
+                      <li>
+                        <input type="radio" name="template"  class="check" value="t2"/>
+                        模板二</li>
+                      <li>
+                        <input type="radio" name="template"  class="check" value="t3"/>
+                        模板三</li>
+                    </ul></td>
+                </tr>
+              </table></td>
+          </tr>
+          <tr>
+            <td class="row"><table cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="100px"><span>需求提出人</span></td>
+                  <td width="220px"><input type="text" class="txt" name="person1"/></td>
+                  <td width="120px"><span>需求提出时间</span></td>
+                  <td width="220px"><input type="text" class="txt" name="time1"/></td>
+                </tr>
+                <tr>
+                  <td><span>需求描述</span></td>
+                  <td colspan="3"><div style="min-height:80px">
+                      <input type="text" class="txt" name="des1"/>
+                    </div></td>
+                </tr>
+                <tr>
+                  <td><span>开发人</span></td>
+                  <td><input type="text" class="txt" name="person2"/></td>
+                  <td><span>开发完成时间</span></td>
+                  <td><input type="text" class="txt" name="time2"/></td>
+                </tr>
+                <tr>
+                  <td><span>开发说明</span></td>
+                  <td colspan="3"><div style="min-height:80px">
+                      <input type="text" class="txt" name="des2"/>
+                    </div></td>
+                </tr>
+                <tr class="hide">
+                  <td><span>测试人</span></td>
+                  <td><input type="text" class="txt" name="person3"/></td>
+                  <td><span>测试时间</span></td>
+                  <td><input type="text" class="txt" name="time3"/></td>
+                </tr>
+                <tr class="hide">
+                  <td><span>测试说明</span></td>
+                  <td colspan="3"><div style="min-height:80px">
+                      <input type="text" class="txt" name="des3"/>
+                    </div></td>
+                </tr>
+              </table></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <div class="paper hide" id="paper-edit2">
+      <form name="form-edit2" id="form-edit2">
+        <table class="form"  cellpadding="0" cellspacing="0">
+          <tr>
+            <td class="row"><table cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="100px"><span>列表标题</span></td>
+                  <td width="240px"><input type="text" class="txt" name="title"/></td>
+                  <td width="80px"><span>长度</span></td>
+                  <td width="80px"><input type="text" class="txt" name="height"/></td>
+                  <td width="80px"><span>宽度</span></td>
+                  <td width="80px"><input type="text" class="txt" name="width"/></td>
+                </tr>
+                <tr>
+                  <td width="100px"><span>URL</span></td><td colspan="5"><input type="text" class="txt" name="dataUrl"/></td>
+                  </tr>
+                <tr>
+                  <td colspan="6"><ol>
+                      <li>
+                        <input type="checkbox" name="singleSelect" class="check"/>
+                        单选模式</li>
+                      <li>
+                        <input type="checkbox" name="collapsible" class="check"/>
+                        允许收缩</li>
+                      <li>
+                        <input type="checkbox" name="fit" class="check"/>
+                        尺寸自适应</li>
+                         <li>
+                        <input type="checkbox" name="page" class="check"/>
+                        显示序号</li>
+                    </ol></td>
+                </tr>
+                 <tr>
+                  <td colspan="6"><span style="width:100px">列定义</span></td>
+                </tr>
+              </table></td>
+          </tr>
+          <tr>
+            <td class="row"><table cellpadding="0" cellspacing="0" id="childTable">
+                <tr>
+                  <td width="120px"><span attr="cols#field">属性字段</span></td>
+                  <td width="140px"><span attr="cols#text">表头文字</span></td>
+                  <td width="120px"><span attr="cols#type">类型</span></td>
+                  <td width="100px"><span attr="cols#width">宽度</span></td>
+                  <td width="100px"><span attr="cols#align">对齐</span></td>
+                  <td width="80px"><span attr="cols#hidden">隐藏</span></td>
+                </tr>
+                <tr>
+                  <td width="120px"><input type="text" name="cols#field" class="txt"></td>
+                  <td width="140px"><input type="text" name="cols#name" class="txt"></td>
+                  <td width="120px"><input type="text" name="cols#type" class="txt"></td>
+                  <td width="100px"><input type="text" name="cols#width" class="txt"></td>
+                  <td width="100px"><input type="text" name="cols#align" class="txt"></td>
+                  <td width="80px" style="text-align:center"><input type="checkbox" name="cols#hidden" class="check"></td>
+                </tr>
+              </table></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+      <div class="paper hide" id="paper-edit3">
+      <form name="form-edit3" id="form-edit3">
+       	<div class="p2">表单可配置计划7月中旬完成</div>
+      </form>
+    </div>
+     <div class="paper hide" id="paper-edit4">
+      <form name="form-edit4" id="form-edit4">
+       	<div class="p2">事件可配置计划7月下旬完成</div>
+      </form>
+    </div>
+  </div>
+  <div class="wrap"></div>
+</div>
+<script src="../../../ide/lib/xlib/require.js"></script> 
+<script>
+	var intro=document.getElementById("paper_index");
+	var add=document.getElementById("form_add");
+	var edit=document.getElementById("form_edit");
+
+	var am=g.am;
+	am.run(intro,"intro.html");
+	am.run(add,"add.html");
+	//am.run(intro,"intro.html");
+</script>
+</body>
+</html>

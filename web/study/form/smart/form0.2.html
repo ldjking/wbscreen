@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>form0.1 布局</title>
+<link rel="stylesheet" type="text/css" href="rs0.2/reset.css">
+<link rel="stylesheet" type="text/css" href="rs0.2/layout.css">
+<link rel="stylesheet" type="text/css" href="rs0.2/lov.css">
+<!--这是一个相对smart的form 依靠dom上的额外定义来解决问题-->
+</head>
+
+<body>
+<form class="form-con">
+  <div class="form-title">三峡高科费用报销单</div>
+  <div class="form-main">
+    <table>
+      <tr>
+        <td></td>
+        <td class="lbl" width="100">姓名</td>
+        <td class="txt disable" width="120"><input type="text" readonly=true></td>
+        <td class="lbl" width="100">性别</td>
+        <td class="txt" width="120"><input type="text"></td>
+        <td class="img center" width="220" rowspan="4">相片</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="lbl" width="100">籍贯</td>
+        <td class="txt" colspan="3"><input type="text"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="lbl" width="100">通讯地址</td>
+        <td class="txt" width="120"><input type="text"></td>
+        <td class="lbl" width="100">邮政编码</td>
+        <td class="txt" width="120"><input type="text"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="lbl" width="100">手机</td>
+        <td class="txt" width="120"><input type="text"></td>
+        <td class="lbl" width="100">电话</td>
+        <td class="txt" width="120"><input type="text"></td>
+        <td></td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <td></td>
+        <td class="lbl" width="100">兴趣爱好</td>
+        <td class="txt" width="560"><span class="radio">
+          <input type="radio" name="favsport">
+          足球</span><span class="radio">
+          <input type="radio" name="favsport">
+          篮球</span><span class="radio">
+          <input type="radio" name="favsport">
+          羽毛球</span><span class="radio">
+          <input type="radio" name="favsport">
+          羽毛球</span><span class="radio">
+          <input type="radio" name="favsport">
+          羽毛球</span><span class="radio">
+          <input type="radio" name="favsport">
+          羽毛球</span><span class="radio">
+          <input type="radio" name="favsport">
+          羽毛球</span><span class="radio">
+          <input type="radio" name="favsport">
+          羽毛球</span><span class="radio">
+          <input type="radio" name="favsport">
+          羽毛球</span></td>
+        <td></td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <td></td>
+        <td class="lbl" width="100">选修科目</td>
+        <td class="txt" width="560"><span class="radio">
+          <input type="checkbox">
+          足球</span><span class="radio">
+          <input type="checkbox">
+          篮球</span><span class="radio">
+          <input type="checkbox">
+          羽毛球</span><span class="radio">
+          <input type="checkbox">
+          羽毛球</span><span class="radio">
+          <input type="checkbox">
+          羽毛球</span><span class="radio">
+          <input type="checkbox">
+          羽毛球</span><span class="radio">
+          <input type="checkbox">
+          羽毛球</span><span class="radio">
+          <input type="checkbox">
+          羽毛球</span><span class="radio">
+          <input type="checkbox">
+          羽毛球</span></td>
+        <td></td>
+      </tr>
+    </table>
+    <table id="t1">
+      <tr>
+        <td></td>
+        <td class="lbl noborder" width="100px">报销明细</td>
+        <td class="lbl" width="560px"></td>
+        <td></td>
+      </tr>
+    </table>
+    <table class="childTable">
+      <tr class="edit-add">
+        <td></td>
+        <td class="lbl" width="60">序号</td>
+        <td class="lbl" width="100px">费用类别</td>
+        <td class="lbl" width="100px">金额</td>
+        <td class="lbl" width="120px">发生时间</td>
+        <td class="lbl" width="280px">费用说明</td>
+        <td></td>
+      </tr>
+      <tr class="edit" style="display:none">
+        <td></td>
+        <td class="txt center seq"></td>
+        <td class="txt center"><input type="text" class="center"></td>
+        <td class="txt center"><input type="text" class="right"></td>
+        <td class="txt center"><input type="text" class="right"></td>
+        <td class="txt left"><input type="text"></td>
+        <td></td>
+      </tr>
+      <tr class="edit">
+        <td></td>
+        <td class="txt center seq"></td>
+        <td class="txt center"><input type="text" class="center" value="差旅费"></td>
+        <td class="txt center"><input type="text" class="right" value="100.00"></td>
+        <td class="txt center"><input type="text" class="right" value="2013-8-13"></td>
+        <td class="txt left"><input type="text" class="left" value="费用说明"></td>
+        <td></td>
+      </tr>
+      <tr class="edit">
+        <td></td>
+        <td class="txt center seq"></td>
+        <td class="txt center"><input type="text" class="center" value="差旅费"></td>
+        <td class="txt center"><input type="text" class="right" value="100.00"></td>
+        <td class="txt center"><input type="text" class="right" value="2013-8-13"></td>
+        <td class="txt left"><input type="text" class="left" value="费用说明"></td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+</form>
+<div class="lov" id="lov_sex">
+  <div>男</div>
+  <div>女</div>
+</div>
+<div class="lov" id="lov_type">
+  <div>国营企业</div>
+  <div>私有企业</div>
+</div>
+<script src="rs0.2/lib.js"></script>
+<script src="rs0.2/form.js"></script>
+</body>
+</html>

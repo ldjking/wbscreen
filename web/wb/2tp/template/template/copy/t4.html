@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Basic DataGrid - jQuery EasyUI Demo</title>
+<script type="text/javascript">
+	var label = {
+			dg_title:'页面元素',
+			page_code:'页面编码',
+			page_desc:'页面名称',
+			objName:"合同",
+			detailStr:"详细信息",
+			addStr:"新增",
+			editStr:"修改"
+		};
+</script>
+<script type="text/javascript" src="../../../../template/template/js/common/t4.js"></script>
+<script type="text/javascript" src="../../../../src/template/template/copy/p4.js"></script>
+<script type="text/javascript" src="../../../../template/template/js/common/jsimport.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="top" id="top">
+    <div id="tb">
+      <a id="btn_add" href="#"></a>
+      <a id="btn_edit" href="#"></a>
+      <a id="btn_delete" href="#"></a>
+      <a id="btn_refresh" href="#"></a>
+      <a id="btn_search" href="#"></a>
+    </div>
+    <table id="dg">
+    </table>
+  </div>
+  <div class="middle" id="middle">
+    <div  class="noborder" id="tab">
+      <div id="form" title="对象详细信息">
+        <form class="formPanel detailMode" id="ff1" method="post">
+          <table>
+            <tr>
+              <td>公司编码:</td>
+              <td><input type="text" name="itemid"/></td>
+              <td>公司名称:</td>
+              <td><input type="text" name="productid"/></td>
+            </tr>
+            <tr>
+              <td>公司简称:</td>
+              <td><input type="text" name="listprice"/></td>
+              <td>公司类型:</td>
+              <td><input type="text" name="unitcost"/></td>
+            </tr>
+            <tr>
+              <td>地区国家:</td>
+              <td><input type="text" name="attr1"/></td>
+              <td>公司状态:</td>
+              <td><input type="text" name="status"/></td>
+            </tr>
+            <tr>
+              <td>税务编号:</td>
+              <td><input type="text" name="status"/></td>
+              <td>财务负责人:</td>
+              <td><input type="text" name="status"/></td>
+            </tr>
+            <tr>
+              <td>税务编号:</td>
+              <td><input type="text" name="status"/></td>
+              <td>财务负责人:</td>
+              <td><input type="text" name="status"/></td>
+            </tr>
+            <tr>
+              <td>税务编号:</td>
+              <td><input type="text" name="status"/></td>
+              <td>财务负责人:</td>
+              <td><input type="text" name="status"/></td>
+            </tr>
+            <tr>
+              <td>税务编号:</td>
+              <td><input type="text" name="status"/></td>
+              <td>财务负责人:</td>
+              <td><input type="text" name="status"/></td>
+            </tr>
+            <tr>
+              <td>税务编号:</td>
+              <td><input type="text" name="status"/></td>
+              <td>财务负责人:</td>
+              <td><input type="text" name="status"/></td>
+            </tr>
+            <tr>
+              <td>担保银行:</td>
+              <td colspan="3"><select class="easyui-combobox" name="language">
+                  <option value="ar">Arabic</option>
+                  <option value="bg">Bulgarian</option>
+                  <option value="ca">Catalan</option>
+                  <option value="zh-cht">Chinese Traditional</option>
+                  <option value="cs">Czech</option>
+                  <option value="da">Danish</option>
+                  <option value="nl">Dutch</option>
+                  <option value="en" selected="selected">English</option>
+                </select></td>
+            </tr>
+          </table>
+        </form><form class="formPanel" id="ff2" method="post">
+          <table>
+            <tr>
+              <td>公司编码:</td>
+              <td><input type="text" name="itemid"/></td>
+              <td>公司名称:</td>
+              <td><input type="text" name="productid"/></td>
+            </tr>
+            <tr>
+              <td>公司简称:</td>
+              <td><input type="text" name="listprice"/></td>
+              <td>公司类型:</td>
+              <td><input type="text" name="unitcost"/></td>
+            </tr>
+            <tr>
+              <td>地区国家:</td>
+              <td><input type="text" name="attr1"/></td>
+              <td>公司状态:</td>
+              <td><input type="text" name="status"/></td>
+            </tr>
+            <tr>
+              <td>税务编号:</td>
+              <td><input type="text" name="status"/></td>
+              <td>财务负责人:</td>
+              <td><input type="text" name="status"/></td>
+            </tr>
+            <tr>
+              <td>税务编号:</td>
+              <td><input type="text" name="status"/></td>
+              <td>财务负责人:</td>
+              <td><input type="text" name="status"/></td>
+            </tr>
+            <tr>
+              <td>税务编号:</td>
+              <td><input type="text" name="status"/></td>
+              <td>财务负责人:</td>
+              <td><input type="text" name="status"/></td>
+            </tr>
+            <tr>
+              <td>税务编号:</td>
+              <td><input type="text" name="status"/></td>
+              <td>财务负责人:</td>
+              <td><input type="text" name="status"/></td>
+            </tr>
+            <tr>
+              <td>税务编号:</td>
+              <td><input type="text" name="status"/></td>
+              <td>财务负责人:</td>
+              <td><input type="text" name="status"/></td>
+            </tr>
+            <tr>
+              <td>担保银行:</td>
+              <td colspan="3"><select class="easyui-combobox" name="language">
+                  <option value="ar">Arabic</option>
+                  <option value="bg">Bulgarian</option>
+                  <option value="ca">Catalan</option>
+                  <option value="zh-cht">Chinese Traditional</option>
+                  <option value="cs">Czech</option>
+                  <option value="da">Danish</option>
+                  <option value="nl">Dutch</option>
+                  <option value="en" selected="selected">English</option>
+                </select></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+      <div id="query" title="对象查询">
+        <form class="formPanel" id="queryForm" method="post">
+          <table>
+            <tr>
+              <td>商品名称:</td>
+              <td colspan="3"><input  type="text" name="itemid"/></td>
+            </tr>
+            <tr>
+              <td>金额范围大于:</td>
+              <td><input  type="text" name="productid"/></td>
+              <td align="right">小于:</td>
+              <td><input  type="text" name="productid"/></td>
+            </tr>
+            <tr>
+              <td>时间早于:</td>
+              <td><input  type="text" name="listprice" /></td>
+              <td align="right">晚于:</td>
+              <td><input type="text" name="unitcost" /></td>
+            </tr>
+            <tr>
+              <td>多选选项:</td>
+              <td colspan="3"><span>
+                <input type="checkbox" checked>
+                西陵区</span><span>
+                <input type="checkbox" checked>
+                夷陵区</span><span>
+                <input type="checkbox">
+                伍家岗</span></td>
+            </tr>
+            <tr>
+              <td>单选选项:</td>
+              <td colspan="3"><input type="radio" name="sex"/>
+                男
+                <input type="radio" name="sex"/>
+                女</td>
+            </tr>
+            <tr>
+              <td>税务编号:</td>
+              <td><input type="text" name="status"/></td>
+              <td>财务负责人:</td>
+              <td><input type="text" name="status"/></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+      <div id="child" title="从表1管理">
+        <form class="formChild">
+          <table id="dg1">
+          </table>
+        </form>
+      </div>
+      <div id="child" title="从表2管理">
+        <form class="formChild">
+          <table id="dg2">
+          </table>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="down" id="down">
+    <a id="btn2_save" href="#">保存</a>
+    <a id="btn2_edit" href="#">保存</a>
+    <a id="btn2_search" href="#">搜索</a>
+    <a id="btn2_addItem" href="#">新增</a>
+    <a id="btn2_editItem" href="#">修改</a>
+    <a id="btn2_rmItem" href="#">删除</a>
+    <a id="btn2_ok" href="#">提交</a>
+  </div>
+</div>
+<div class="mask" id="mask">加载中</div>
+</body>
+</html>

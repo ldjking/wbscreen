@@ -1,0 +1,12 @@
+html,body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
+div{
+	border:1px solid #333;
+	height:100px;
+	width:100px;
+}
+@media screen and (min-width:400px) { .c1 {border:10px solid #F00;}}

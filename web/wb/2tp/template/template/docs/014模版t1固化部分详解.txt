@@ -1,0 +1,28 @@
+模版t1固化部分源代码参见 /js/common/t1.js
+var pageHeight		num		页面高度
+var pageMode		string	页面模式  	页面有三种模式 detail 	add 	modify  分别代表详细信息模式  	新增模式  	修改模式
+var panelType		string  当前面板类型  面板类型有三种	form  	search 	child 	分别代表表单面板		搜索面板		子对象面板
+var editIndex 		num		主表当前编辑行
+var dg1EditIndex 	num		从表当前编辑行
+var gridToolbar 	array	主表操作按钮配置
+
+function component			组件初始化函数，包括渲染主列表、按钮，注册快捷键等任务
+function dg_collapse		主表datagrid的搜索事件处理函数
+function dg_expand			主表datagrid的展开事件处理函数
+function dg_load			主表datagrid的加载事件处理函数
+function dg_select			主表datagrid的选中行事件处理函数
+function dg_add				主表datagrid的新增按钮事件处理函数
+function dg_edit			主表datagrid的编辑按钮事件处理函数
+function dg_delete			主表datagrid的删除按钮事件处理函数
+function dg_refresh			主表datagrid的刷新按钮事件处理函数
+function dg_search			主表datagrid的搜索按钮事件处理函数
+function dg_click			主表datagrid的单击事件处理函数
+function dg_dbl				主表datagrid的双击事件处理函数
+
+function tab_select			选项卡切换处理函数
+function useDetailMode		进入详细信息模式
+function useAddMode			进入新增表单模式
+function useEditMode		进入编辑模式
+function useSearchMode		进入搜索面板模式
+
+

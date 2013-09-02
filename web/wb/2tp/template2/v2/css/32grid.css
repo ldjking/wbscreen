@@ -1,0 +1,210 @@
+.grid {
+	box-sizing: border-box;
+	padding: 0 12px;
+	font-size: 14px;
+}
+.grid .search{
+	background-color: #fff;
+	height: 24px;
+	padding-top: 12px;
+	padding-left: 4px;
+	padding-bottom: 6px;
+}
+.grid .search div{
+	float: left;
+	line-height: 24px;
+}
+.icon-gap-small {
+	background-image: url(../img/icon-gap-small.png);
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 24px;
+	background-position: center center;
+	margin-left: 3px;
+}
+.icon-more {
+	background-image: url(../img/more.png);
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 24px;
+	background-position: center center;
+	background-size: auto auto;
+}
+.grid .find{
+	background-color: #fff;
+	height: 24px;
+	padding-left: 28px;
+	background-image: url(../img/find.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 24px 24px;
+}
+.grid .hide{
+	display: none;
+
+}
+.grid .save{
+	background-color: #fff;
+	height: 24px;
+	padding-left: 28px;
+	background-image: url(../img/save2.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 24px 24px;
+	margin-left: 8px;
+}
+.grid .header{
+	background-color: #cacaca;
+	background-image: -webkit-linear-gradient(top,#fafafa,#cacaca);
+	background-image: linear-gradient(to bottom,#fafafa,#cacaca);
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #c2c9c2;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	padding-left: 12px;
+
+}
+.grid .header div{
+	height: 30px;
+	cursor: default;
+
+
+}
+.grid .header .title{
+	font-weight: bold;
+
+
+}
+.icon-gap {
+	background-image: url(../img/icon-gap.png);
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 24px;
+	background-position: center center;
+	margin-left: 3px;
+}
+.grid .body{
+	line-height: 24px;
+	border: 1px solid #c2c9c2;
+	border-top: 0px;
+}
+.grid .table {
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 24px;
+	line-height: 24px;
+	table-layout: fixed;
+}
+.grid .table td{
+	border-right: 1px solid #e3e3e3;
+	box-sizing: border-box;
+	padding: 0 5px;
+	line-height: 30px;
+}
+.grid .table tr td:first-child{
+	text-align: center;
+	display: none;
+}
+.grid .table tr td:nth-child(2){
+	text-align: center;
+
+}
+.grid .table .theader{
+	background-image: -webkit-linear-gradient(top,#fff,#ececec 50%,#e6e6e6 51%, #e3e3e3 55%, #eee9ed);
+	background-image: linear-gradient(to bottom,#fff,#ececec 50%,#e6e6e6 51%, #e3e3e3 55%, #eee9ed);
+	height: 30px;
+	line-height: 30px;
+	color: #333;
+	text-decoration: underline;
+	cursor: default;
+}
+.grid .table .filter{
+	background-image: -webkit-linear-gradient(top,#f8f8f8,#eaeaea 50%,#e3e3e1 51%, #e3e3e3 55%, #eee9ed);
+	background-image: linear-gradient(to bottom,#f8f8f8,#eaeaea 50%,#e3e3e1 51%, #e3e3e3 55%, #eee9ed);
+	
+}
+.grid .table .filter input{
+	border: 1px solid #ccc;
+	background-color: #FFF;
+}
+.grid .table tr:nth-child(2n+2){
+	background-color: #f1f1f1;
+}
+.grid .table tr:nth-child(2n+3){
+	background-color:#fff;
+}
+
+.grid .table tr:nth-child(n+2):hover{
+	background-color: #D3E2EF;
+}
+.grid .table tr.select{
+	background-color: #8BB3D3;
+}
+.grid .table tr.select:hover{
+	background-color: #8BB3D3;
+}
+.grid .footer{
+	background-color: #cacaca;
+	background-image: -webkit-linear-gradient(top,#fafafa,#cacaca);
+	background-image: linear-gradient(to bottom,#fafafa,#cacaca);
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #c2c9c2;
+	border-top: 0px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.grid .pager {
+	height: 22px;
+	padding-top: 5px;
+	color: #999;
+	-moz-user-select: none;
+	line-height: 22px;
+}
+.grid .pageInfo {
+	line-height: 22px;
+	height: 22px;
+	vertical-align: middle;
+	font-size: 13px;
+	float: left;
+	cursor: default;
+	color: #666;
+}
+.grid .pageTable {
+	line-height: 22px;
+	height: 22px;
+	vertical-align: middle;
+	font-size: 13px;
+	float: right;
+}
+.grid .pageTable td{
+	padding-left: 5px;
+	padding-right: 5px;
+	cursor: pointer;
+
+}
+.grid .pageInfo:hover{
+	color: #333;
+}
+.grid .rowNum {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.grid .pageNum {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.grid .pagebtn {
+	cursor: pointer;
+	text-align: center;
+	width: 42px;
+	font-size: 12px;
+}
+.grid .pagebtn:hover {
+	cursor: pointer;
+	text-align: center;
+	width: 42px;
+	color: #333333;
+}

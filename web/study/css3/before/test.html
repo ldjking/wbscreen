@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+.navs {
+	height: 32px;
+	background-color: #09F;
+}
+.nav {
+	float: left;
+	padding: 4px 22px 4px 42px;
+	height: 32px;
+	box-sizing: border-box;
+	line-height: 24px;
+	background-color: #e3e6e9;
+	position: relative;
+	overflow: visible;
+	margin-right: 0px;
+	text-align: center;
+	cursor: default;
+}
+.nav::before{
+	position: absolute;
+	z-index: 1;
+	content: "";
+	top: 0px;
+	right: -18px;
+	border-top: 15px solid transparent;
+	border-left: 18px solid #333;
+	border-bottom: 17px solid transparent;
+	background-color: transparent;
+}
+.nav::after{
+	position: absolute;
+	z-index: 2;
+	content: "";
+	top: 0px;
+	right: -18px;
+	border-top: 15px solid transparent;
+	border-left: 18px solid #e3e6e9;
+	border-bottom: 17px solid transparent;
+	background-color: transparent;
+}
+.nav:hover {
+	background-color: #000;
+	color: #FFF;
+}
+.nav:hover::before{
+	border-left: 18px solid #0F0;
+}
+.nav:hover::after{
+	border-left: 18px solid #000;
+}
+</style>
+</head>
+
+<body>
+<div class="navs">
+  <div class="nav">
+    Step1
+  </div>
+  <div class="nav">
+    Step2
+  </div>
+  <div class="nav">
+    Step3
+  </div>
+  <div class="nav">
+    Step4
+  </div>
+  <div class="nav">
+    Step5
+  </div>
+</div>
+</body>
+</html>

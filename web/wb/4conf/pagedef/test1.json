@@ -1,0 +1,114 @@
+{
+  "name": "test1",
+  "cname": "1111",
+  "code": "",
+  "title": "",
+  "des": "",
+  "person1": "",
+  "time1": "",
+  "person2": "",
+  "time2": "",
+  "person3": "",
+  "time3": "",
+  "queryUrl": "",
+  "deleteUrl": "",
+  "addUrl": "",
+  "updateUrl": "",
+  "btnDefault": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+  ],
+  "columns": [
+    {
+      "attr": "",
+      "text": "",
+      "type": "",
+      "width": "",
+      "align": ""
+    },
+    {
+      "attr": "",
+      "text": "",
+      "type": "",
+      "width": "",
+      "align": ""
+    },
+    {
+      "attr": "",
+      "text": "",
+      "type": "",
+      "width": "",
+      "align": ""
+    }
+  ],
+  "btns": [
+    {
+      "id": "",
+      "text": "",
+      "style": "",
+      "num": "",
+      "handler": ""
+    },
+    {
+      "id": "",
+      "text": "",
+      "style": "",
+      "num": "",
+      "handler": ""
+    },
+    {
+      "id": "",
+      "text": "",
+      "style": "",
+      "num": "",
+      "handler": ""
+    }
+  ],
+  "inputs": [
+    {
+      "lbl": "1",
+      "attr": "",
+      "type": "",
+      "width": "",
+      "align": "左",
+      "lov": "",
+      "dataUrl": "",
+      "handler": ""
+    },
+    {
+      "lbl": "2",
+      "attr": "",
+      "type": "",
+      "width": "",
+      "align": "",
+      "lov": "",
+      "dataUrl": "",
+      "handler": ""
+    },
+    {
+      "lbl": "3",
+      "attr": "",
+      "type": "",
+      "width": "",
+      "align": "",
+      "lov": "",
+      "dataUrl": "",
+      "handler": ""
+    },
+    {
+      "lbl": "4",
+      "attr": "",
+      "type": "",
+      "width": "",
+      "align": "",
+      "lov": "",
+      "dataUrl": "",
+      "handler": ""
+    }
+  ],
+  "module": 1,
+  "template": "new1"
+}

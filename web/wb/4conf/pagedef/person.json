@@ -1,0 +1,11 @@
+{
+  "name": "person",
+  "cname": "人员管理",
+  "module": 3,
+  "template": "t1",
+  "title": "人员管理",
+  "id": 10,
+  "conf": null,
+  "person1": "罗惠恒",
+  "time1": "2013-7-6 18:00"
+}

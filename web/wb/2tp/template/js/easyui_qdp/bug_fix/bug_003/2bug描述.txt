@@ -1,0 +1,1 @@
+easyui的form组件 clear和reset事件都触发校验

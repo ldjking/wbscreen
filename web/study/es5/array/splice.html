@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<p>splice的第一个功能 是删除元素</p>
+<p>很神奇，位置可以是负数,位置会先加上数组长度</p>
+<p>很神奇，如果位置加上数组长度后还是负数，则会变成0</p>
+<p>删除长度如果是负数，则变成0</p>
+<p>splice的第二个功能 是增加元素，如何增加元素</p>
+
+</body>
+<script type="text/javascript">
+	var array=[1,2,3,4,5,6];
+	
+	var array2=array.splice(0,2);/*从第0个开始，删除n个  返回会删除的内容*/
+	
+	console.log("删除前面两个 array1: "+array);
+	console.log("删除前面两个 array2: "+array2);
+	
+	array2=array.splice(-12,10);/*从第0个开始，删除n个  返回会删除的内容*/
+	console.log("删除后面两个 array1: "+array);
+	console.log("删除后面两个 array2: "+array2);
+	//var array3=array.splice(2,2,3.1,3.2);/*从第2个开始，删除2个，再新增两个*/
+	
+	array2=array.splice(-2,2,3.1,3.2,3,3);/*如果位置为负数  则变成数组的长度+位置*/
+	//array2=array.splice(2,1,3.1,3.2);/*如果位置为负数  则变成数组的长度+位置*/
+
+
+	console.log("删除2个并插入两个后array1: "+array);
+	//console.log(array2);
+	console.log("删除2个并插入两个后array2: "+array2);
+	
+	array2=array.splice(-2,2);/*如果位置为负数  则变成数组的长度+位置*/
+
+	
+</script>
+</html>

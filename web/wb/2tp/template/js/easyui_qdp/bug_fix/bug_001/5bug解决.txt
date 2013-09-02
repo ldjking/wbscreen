@@ -1,0 +1,7 @@
+1.bug结论：
+    easyui在IE9下对iframe的操作造成内存泄露
+	该bug的根源是IE iframe操作不当可造成内存泄露问题，估计9以下的版本也都存在该问题【尚未在678上证实】
+	
+2.解决方案
+	2.1	延迟给iframe赋src
+	2.2	使用easyui的panel元素，将panel的href指向iframe src页面[本质上也是延迟加载iframe]

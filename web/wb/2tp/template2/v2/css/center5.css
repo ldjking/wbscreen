@@ -1,0 +1,132 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: #727b7f;
+	color: #FFF;
+}
+.center {
+	height: 480px;
+	width: 960px;
+	position: relative;
+	top: 50%;
+	
+	margin-top: -240px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.center>div {
+	float: left;
+}
+.area1 {
+	width: 726px;
+	background-color: #666;
+}
+.area2 {
+	width: 234px;
+	float: right;
+}
+.area3 {
+}
+.area1 >div{
+	float: left;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	height: 108px;
+	background-color: #4cc0ff;
+}
+.area1 div:nth-child(2n){
+}
+.area1 div:nth-child(2n+1){
+}
+.area1 >div:hover{
+	background-color: #484848;
+}
+.area2 >div{
+	float: left;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	height: 108px;
+	background-color: #5D99FF;
+}
+.item1 {
+	width: 220px;
+	
+}
+.item2 {
+	width: 220px;
+	
+}
+.item3 {
+	width: 108px;
+	
+}
+.item4 {
+	width: 108px;
+	
+}
+.item5 {
+	width: 108px;
+	
+}
+.item6 {
+	width: 108px;
+	
+}
+.item7 {
+	width: 220px;
+	
+}
+.item8 {
+	width: 108px;
+	
+}
+.item9 {
+	width: 108px;
+	
+}
+.item10 {
+	width: 220px;
+	
+}
+.item11 {
+	width: 220px;
+	
+}
+.item12 {
+	width: 220px;
+	
+}
+.item13 {
+	width: 220px;
+	
+}
+.item14 {
+	width: 220px;
+	
+}
+.item15 {
+	width: 220px;
+	
+}
+
+.item21 {
+	width: 220px;
+	
+}
+.item22 {
+	width: 220px;
+	
+}.item23 {
+	width: 108px;
+	
+}.item24 {
+	width: 108px;
+	
+}.item25 {
+	width: 108px;
+	
+}.item26 {
+	width: 108px;
+	
+}

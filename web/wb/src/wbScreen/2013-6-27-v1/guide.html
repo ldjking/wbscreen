@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>WBScreen Guide</title>
+<link rel="stylesheet" href="../../../ide/2013-6-27-v1/theme/style/guide.css">
+<link rel="stylesheet" href="../../../ide/2013-6-27-v1/theme/style/pictogram-button.css">
+</head>
+<body>
+<div class="guide-con">
+  <!--垂直居中 -->
+  <div class="guide">
+    <div class="guide-logo">
+      WBScreen
+    </div>
+    <div class="guide-des">
+      让页面开发更简单
+    </div>
+  </div>
+  <div class="guide-navs">
+    <div class="button-bevel cyan">
+      <span class="folder"></span> 学习教程
+    </div>
+    <div class="button-bevel green" id="dev">
+      <span class="edit"></span> 进入开发
+    </div>
+  </div>
+</div>
+<script  type="text/javascript">
+	window.onload=init;
+
+	function init(){
+		var dev=document.getElementById("dev");
+		dev.onclick=gotoDev;
+	}
+	
+	function gotoDev(){
+		setTimeout(jump,1000);
+	}
+	
+	function jump(){
+		window.location="steps.html";
+	}
+</script>
+</body>
+</html>

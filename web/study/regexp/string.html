@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<script type="text/javascript">
+	//var str="../../../a/b/../../../a.html";
+	//var a=str.replace(/[^\/^\.][^\/|]*?\/\.\.\//g,"");
+	//alert(a);
+	
+	var str2="<label class='@css'>@text</label>";
+	
+	function tpl(str2,data){
+		var s=str2.match(/@[a-z|A-z|0-9]+/g);
+		for(var i=0;i<s.length;i++){
+			str2= str2.replace(s[i],data[s[i].substr(1)]);
+		}
+		return str2;
+	}
+	var data={css:"abe",text:"ace"};
+	var str=tpl(str2,data);
+	alert(str2);
+	alert(str);
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!doctype html>
+<html charset="utf-8">
+<head>
+<title>Bar Chart</title>
+<script src="../../../../32guide/template/js/chart/Chart.js"></script>
+<meta name = "viewport" content = "initial-scale = 1, user-scalable = no" charset="utf-8">
+<style>
+.con {
+	width: 960px;
+	margin: auto;
+	font-family: Verdana, Geneva, sans-serif;
+}
+.top {
+	margin: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	text-align: center;
+	margin-bottom: 32px;
+	margin-top: 32px;
+}
+.title {
+	font-size: 36px;
+	font-weight: bold;
+}
+.info {
+	padding-left: 12px;
+	font-size: 14px;
+}
+canvas {
+	margin-top: 24px;
+}
+table {
+	border-spacing: 0;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+	width: 960px;
+	margin-top: 32px;
+	margin-bottom: 32px;
+	background-color: #f3f6f9;
+}
+table td {
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 28px;
+	border: 1px solid #ccc;
+	min-width: 30px;
+	text-align: center;
+	box-sizing: border-box;
+}
+table tr:first-child td {
+	color: #3c5420;
+	line-height: 36px;
+	text-align: right;
+	background-color: #cfe7b3;
+}
+table tr td:first-child {
+	color: #666;
+}
+.txt {
+	border: 0px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	text-align: right;
+	outline: none;
+	background-color: transparent;
+	color: #333;
+}
+</style>
+</head>
+<body>
+<div class="con">
+  <div class="top">
+    <span  class="title">2012年三峡集团发电量统计</span><span class="info">单位：亿千瓦时</span>
+  </div>
+  <table id="t1">
+    <tr>
+      <td width="80px"></td>
+      <td>1月</td>
+      <td>2月</td>
+      <td>3月</td>
+      <td>4月</td>
+      <td>5月</td>
+      <td>6月</td>
+      <td>7月</td>
+      <td>8月</td>
+      <td>9月</td>
+      <td>10月</td>
+      <td>11月</td>
+      <td>12月</td>
+    </tr>
+    <tr>
+      <td>三峡</td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+    </tr>
+    <tr>
+      <td>葛洲坝</td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+    </tr>
+    <tr>
+      <td>新能源</td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+    </tr>
+    <tr>
+      <td>海外</td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+      <td><input type="text" class="txt" value="1"/></td>
+    </tr>
+  </table>
+  <canvas id="canvas" height="450" width="960"></canvas>
+</div>
+<script>
+		var datas=[
+					[110,90,80,63,70,72,65,80,90,102,112,120],
+					[24,19,18,23,17,22,25,20,30,25,25,29],
+					[11,11,11,13,12,13,12,9,12,13,12,11],
+					[6,5,4,2,3,3,4,4,2,3,3,3],
+				]
+		var colors=[	
+					[60,211,255],
+				    [152,232,100],
+					[255,204,100],
+					[225,124,232]
+					];
+		var opt={	
+			barStrokeWidth : 1,
+			barValueSpacing : 5,
+			scaleStepWidth:10,
+			scaleOverride:true,
+			scaleSteps :13,
+			scaleStartValue :0,
+			scaleOverlay:true
+		
+		
+		};
+		var t1=document.getElementById("t1");
+		var myLine=null;
+		
+		for(var i=1;i<t1.rows.length;i++){
+			var row=t1.rows[i];
+			for(var j=1;j<row.cells.length;j++){
+				var cell=row.cells[j];
+				var text=cell.childNodes[0];
+				text.i=i;text.j=j;
+				text.value=datas[i-1][j-1];
+				text.onchange=textChange;
+			}
+		}
+		
+		function textChange(){
+			var value=this.value;
+			var i=this.i;
+			var j=this.j;
+			datas[i-1][j-1]=value;
+			//alert("text change!"+value);
+			drawChart();
+		}
+		
+		function drawChart(){
+			var barChartData = {
+				labels : ["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],
+				datasets : [
+					{
+						fillColor : "rgba("+colors[0].join(",")+",0.5)",
+						strokeColor : "rgba("+colors[0].join(",")+",0.8)",
+						data : datas[0]
+					},
+					{
+						fillColor : "rgba("+colors[1].join(",")+",0.5)",
+						strokeColor : "rgba("+colors[1].join(",")+",0.8)",
+						data :  datas[1]
+					},
+					{
+						fillColor : "rgba("+colors[2].join(",")+",0.5)",
+						strokeColor : "rgba("+colors[2].join(",")+",0.8)",
+						data : datas[2]
+					},
+					{
+						fillColor :"rgba("+colors[3].join(",")+",0.5)",
+						strokeColor :"rgba("+colors[3].join(",")+",0.8)",
+						data : datas[3]
+					}
+				]
+				
+			}
+
+			var canvas=document.getElementById("canvas").getContext("2d");
+			var	myLine = new Chart(canvas).Bar(barChartData,opt); 
+			opt.animation =false;
+
+		}
+		
+		drawChart();
+	</script>
+</body>
+</html>

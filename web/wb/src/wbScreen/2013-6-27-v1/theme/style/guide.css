@@ -1,0 +1,142 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: "微软雅黑", Tahoma, Verdana, sans-serif, "Times New Roman";
+}
+.guide-con {
+	display: -ms-flexbox;
+	-ms-flex-align: center;
+	-ms-flex-pack: center;
+	-ms-flex-direction: column;
+	-ms-flex-wrap: wrap;
+	height: 100%;
+	background-color: #999999;
+}
+.guide {
+	width: 80%;
+	display: -ms-flexbox;
+	-ms-flex-align: baseline;
+	-ms-flex-pack: justify;
+	-ms-flex-direction: row;
+	-ms-flex-wrap: wrap;
+	border-bottom: 2px solid #333;
+	padding-bottom: 24px;
+}
+.guide-logo {
+	font-size: 48px;
+	font-weight: bold;
+	color: #FFF;
+	margin-left: 50px;
+	-webkit-animation-name: 'logo';/*动画属性名，也就是我们前面keyframes定义的动画名*/
+	-webkit-animation-duration: 1.5s;/*动画持续时间*/
+	-webkit-animation-timing-function: ease-in-out; /*动画频率，和transition-timing-function是一样的*/
+	-webkit-animation-delay: 0s;/*动画延迟时间*/
+	-webkit-animation-iteration-count: 1;/*定义循环资料，infinite为无限次*/
+	-webkit-animation-direction: normal;/*定义动画方式*/
+	-webkit-animation-fill-mode: forwards;/*动画结束状态*/
+	animation-name: logo;/*动画属性名，也就是我们前面keyframes定义的动画名*/
+	animation-duration: 1.5s;/*动画持续时间*/
+	animation-timing-function:ease-in-out;
+	animation-delay: 0s;/*动画延迟时间*/
+	animation-iteration-count: 1;/*定义循环资料，infinite为无限次*/
+	animation-direction: normal;/*定义动画方式*/
+	animation-fill-mode: forwards;/*动画结束状态*/
+}
+.guide-des {
+	font-size: 24px;
+	font-weight: bold;
+	color: #FFF;
+		-webkit-animation-name: 'des';/*动画属性名，也就是我们前面keyframes定义的动画名*/
+	-webkit-animation-duration: 1.5s;/*动画持续时间*/
+	-webkit-animation-timing-function: ease-in-out; /*动画频率，和transition-timing-function是一样的*/
+	-webkit-animation-delay: 0s;/*动画延迟时间*/
+	-webkit-animation-iteration-count: 1;/*定义循环资料，infinite为无限次*/
+	-webkit-animation-direction: normal;/*定义动画方式*/
+	-webkit-animation-fill-mode: forwards;/*动画结束状态*/
+	animation-name: des;/*动画属性名，也就是我们前面keyframes定义的动画名*/
+	animation-duration: 1.5s;/*动画持续时间*/
+	animation-timing-function:ease-in-out;
+	animation-delay: 0s;/*动画延迟时间*/
+	animation-iteration-count: 1;/*定义循环资料，infinite为无限次*/
+	animation-direction: normal;/*定义动画方式*/
+	animation-fill-mode: forwards;/*动画结束状态*/
+}
+.guide-navs {
+	width: 80%;
+	display: -ms-flexbox;
+	-ms-flex-align: end;
+	-ms-flex-pack: end;
+	-ms-flex-direction: row;
+	-ms-flex-wrap: wrap;
+	padding-top: 24px;
+	padding-bottom: 48px;
+	opacity:0;
+	-webkit-animation-name: 'btn';/*动画属性名，也就是我们前面keyframes定义的动画名*/
+	-webkit-animation-duration: 1.8s;/*动画持续时间*/
+	-webkit-animation-timing-function: ease-in-out; /*动画频率，和transition-timing-function是一样的*/
+	-webkit-animation-delay: 1.2s;/*动画延迟时间*/
+	-webkit-animation-iteration-count: 1;/*定义循环资料，infinite为无限次*/
+	-webkit-animation-direction: normal;/*定义动画方式*/
+	-webkit-animation-fill-mode: forwards;/*动画结束状态*/
+	animation-name: btn;/*动画属性名，也就是我们前面keyframes定义的动画名*/
+	animation-duration: 1.8s;/*动画持续时间*/
+	animation-timing-function:ease-in-out;
+	animation-delay: 1.2s;/*动画延迟时间*/
+	animation-iteration-count: 1;/*定义循环资料，infinite为无限次*/
+	animation-direction: normal;/*定义动画方式*/
+	animation-fill-mode: forwards;/*动画结束状态*/
+}
+
+
+@keyframes logo {
+from {
+ margin-left:50px;
+}
+to {
+	margin-left:0px;
+}
+}
+@-webkit-keyframes 'logo' {
+ 0% {
+ margin-left: 50px;
+}
+ 100% {
+ margin-left: 0px;
+}
+}
+
+@keyframes des {
+from {
+ margin-right:50px;
+}
+to {
+	margin-right:0px;
+}
+}
+@-webkit-keyframes 'des' {
+ 0% {
+ margin-right: 50px;
+}
+ 100% {
+ margin-right: 0px;
+}
+}
+
+
+@keyframes btn {
+from {
+ opacity:0;
+}
+to {
+	opacity:1;
+}
+}
+@-webkit-keyframes 'btn' {
+ 0% {
+  opacity:0;
+}
+ 100% {
+ opacity:1;
+}
+}

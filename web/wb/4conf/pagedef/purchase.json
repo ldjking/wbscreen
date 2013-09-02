@@ -1,0 +1,11 @@
+{
+  "name": "purchase",
+  "cname": "采购",
+  "module": 5,
+  "template": "t1",
+  "title": "采购",
+  "id": 20,
+  "conf": null,
+  "person1": "罗惠恒",
+  "time1": "2013-7-6 18:00"
+}

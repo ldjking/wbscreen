@@ -1,0 +1,177 @@
+[
+  {
+    "name": "task-done",
+    "cname": "已办事项",
+    "template": "2",
+    "module": 1,
+    "id": 2
+  },
+  {
+    "name": "task-save",
+    "cname": "草稿箱",
+    "template": "2",
+    "module": 1,
+    "id": 3
+  },
+  {
+    "name": "label-def",
+    "cname": "标签定义",
+    "template": "2",
+    "module": 2,
+    "id": 4
+  },
+  {
+    "name": "btn-def",
+    "cname": "按钮定义",
+    "template": "2",
+    "module": 2,
+    "id": 5
+  },
+  {
+    "name": "lov-def",
+    "cname": "值列表定义",
+    "template": "2",
+    "module": 2,
+    "id": 6
+  },
+  {
+    "name": "menu-def",
+    "cname": "菜单定义",
+    "template": "2",
+    "module": 2,
+    "id": 7
+  },
+  {
+    "name": "power-def",
+    "cname": "权限管理",
+    "template": "2",
+    "module": 2,
+    "id": 8
+  },
+  {
+    "name": "person",
+    "cname": "人员管理",
+    "template": "2",
+    "module": 3,
+    "id": 10
+  },
+  {
+    "name": "company",
+    "cname": "往来单位",
+    "template": "2",
+    "module": 3,
+    "id": 11
+  },
+  {
+    "name": "asset",
+    "cname": "资产管理",
+    "template": "2",
+    "module": 4,
+    "id": 12
+  },
+  {
+    "name": "cert",
+    "cname": "凭证",
+    "template": "2",
+    "module": 4,
+    "id": 13
+  },
+  {
+    "name": "income",
+    "cname": "收入",
+    "template": "2",
+    "module": 4,
+    "id": 14
+  },
+  {
+    "name": "outcome",
+    "cname": "支出",
+    "template": "2",
+    "module": 4,
+    "id": 15
+  },
+  {
+    "name": "workflow",
+    "cname": "物资台账",
+    "template": "2",
+    "module": 5,
+    "id": 16
+  },
+  {
+    "name": "warehouse",
+    "cname": "仓库管理",
+    "template": "2",
+    "module": 5,
+    "id": 17
+  },
+  {
+    "name": "inhouse",
+    "cname": "入库",
+    "template": "2",
+    "module": 5,
+    "id": 18
+  },
+  {
+    "name": "outhouse",
+    "cname": "出库",
+    "template": "2",
+    "module": 5,
+    "id": 19
+  },
+  {
+    "name": "purchase",
+    "cname": "采购",
+    "template": "2",
+    "module": 5,
+    "id": 20
+  },
+  {
+    "name": "use",
+    "cname": "领料",
+    "template": "2",
+    "module": 5,
+    "id": 21
+  },
+  {
+    "name": "onduty",
+    "cname": "运行日志",
+    "template": "2",
+    "module": 6,
+    "id": 22
+  },
+  {
+    "name": "workticket",
+    "cname": "工作票",
+    "template": "2",
+    "module": 6,
+    "id": 23
+  },
+  {
+    "name": "opticket",
+    "cname": "操作票",
+    "template": "2",
+    "module": 6,
+    "id": 24
+  },
+  {
+    "name": "posts",
+    "cname": "合同执行统计",
+    "template": "2",
+    "module": 7,
+    "id": 25
+  },
+  {
+    "name": "hrsts",
+    "cname": "人力资源统计",
+    "template": "2",
+    "module": 7,
+    "id": 26
+  },
+  {
+    "name": "engsts",
+    "cname": "电量统计",
+    "template": "2",
+    "module": 7,
+    "id": 27
+  }
+]

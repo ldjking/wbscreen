@@ -1,0 +1,8 @@
+IE9下使用easyui加载iframe 报js原生对象Array未定义错误
+报错页面 index.html
+
+
+index.html使用了jquery和easyui
+index.html里有一个iframe指向newtop.html
+
+newtop.html里使用了jquery

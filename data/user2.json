@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "name": "刘东杰",
+    "type": 1,
+    "value": 1,
+    "dep": "dev"
+  },
+  {
+    "id": "101",
+    "name": "郑黎明22",
+    "type": 11,
+    "value": 1,
+    "dep": "sxgk"
+  },
+  {
+    "id": "248",
+    "name": "刘东杰",
+    "type": 11,
+    "value": 1,
+    "dep": "xxzx"
+  },
+  {
+    "id": "249",
+    "name": "刘东杰",
+    "type": 11,
+    "value": 1,
+    "dep": "xxzx"
+  },
+  {
+    "id": "250",
+    "name": "刘东杰",
+    "type": 11,
+    "value": 1,
+    "dep": "xxzx"
+  },
+  {
+    "id": "251",
+    "name": "刘东杰",
+    "type": 11,
+    "value": 1,
+    "dep": "xxzx"
+  }
+]

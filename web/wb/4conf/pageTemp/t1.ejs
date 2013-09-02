@@ -1,0 +1,58 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title><%=title%></title>
+	<link rel="stylesheet" type="text/css" href="../lib/easyui_qdp/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="../lib/easyui_qdp/themes/icon.css">
+	<link rel="stylesheet" type="text/css" href="../lib/easyui_qdp/demo/demo.css">
+	<script type="text/javascript" src="../lib/easyui_qdp/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript" src="../lib/easyui_qdp/jquery.easyui.min.js"></script>
+</head>
+
+<body>
+	<%if(conf==null){%>
+		<div>本页面为新增页面，尚未定义属性内容，使用模板<%=template%></div>
+	<%}else{%>
+	<h2>Basic DataGrid</h2>
+	<div class="demo-info">
+		<div class="demo-tip icon-tip"></div>
+		<div>The DataGrid is created from markup, no JavaScript code needed.</div>
+	</div>
+	<div style="margin:10px 0;"></div>
+	
+	<div style="padding:10px; height:250px">
+		<table id="dg" class="easyui-datagrid" title="<%=conf.title%>" style="width:700px;height:250px;"
+			data-options="singleSelect:true,
+			collapsible:<%=conf.collapsible%>,
+			fit:true,
+			onClickRow:c">
+		<thead>
+			<tr>
+			<%	for(var i=0;i<conf.cols.length;i++){
+					var col=conf.cols[i];
+			%>
+				<th data-options="field:'<%=col.field%>',width:<%=col.width%>,hidden:0"><%=col.name%></th>
+			<%
+				}
+			%>
+			</tr>
+		</thead>
+	</table></div>
+<script type="text/javascript">
+	window.onload=init;
+	function init(){
+		$.get("http://localhost/file/<%=conf.dataUrl%>",null,function(result){
+			console.log(result);
+			$("#dg").datagrid("loadData",result.rows);
+		});
+	}
+	function c(){
+		var row=$("#dg").datagrid("getSelected");
+		alert(row.itemid);
+	}
+</script>
+	<%}%>
+</body>
+</html>

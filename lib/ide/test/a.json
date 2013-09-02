@@ -1,0 +1,134 @@
+{
+  "id": 1,
+  "pid": null,
+  "name": "root",
+  "childs": [
+    {
+      "name": "dao.js",
+      "level": 1,
+      "id": 2,
+      "pid": 1
+    },
+    {
+      "name": "dbConf.js",
+      "level": 1,
+      "id": 3,
+      "pid": 1
+    },
+    {
+      "name": "dbPool.js",
+      "level": 1,
+      "id": 4,
+      "pid": 1
+    },
+    {
+      "name": "ejs",
+      "level": 1,
+      "id": 5,
+      "pid": 1,
+      "isFolder": true,
+      "childs": [
+        {
+          "name": "build.js",
+          "level": 2,
+          "id": 6,
+          "pid": 5
+        },
+        {
+          "name": "buildall.js",
+          "level": 2,
+          "id": 7,
+          "pid": 5
+        },
+        {
+          "name": "scanPage.js",
+          "level": 2,
+          "id": 8,
+          "pid": 5
+        },
+        {
+          "name": "test",
+          "level": 2,
+          "id": 9,
+          "pid": 5,
+          "isFolder": true,
+          "childs": [
+            {
+              "name": "buildAll.js",
+              "level": 3,
+              "id": 10,
+              "pid": 9
+            },
+            {
+              "name": "buildTest.js",
+              "level": 3,
+              "id": 11,
+              "pid": 9
+            },
+            {
+              "name": "initPageDef.js",
+              "level": 3,
+              "id": 12,
+              "pid": 9
+            },
+            {
+              "name": "scanPageTest.js",
+              "level": 3,
+              "id": 13,
+              "pid": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fileMonitor.js",
+      "level": 1,
+      "id": 14,
+      "pid": 1
+    },
+    {
+      "name": "fs",
+      "level": 1,
+      "id": 15,
+      "pid": 1,
+      "isFolder": true,
+      "childs": [
+        {
+          "name": "fsHelper.js",
+          "level": 2,
+          "id": 16,
+          "pid": 15
+        },
+        {
+          "name": "hfs.js",
+          "level": 2,
+          "id": 17,
+          "pid": 15
+        }
+      ]
+    },
+    {
+      "name": "json_sql",
+      "level": 1,
+      "id": 18,
+      "pid": 1,
+      "isFolder": true,
+      "childs": [
+        {
+          "name": "test.js",
+          "level": 2,
+          "id": 19,
+          "pid": 18
+        }
+      ]
+    },
+    {
+      "name": "webEngine.js",
+      "level": 1,
+      "id": 20,
+      "pid": 1
+    }
+  ],
+  "level": 0
+}

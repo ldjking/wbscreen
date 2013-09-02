@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Grid</title>
+<link rel="stylesheet" type="text/css" href="css/grid.css">
+<link rel="stylesheet" type="text/css" href="css/32grid.css">
+</head>
+
+<body class="grid">
+<div class="search">
+  <div class="find">高级搜索</div>
+  <div class="icon-gap-small"></div>
+  <div class="icon-more"></div>
+  <div class="save">保存搜索</div>
+  <div class="icon-gap-small"></div><div class="icon-more"></div>
+</div>
+<div class="header">
+  <div class="title">所有员工</div>
+  <div class="icon-gap"></div>
+</div>
+<div class="body">
+  <table class="table" id="grid" cellspacing="0" cellpadding="0">
+    <tr class="theader">
+      <td class="w01"  style="width: 30px;"><div class="w01">
+          <input class="checkbox" id="grid_0_selectAll" type="checkbox">
+        </div></td>
+      <td class="w02"  style="width: 60px;"><div class="w02"> 序号 </div></td>
+      <td class="asc"  style="width: 100px;"><div class="cell"> 主键 </div></td>
+      <td class="asc"  style="width: 180px;"><div class="cell"> 姓名 </div></td>
+      <td class="asc"  style="width: 80px;"><div class="cell"> 性别 </div></td>
+      <td class="asc"  style="width: 100px;"><div class="cell"> 出生日期 </div></td>
+      <td class="asc"  style="width: 180px;"><div class="cell"> 账户 </div></td>
+      <td class="asc"  style="width: 140px;"><div class="cell"> 密码 </div></td>
+      <td class="asc"  style="width: 120px;"><div class="cell"> 状态 </div></td>
+      <td class="asc"  style="width: auto;"></td>
+    </tr>
+    <tr class="hide">
+      <td><div class="w01" attr="">
+          <input class="checkbox" type="checkbox">
+        </div></td>
+      <td><div attr="id"> 序号 </div></td>
+      <td><div class="cell"> 主键 </div></td>
+      <td><div class="cell"> 姓名 </div></td>
+      <td><div class="cell"> 性别 </div></td>
+      <td><div class="cell"> 出生日期 </div></td>
+      <td><div class="cell"> 账户 </div></td>
+      <td><div class="cell"> 密码 </div></td>
+      <td><div class="cell"> 状态 </div></td>
+      <td></td>
+    </tr>
+    <tr class="filter">
+      <td class="w01"></td>
+      <td class="w02"><div class="w02">
+        </div></td>
+      <td><input class=" query cell" style="width: 80px;" type="text"></td>
+      <td><input class=" query cell" style="width: 160px;" type="text"></td>
+      <td><input class=" query cell" style="width: 60px;" type="text"></td>
+      <td><input class=" query cell" style="width: 80px;" type="text"></td>
+      <td><input class=" query cell" style="width: 160px;" type="text"></td>
+      <td><input class=" query cell" style="width: 100px;" type="text"></td>
+      <td><input class=" query cell" style="width: 100px;" type="text"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><input class="checkbox" id="grid_0_selectAll" type="checkbox"></td>
+      <td>1</td>
+      <td>10011</td>
+      <td>张三</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><input class="checkbox" id="grid_0_selectAll" type="checkbox"></td>
+      <td>2</td>
+      <td>10012</td>
+      <td>李四</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><input class="checkbox" id="grid_0_selectAll" type="checkbox"></td>
+      <td>3</td>
+      <td>10013</td>
+      <td>王五</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><input class="checkbox" id="grid_0_selectAll" type="checkbox"></td>
+      <td>4</td>
+      <td>10014</td>
+      <td>谢六</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><input class="checkbox" id="grid_0_selectAll" type="checkbox"></td>
+      <td>5</td>
+      <td>10015</td>
+      <td>陈七</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><input class="checkbox" id="grid_0_selectAll" type="checkbox"></td>
+      <td>6</td>
+      <td>10016</td>
+      <td>邓八</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><input class="checkbox" id="grid_0_selectAll" type="checkbox"></td>
+      <td>7</td>
+      <td>10017</td>
+      <td>段九</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><input class="checkbox" id="grid_0_selectAll" type="checkbox"></td>
+      <td>8</td>
+      <td>10018</td>
+      <td>万十</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><input class="checkbox" id="grid_0_selectAll" type="checkbox"></td>
+      <td>9</td>
+      <td>10019</td>
+      <td>萧十一</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><input class="checkbox" id="grid_0_selectAll" type="checkbox"></td>
+      <td>10</td>
+      <td>10020</td>
+      <td>金十二</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+</div>
+<div class="footer" id="grid_0_footer">
+  <div class="pager" id="grid_0_pager">
+    <table class="pageInfo" cellspacing="0" cellpadding="0">
+      <tbody>
+        <tr>
+          <td class="rowNum" id="grid_0_rowNum">共2条数据</td>
+          <td class="pageNum" id="grid_0_pageNum"></td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="pageTable"  cellspacing="0" cellpadding="0">
+      <tbody>
+        <tr>
+          <td class="pagebtn" id="grid_0_firstPage">首页</td>
+          <td class="pagebtn" id="grid_0_prePage">上一页</td>
+          <td class="pagebtn" id="grid_0_nextPage">下一页</td>
+          <td class="pagebtn" id="grid_0_lastPage">尾页</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<script src="../../../template2/src/js/lib.js"></script>
+<script src="../../../template2/src/js/grid.js"></script>
+<script>
+	makeGrid("grid",[]);
+</script>
+</body>
+</html>

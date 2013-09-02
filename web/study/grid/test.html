@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+.grid {
+	background-color: #333;
+	height: 340px;
+	width: 340px;
+	overflow: hidden;
+}
+.grid div {
+	background-color: #999;
+	height: 100px;
+	width: 100px;
+	float: left;
+	border: 10px solid #f00;
+	position: relative;
+	z-index: 1;
+}
+.grid div:nth-child(n+4) {
+	margin-top: -10px;
+	background-color: #099;
+}
+.grid div:nth-child(3n+2), .grid div:nth-child(3n+3) {
+	margin-left: -10px;
+}
+.grid div:hover {
+	background-color: #39F;
+	border-color: #000;
+	z-index: 2;
+}
+</style>
+</head>
+
+<body>
+<div class="grid"><div> 1 </div><div> 2 </div><div> 3 </div><div> 4 </div><div> 5 </div><div> 6 </div><div> 7 </div><div> 8 </div><div> 9 </div>
+</div>
+</body>
+</html>

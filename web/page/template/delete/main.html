@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>首页</title>
+
+<link rel="stylesheet" type="text/css" href="../../../web/template/js/easyui/themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="../../../web/template/js/easyui/themes/icon.css">
+</head>
+<body class="easyui-layout" style="overflow:hidden; border:0; padding:0; margin:0"><div data-options="region:'north',boder:false" style="height:61px;padding:0px;scrolling:no; background-image:url(../../../web/template/images/newtop.png); background-position:center top; background-repeat:no-repeat; overflow:hidden; border:0"><table width="100%" height="58px" cellpadding="0" cellspacing="0"
+		 border='0' style="background-image:url(../../../web/template/images/newlogo.png);background-position:left 0px; background-repeat:no-repeat">
+		<tr>
+			<td rowspan="2" width="600px">&nbsp;</td>
+			<td rowspan="2">&nbsp;</td>
+			<td width="350px" align="right"><img src="../../../web/template/images/home.png"
+				name="Image1" border="0" id="Image1" /> <a href="###"
+				onclick="openIndex();" style="text-decoration: none; color: #FFF;"
+				class="topa">首页</a> &nbsp;<font color="White">|</font>&nbsp; <img
+				src="../../../web/template/images/help.png" name="Image2" border="0" id="Image2" /> <a
+				id="help" href="###" style="text-decoration: none; color: #FFF;">帮助</a>
+				&nbsp;<font color="White">|</font>&nbsp; <img src="../../../web/template/images/about.png"
+				name="Image3" border="0" id="Image3" /> <a href="###" onclick=""
+				style="text-decoration: none; color: #FFF;">关于</a> &nbsp;<font
+				color="White">|</font>&nbsp; <img src="../../../web/template/images/quit.png"
+				name="Image3" border="0" id="Image3" /> <a href="#"
+				onclick="loginOut();" style="text-decoration: none; color: #FFF;">退出</a>
+				&nbsp;&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="350px" align="right"><font color="White">您好：${userInfo.fullname}，欢迎登录本系统&nbsp;</font>
+				<a href='###' onclick='parent.open_updatePass()' style="color: #fff">[修改密码]</a>
+				&nbsp;&nbsp;</td>
+		</tr>
+	</table>
+	</div>
+	<div data-options="region:'south',boder:false"
+		style="height: 27px; padding: 10px;" align="center">
+		<!--底部文字-->
+		<span
+			style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">版权所有&copy;2013
+			中国长江三峡集团公司 All rights reserved. 服务热线：0717-6761000</span>
+	</div>
+	<div data-options="region:'west',boder:false,split:true"
+		style="width: 193px;overflow:hidden">
+		<!--中间手风琴菜单-->
+		<div style="width: 183px; height: 600px">
+			<div id="manage_accordion" class="easyui-accordion"
+				style="width: 184px" border="false">
+			</div> 
+		</div>
+	</div>
+	<div data-options="region:'center',boder:false">
+		<!--中间信息显示区域-->
+		<div id="main-center" class="easyui-tabs" closable="true"
+			style="overflow: hidden" fit="true" border="false"></div>
+	</div>
+</body>
+</html>

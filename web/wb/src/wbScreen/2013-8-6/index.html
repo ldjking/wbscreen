@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>新增表单</title>
+<link rel="stylesheet" type="text/css" href="../../../ide/lib/theme/style/steps.css">
+<link rel="stylesheet" type="text/css"  media="screen and (max-width:1200px)"  href="../../../ide/lib/theme/style/welcome-s.css">
+<link rel="stylesheet" type="text/css"  media="screen and (min-width:1200px)"   href="../../../ide/lib/theme/style/welcome.css">
+</head>
+<body>
+<div class="container">
+  <div class="top">
+    <div class="navs">
+      <ul class="con">
+        <li class="a1">基本页面信息</li>
+        <li class="a1">列表配置 </li>
+        <li class="a1">表单配置 </li>
+        <li class="a1">子表配置 </li>
+        <li class="a1">自定义事件 </li>
+      </ul>
+    </div>
+    <div class="btns"><div class="btn save">保存</div></div>
+  </div>
+  <div class="down">
+    <div class="paper">
+      <div class="content">
+      <table cellpadding="0" cellspacing="0" class="form">
+          <tr>
+            <td class="row"><table  cellpadding="0" cellspacing="0" >
+                <tr>
+                  <td style="width:100px;"><span> 页面名称 </span></td>
+                  <td style="width:100px;"><span> </span></td>
+                  <td  style="width:100px;"><span> 中文名称</span></td>
+                  <td  style="width:300px;"><span> </span></td>
+                </tr>
+              </table></td>
+          </tr>
+          <tr>
+            <td  class="row"><table cellpadding="0" cellspacing="0" >
+                <tr>
+                  <td  style="width:100px;"><span> 标题 </span></td>
+                  <td  style="width:500px;"><span> </span></td>
+                </tr>
+              </table></td>
+          </tr>
+          <tr>
+            <td  class="row"><table cellpadding="0" cellspacing="0" >
+                <tr>
+                  <td  style="width:100px;"><span> 功能描述 </span></td>
+                  <td  style="width:500px;"><span> </span></td>
+                </tr>
+              </table></td>
+          </tr>
+          <tr>
+            <td  class="row"><table cellpadding="0" cellspacing="0" >
+                <tr>
+                  <td colspan="4"  style="width:600px;"><span style="width:100px"> 表格行数</span></td>
+                </tr>
+                <tr>
+                  <td style="width:40px;"><span > 序号 </span></td>
+                  <td style="width:360px;"><span > 内容 </span></td>
+                  <td style="width:100px;"><span> 成果 </span></td>
+                  <td style="width:100px;"><span> 时间 </span></td>
+                </tr>
+                <tr>
+                  <td style="width:40px;"><span > 1 </span></td>
+                  <td style="width:360px;"><span style="text-align:left" > 完成xxxxfhalfhs alfhdlsakh fldskhalfkhdslafhsdl alfhaslfhdsa 以激发发生了发火的萨利赫泛利大厦 </span></td>
+                  <td style="width:100px;"><span> 成果 </span></td>
+                  <td style="width:100px;"><span> 2012-3-1 </span></td>
+                </tr>
+                <tr>
+                  <td style="width:40px;"><span > 2 </span></td>
+                  <td style="width:360px;"><span style="text-align:left" > 完成xxxxfhalfhs alfhdlsakh fldskhalfkhdslafhsdl alfhaslfhdsa 以激发发生了发火的萨利赫泛利大厦 </span></td>
+                  <td style="width:100px;"><span> 成果 </span></td>
+                  <td style="width:100px;"><span> 2013-3-1 </span></td>
+                </tr>
+                <tr>
+                  <td style="width:40px;"><span > 3 </span></td>
+                  <td style="width:360px;"><span style="text-align:left" > 完成xxxxfhalfhs alfhdlsakh fldskhalfkhdslafhsdl alfhaslfhdsa 以激发发生了发火的萨利赫泛利大厦 </span></td>
+                  <td style="width:100px;"><span> 成果 </span></td>
+                  <td style="width:100px;"><span> 2014-3-1 </span></td>
+                </tr>
+              </table></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="left">
+  <div class="logo">
+    <span class="text">WBScreen</span><span class="newPage">+</span>
+  </div>
+  <div class="files">
+    <div class="tree" id="tree"></div>
+  </div>
+  <div class="wrap">
+  </div>
+</div>
+<script src="../../../ide/lib/xlib/require.js"></script>
+<script type="text/javascript">
+	window.onload=init;
+	function init(){
+		var genTree=g.tree;
+		var data=[
+				{name:"所有页面",level:1,type:"node"},
+				{name:"系统模块",level:2,type:"node"},
+				{name:"人员管理",level:3,type:"leaf"},
+				{name:"角色管理",level:3,type:"leaf"},
+				{name:"授权管理",level:3,type:"leaf"},
+				{name:"开发模块",level:2,type:"node"},
+				{name:"数据库",level:3,type:"leaf"},
+				{name:"服务",level:3,type:"leaf"},
+				{name:"页面",level:3,type:"leaf"},
+				{name:"运行模块",level:2,type:"node"},
+				{name:"运行日志",level:3,type:"leaf"},
+				{name:"工作票",level:3,type:"leaf"},
+				{name:"操作票",level:3,type:"leaf"},
+				{name:"物资模块",level:2,type:"node"},
+				{name:"物资台账",level:3,type:"leaf"},
+				{name:"仓库管理",level:3,type:"leaf"},
+				{name:"采购管理",level:3,type:"leaf"},
+				{name:"入库",level:3,type:"leaf"},
+				{name:"出库",level:3,type:"leaf"},
+				{name:"领料",level:3,type:"leaf"},
+				{name:"合同模块",level:2,type:"node"},
+				{name:"合同录入",level:3,type:"leaf"},
+				{name:"支付单",level:3,type:"leaf"},
+				{name:"合同结算",level:3,type:"leaf"},
+				{name:"合同验收",level:3,type:"leaf"}
+
+			];
+		var tree=document.getElementById("tree");
+		genTree(tree,{},data);
+		//console.log(x);
+		//x.bind("#c1","click",btnClick,{a:10});
+		//console.log(extend);
+	}
+	function btnClick(){
+		
+		console.log("click");
+		console.log(this);
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	li a{
+		position:relative;
+		display:block;
+		z-index:4;
+		background-color:#999;
+	}
+	label{
+		opacity:0.5;
+	}
+	li:hover{
+		background-color:#0CC;
+	}
+	input{
+		opacity:0.5;
+		z-index:2;
+	}
+	input:checked{
+		background-color:#F00;
+	}
+	input:checked+*{
+		background-color:#F00;
+		color:#03C;
+	}
+</style>
+</head>
+
+<body>
+<form>
+<ul>
+	<li><a href="http://www.baidu.com" target="_blank">&nbsp;<input type="radio" name="r1"/><label>hello</label></a></li>
+    <li><a href="http://www.sina.com" target="_blank">hello<div>hello</div></a></li>
+    <li><input type="radio" name="r1"/><label>hello</label></li>
+    <li><input type="radio" name="r1"/><label>hello</label></li>
+    <li><input type="radio" name="r1"/><label>hello</label></li>
+    <li><input type="radio" name="r1"/><label>hello</label></li>
+</ul>
+</form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+
+<script type="text/javascript">
+	var array=[1,2,3];
+	var temp=Array.prototype.push;
+	array.a=10;
+	array.before=function(){
+			alert(1);
+		}
+	array.after=function(){
+			alert(2);
+		}
+	Array.prototype.push=function(){
+			if(this.a==10)	if(this.before)	this.before();;
+			temp.apply(this);
+			if(this.a==10)	if(this.after)	this.after();;
+		}
+	console.dir(array);
+	console.info(Object);
+	Object.defineProperty(array,"length",{set:function(){alert("set");}});
+	//var obj=new Array(1,2,3);
+	//array.watch("length",function(){alert(1)});
+	array.push(4);
+</script>
+</body>
+</html>

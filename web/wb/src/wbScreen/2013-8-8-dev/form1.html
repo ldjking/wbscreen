@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>基本信息配置向导</title>
+<link rel="stylesheet" type="text/css" href="../../../src/wbScreen/2013-8-8-dev/rs/style/reset.css">
+<link rel="stylesheet" type="text/css" href="../../../src/wbScreen/2013-8-8-dev/rs/style/paper.css">
+</head>
+
+<body>
+<div class="paper" id="paper-add">
+  <form name="form-add" id="form-add">
+    <table class="form"  cellpadding="0" cellspacing="0">
+      <tr>
+        <td class="row"><table cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="100px"><span>页面名称</span></td>
+              <td width="220px"><input type="text" class="txt" name="name"/></td>
+              <td width="120px"><span>中文名称</span></td>
+              <td width="220px"><input type="text" class="txt" name="cname"/></td>
+            </tr>
+            <tr>
+              <td><span>页面标题</span></td>
+              <td colspan="3"><input type="text" class="txt" name="title"/></td>
+            </tr>
+            <tr>
+              <td><span>所属模块</span></td>
+              <td colspan="3"><ul>
+                  <li>
+                    <input type="radio" name="module" class="check" value="1"/>
+                    工作流</li>
+                  <li>
+                    <input type="radio" name="module"  class="check" value="2"/>
+                    系统定义</li>
+                  <li>
+                    <input type="radio" name="module"  class="check" value="3"/>
+                    人员机构</li>
+                  <li>
+                    <input type="radio" name="module"  class="check" value="4"/>
+                    财务管理</li>
+                  <br/>
+                  <li>
+                    <input type="radio" name="module"  class="check" value="5"/>
+                    物资管理</li>
+                  <li>
+                    <input type="radio" name="module"  class="check" value="6"/>
+                    运行管理</li>
+                  <li>
+                    <input type="radio" name="module"  class="check" value="7"/>
+                    报表统计</li>
+                </ul></td>
+            </tr>
+            <tr>
+              <td><span>模板类别</span></td>
+              <td colspan="3"><ul>
+                  <li>
+                    <input type="radio" name="template" class="check" value="t1"/>
+                    模板一</li>
+                  <li>
+                    <input type="radio" name="template"  class="check" value="t2"/>
+                    模板二</li>
+                  <li>
+                    <input type="radio" name="template"  class="check" value="t3"/>
+                    模板三</li>
+                </ul></td>
+            </tr>
+          </table></td>
+      </tr>
+      <tr>
+        <td class="row"><table cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="100px"><span>需求提出人</span></td>
+              <td width="220px"><input type="text" class="txt" name="person1"/></td>
+              <td width="120px"><span>需求提出时间</span></td>
+              <td width="220px"><input type="text" class="txt" name="time1"/></td>
+            </tr>
+            <tr>
+              <td><span>需求描述</span></td>
+              <td colspan="3"><div style="min-height:80px">
+                  <input type="text" class="txt" name="des1"/>
+                </div></td>
+            </tr>
+            <tr>
+              <td><span>开发人</span></td>
+              <td><input type="text" class="txt" name="person2"/></td>
+              <td><span>开发完成时间</span></td>
+              <td><input type="text" class="txt" name="time2"/></td>
+            </tr>
+            <tr>
+              <td><span>开发说明</span></td>
+              <td colspan="3"><div style="min-height:80px">
+                  <input type="text" class="txt" name="des2"/>
+                </div></td>
+            </tr>
+            <tr class="hide">
+              <td><span>测试人</span></td>
+              <td><input type="text" class="txt" name="person3"/></td>
+              <td><span>测试时间</span></td>
+              <td><input type="text" class="txt" name="time3"/></td>
+            </tr>
+            <tr class="hide">
+              <td><span>测试说明</span></td>
+              <td colspan="3"><div style="min-height:80px">
+                  <input type="text" class="txt" name="des3"/>
+                </div></td>
+            </tr>
+          </table></td>
+      </tr>
+    </table>
+  </form>
+</div>
+</body>
+</html>

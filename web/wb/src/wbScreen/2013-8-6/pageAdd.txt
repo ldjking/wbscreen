@@ -1,0 +1,14 @@
+新增页面  布局组成
+
+container 限制最大宽度
+1.顶部 指示作用
+	1.1 steps
+	1.2	buttons
+2.left 
+	2.1 hint 当前提示
+	2.2 nav
+	2.3 wrap
+	
+3.content
+	3.1 papers	[由多张paper组成]  比如首页的WBScreen介绍   按钮功能说明
+	

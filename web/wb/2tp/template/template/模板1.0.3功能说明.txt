@@ -1,0 +1,72 @@
+功能点
+101.datagrid配置可定义 	dgConf  		{}
+102.从表配置可定义      	childConf		{}
+103.datagrid按钮可定义	btns			[]		
+104.底部按钮可定义	   		btn2s			[]
+105.从表新增行数可限制		childLimit		[] 		使用方法childLimit[1]=1代表第一个从表最多新增一条数据
+
+datagrid默认行为
+201.dg_load		表单加载完成 选中第一条数据
+			如果数据行数为0  不会报错  依然触发dg_select事件
+202.dg_select	选中数据事件	根据选中对象  绘制对象的详细信息  以及相应从表数据
+			调用useDetailMode
+	a.如果当前处于编辑状态  先弹出提示框提示用户有未保存数据
+	
+203.showForm	绘制表弟 包括详细信息表单和修改表单
+204.showChildGrid	绘制从表
+
+205.useDeatilMode  触发tab_select事件，确保底部按钮显示正确
+			   如果焦点位于搜索面板，激活表单面板  tab.select(0)
+			   如果交单位于其他面板，触发tab.select(curr)  看似多余的一步但是是必须的，因为tab_select负责底部按钮的呈现
+
+206.pager_refresh	底部刷新按钮的处理事件，默认调用btn_reload
+
+207.dg_collapse		datagrid收缩事件
+
+208.dg_expand		datagrid展开事件
+
+209.dg_dbl			datagrid双击事件		调用btn_edit
+
+
+
+默认按钮及其行为
+301.btn_add  打开新增表单		调用useAddMode
+302.btn_edit 打开修改表单		调用useEditMode
+303.btn_delete  删除选中行  删除前弹出确认框 	doDelete由开发人员实现
+304.btn_reload	刷新datagrid	
+305.btn_search  打开搜索面板
+
+选项卡切换事件
+401.tab_select 选项卡切换负责处理第底部按钮的显示与隐藏
+
+底部按钮事件
+501.btn2_save	弹出保存确认	需要开发人员实现doSave函数
+502.btn2_update	弹出修改确认	需要开发人员实现doUpdate函数
+503.btn2_search				需要开发人员实现doSearch函数
+504.btn2_addItem	新增行	在子表中新增行
+505.btn2_editItem	编辑行	编辑子表中选中行
+506.btn2_rmItem		删除行	删除子表选中行
+507.btn2_ok			提交更改	将字表中发生的操作保存	需要开发人员思想 doCommit函数
+
+窗体大小调整只是用
+601. window.onresiez=pageLoad;	大小调整触发所有页面组件的重新加载
+
+
+按钮初始化事件
+701. initButton	根据btns和btn2s的定义 生成按钮
+
+
+其他
+801.useAddMode		进入新增模式	触发formChange("add")
+802.userEditMode	进入修改模式	触发formChange("edit");
+803.formChange		需要开发人员实现
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+1. 底部呼出    			系统导航栏在底部
+2. 单页应用程序 			运行一个buildPage页面，能将page打包成一个app,
+
+结构应该是page 目录   index.html是这个page的起始页  只允许单页
+                    index.js是这个page的起始程序  
+					内联<script> 调用main方法   启动index.js
+					
+					
+build  对某个目录执行编译   会将该页面形成一个app.js
+
+app.conf 里面需要有 title  
+                  icon  	可选
+				  styles	样式资源		静态化  可引用别的定义
+				  scripts	脚本资源		需要整合脚本内容形成一个
+				  
+访问对象已经无法通过id来访问，必须要有相对的dom,即上下文
+
+app.run 需要什么参数 dom参数
+		返回什么结果	dom
+
+am做什么  am.run(app)		判断app.status  active  ready  deactive  
+		 如果是ready状态  则分配一个dom	交给app.run执行 然后得到这个dom，使其处于激活状态
+		 如果是deactive	则激活这个dom
+		 如果是active		则不执行操作
+		 
+		 loading进度条
+
+如果是ready状态，首先加载app的资源引用配置
+执行app.run的时候会动态修改dom的id属性，加上新的id
+		 
+		 
+
+
+$(xx,dom)	需要重新构建
