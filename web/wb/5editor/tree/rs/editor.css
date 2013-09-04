@@ -1,4 +1,5 @@
 .tree {
+	font-size:16px;
 }
 .tree div {
 	padding-left: 24px;
@@ -17,7 +18,7 @@
 }
 .tree .leaf {
 }
-.tree .leaf:before {
+.tree .leaf::before {
 	content: "";
 	position: absolute;
 	top: 11px;
@@ -81,14 +82,70 @@
 
 }
 #t1 {
-	width: 400px;
-	background-color: #dedede;
+	width: 20%;
+/*	background-color: #dedede;*/
 	float: left;
+	max-height:600px;
+	overflow-y:auto;
 }
 .right {
-	width: 800px;
-	background-color: #F00;
-	float: left;
-	min-height: 800px;
-	height: 800px;
+	width: 80%;
+/*	background-color: #F00;
+*/	float: left;
+	min-height: 600px;
+	height: 600px;
+	border-left:1px solid #000;
+	box-sizing:border-box;
+}
+#code{
+	height: 570px;	
+}
+#content{
+	height: 600px;
+	width: 100%;
+}
+#title{
+	height:40px;
+}
+.buttons{
+	margin-top:5px;
+	float:right;
+}
+
+.right_top{
+	height: 40px;
+}
+
+.fileTitles{
+	float:left;
+	margin-left:20px;
+	box-sizing:border-box;
+	height:40px;
+}
+
+.filetitle{
+	box-sizing:border-box;
+	position:relative;
+	margin:0 10px;	
+	z-index:1;	
+	font-size:16px;
+	cursor:pointer;
+	padding:0 5px;
+	height:41px;
+	line-height:41px;
+	display:inline-block;
+}
+.filetitle.editing{
+	border-top:1px solid #000;
+	border-left:1px solid #000;
+	border-right:1px solid #000;
+	border-bottom:1px solid #FFF;
+}
+
+#btn_save, #btn_preview{
+	margin-right:40px;
+	height:30px;
+	width:60px;
+	padding:0;
+	font-size:14px;
 }

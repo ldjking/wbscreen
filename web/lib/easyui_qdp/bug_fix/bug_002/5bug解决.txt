@@ -1,0 +1,7 @@
+1.bug结论：
+    easyui对combobox的错误提示信息位置计算算法不正确，少计算了下拉按钮的宽度
+	
+2.解决方案
+	修改easyui源代码  修改标记 bug_002  
+	增加代码判断 如果是comob text 增加18的按钮宽度
+	if(box.hasClass("combo-text"))	tip.css("left",box.offset().left+box._outerWidth()+18);

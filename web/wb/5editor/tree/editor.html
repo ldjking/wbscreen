@@ -2,18 +2,34 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>无标题文档</title>
+<title>代码编辑器</title>
 <link rel="stylesheet" href="../CodeMirror/lib/codemirror.css">
 <link rel="stylesheet" type="text/css" href="rs/editor.css">
+<style type="text/css">
+html, body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+</style>
 </head>
 
 <body>
-<div id="t1" class="tree">
+<div id="title">
+  <h1>代码编辑器</h1>
 </div>
-<div class="right">
-  <button id="btn_save">保存</button>
-  <button id="btn_preview">预览</button>
-  <div id="code" name="code"</div>
+<div id="content">
+  <div id="t1" class="tree"></div>
+  <div class="right">
+    <div class="right_top">
+      <div class="fileTitles" id="ft_src"></div>
+      <div class="buttons">
+        <button id="btn_save">保存</button>
+        <button id="btn_preview">预览</button>
+      </div>
+    </div>
+    <div id="code" name="code"></div>
+  </div>
 </div>
 <script src="rs/tree.js"></script> 
 <script src="../codeMirror/lib/codemirror.js"></script> 
@@ -27,7 +43,7 @@
 <script>
 	genTree("t1","/web/file/catalog.json",leafClick);
 	
-	// var mixedMode = {
+// var mixedMode = {
 //        name: "htmlmixed",
 //        scriptTypes: [{matches: /\/x-handlebars-template|\/x-mustache/i,
 //                       mode: null}]
@@ -48,18 +64,46 @@
 	function leafClick(evt){
 		var target=evt.target;
 		if(target.className.indexOf("leaf")>=0){
-			path=target.getAttribute("path");
-			//alert(path);
-			
-			var xhr=new XMLHttpRequest();
-			xhr.open("get",path,false);
-			xhr.send();
-			var text=xhr.responseText;
-			//alert(text);
-			editor.doc.setValue(text);
-		}
-		
+			var text=loadFile(evt);
+			var title = target.innerHTML;
+			var ft_src =  document.getElementById("ft_src");
+			ft_src.innerHTML = '<span class="filetitle editing" path="'+path+'">'+title+'</span>';
+			var a = text.match(/<(link|script)([^>])+/g);			
+			if(a){			
+				var html="";
+				var reg = /(\s|\S)*(href="|src=")([^"]+)(\s|\S)*/g
+				a.forEach(function(x , i , a) {			
+						if(reg.test(x)){
+							var sub_path = x.replace(reg,"$3");
+							title = /[^\/]+$/.exec(sub_path);
+							html += '<span class="filetitle" path="'+path+'/../'+sub_path+'">'+title+'</span>';
+						}
+					});
+				ft_src.innerHTML +=html;
+			}
+			var fts = ft_src.children;
+			for(var p = 0; p < fts.length; p++){
+					fts[p].onclick = titleClick;
+			}
+		}	
 	}
+	function titleClick(evt) {
+		document.getElementsByClassName("filetitle editing")[0].className = "filetitle";
+		evt.target.className = "filetitle editing";
+		loadFile(evt);	
+	}
+	
+	function loadFile(evt) {
+		var xhr=new XMLHttpRequest();
+		path = evt.target.getAttribute("path");		//设置全局路径
+		xhr.open("get",path,false);
+		xhr.send();
+		editor.doc.setValue(xhr.responseText);
+		return xhr.responseText;
+	}
+	
+	
+	
 	var editor;
 	var path;
 

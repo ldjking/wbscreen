@@ -48,7 +48,7 @@
 		if(node.className=="node open"&&lastOpen==node){
 			node.className="node collapse";
 			collapse(node);
-			lastOpen=nulll;
+			lastOpen=null;
 		}
 		else{
 			node.className="node open";

@@ -1,0 +1,9 @@
+1.bug场景描述：
+    该bug出现在IE9、IE10、Chrome、Firefox中
+	
+2.参考资料 无
+
+3.问题初步分析：  easyui validate控件的提示位置计算错误
+
+	
+		

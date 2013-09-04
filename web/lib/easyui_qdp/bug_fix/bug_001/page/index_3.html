@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>no layout</title>
+<link rel="stylesheet" type="text/css"
+	href="../../../../../../../32guide/template/js/easyui/themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="../../../../../../../32guide/template/js/easyui/themes/icon.css">
+<script type="text/javascript" src="../../../../../../../32guide/template/js/easyui/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="../../../../../../../32guide/template/js/easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="../../../../../../../32guide/template/js/easyui/locale/easyui-lang-zh_CN.js"></script>
+</head>
+<body class="easyui-layout">
+	<div data-options2="region:'north',boder:false" style="height: 61px;">
+            <div id="p" class="easyui-panel"   
+        data-options="href:'newtop.html',border:false">  
+</div>
+	</div>
+	<div data-options="region:'south',boder:false"
+		style="height: 27px; padding: 10px;" align="center">
+		<!--底部文字-->
+		<span
+			style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">版权所有&copy;2012
+			中国长江三峡集团公司 All rights reserved. 服务热线：0717-6761000</span>
+	</div>
+	<div data-options="region:'west',boder:false,split:true"
+		style="width: 193px"">
+		<!--中间手风琴菜单-->
+		<div style="width: 183px; height: 600px">
+			<div id="manage_accordion" class="easyui-accordion"
+				style="width: 184px" border="false">
+			</div> 
+		</div>
+	</div>
+	<div data-options="region:'center',boder:false">
+		<!--中间信息显示区域-->
+		<div id="main-center" class="easyui-tabs" closable="true"
+			style="overflow: hidden" fit="true" border="false"></div>
+		<div id="mm" class="easyui-menu" style="width: 120px;">
+			<div onclick="closeTab('self')">关闭</div>
+			<div onclick="closeTab('others')">关闭其它</div>
+		</div>
+	</div>
+</body>
+</html>

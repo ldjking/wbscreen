@@ -1,0 +1,7 @@
+1.bug结论：
+    easyui form 的clear和reset方法不应该触发校验
+	
+2.解决方案
+	修改easyui源代码	修改标记bug_003
+	移除代码		_3d6(_3d5)	
+	移除代码		_3d6(_3d8)
